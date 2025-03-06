@@ -1,25 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue'
-import { ref, onMounted } from 'vue'
-import { supabase } from './lib/supabaseClient'
-
-const blogs = ref([])
-
-async function getBlogs() {
-  const { data, error } = await supabase.from('blogs').select('*')
-
-  if (error) {
-    console.error('Error fetching blogs:', error.message)
-  } else {
-    console.log('Blogs:', data)
-    blogs.value = data
-  }
-}
-
-onMounted(() => {
-  getBlogs()
-})
 </script>
 
 <template>
