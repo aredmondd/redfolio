@@ -10,7 +10,6 @@ async function getContent() {
   if (error) {
     console.error('Error fetching content:', error.message)
   } else {
-    console.log('Content:', data)
     content.value = data
   }
 }

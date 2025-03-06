@@ -1,6 +1,7 @@
 <script setup>
 import ContentScroller from '@/components/ContentScroller.vue'
 import Vault from '@/components/Vault.vue'
+import Projects from '@/components/Projects.vue'
 </script>
 
 <template>
@@ -32,5 +33,6 @@ import Vault from '@/components/Vault.vue'
       listed below are some project i've been working on recently. <br />
       click on one to see the github repo.
     </h3>
+    <Projects />
   </div>
 </template>

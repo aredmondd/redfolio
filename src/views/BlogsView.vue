@@ -10,7 +10,6 @@ async function getBlogs() {
   if (error) {
     console.error('Error fetching blogs:', error.message)
   } else {
-    console.log('Blogs:', data)
     blogs.value = data
   }
 }
