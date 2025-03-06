@@ -1,8 +1,6 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import Navbar from './components/Navbar.vue'
 import { ref, onMounted } from 'vue'
-import { supabase } from './lib/supabaseClient'
+import { supabase } from '../lib/supabaseClient'
 
 const blogs = ref([])
 
@@ -23,6 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <Navbar />
-  <RouterView />
+  <ul class="bg-pink">
+    <h1 v-for="blog in blogs" :key="blog.id">{{ blog.slug }}</h1>
+  </ul>
 </template>
