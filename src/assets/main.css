@@ -8,6 +8,7 @@
   --color-pink: #ff5964;
 
   --font-sans: InterVariable, sans-serif;
+  --font-mono: 'Martian Mono', sans-serif;
 
   --animate-loop-scroll: loop-scroll 200s linear infinite;
   --animate-loop-fast-scroll: loop-scroll 50s linear infinite;
