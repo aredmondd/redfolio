@@ -27,7 +27,7 @@ onMounted(() => {
     >
       <ul class="flex animate-loop-fast-scroll">
         <div v-for="(image, index) in content" class="w-64 mr-8 h-full" :key="index">
-          <a v-bind:href="image.link" target="_blank">
+          <a v-bind:href="image.more_link" target="_blank">
             <img
               :key="index"
               :src="image.src"
@@ -39,7 +39,7 @@ onMounted(() => {
       </ul>
       <ul class="flex animate-loop-fast-scroll" aria-hidden="true">
         <div v-for="(image, index) in content" class="w-64 mr-8 h-full" :key="index">
-          <a v-bind:href="image.link" target="_blank">
+          <a v-bind:href="image.more_link" target="_blank">
             <img
               :key="index"
               :src="image.src"
