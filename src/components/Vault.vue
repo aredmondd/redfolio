@@ -42,7 +42,7 @@ onMounted(() => {
     <ul>
       <li v-for="raindrop in raindrops" :key="raindrop._id" class="flex items-end">
         <!-- Left: Title -->
-        <a v-bind:href="raindrop.link" target="_blank" class="hover:text-pink truncate">
+        <a v-bind:href="raindrop.link" target="_blank" class="hover:text-pink truncate font-medium">
           {{ raindrop.title }}
         </a>
 
@@ -52,7 +52,7 @@ onMounted(() => {
         ></span>
 
         <!-- Right: Date -->
-        <span class="text-black whitespace-nowrap font-mono">
+        <span class="text-black whitespace-nowrap font-mono font-light">
           {{ generateDate(raindrop.created) }}
         </span>
       </li>

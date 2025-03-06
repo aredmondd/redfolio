@@ -8,7 +8,7 @@ import Vault from '@/components/Vault.vue'
     <!-- what i'm loving section -->
     <h2 class="text-4xl font-bold mt-12 mb-3">what i'm loving 💚</h2>
     <h3 class="mb-6">
-      a huge part of my inspiration comes from media. <br />here's what i'm into right now.
+      a huge part of my inspiration comes from media. <br />click on a card to learn more.
     </h3>
     <ContentScroller class="mb-12" />
 
@@ -25,5 +25,12 @@ import Vault from '@/components/Vault.vue'
       here are some of my favorite websites, tools, & more.
     </h3>
     <Vault class="mb-12" />
+
+    <!-- github projects section -->
+    <h2 class="text-4xl font-bold mt-12 mb-3">featured projects 🚧</h2>
+    <h3 class="mb-6">
+      listed below are some project i've been working on recently. <br />
+      click on one to see the github repo.
+    </h3>
   </div>
 </template>
