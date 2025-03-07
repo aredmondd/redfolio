@@ -5,6 +5,11 @@ let github_url = 'https://api.github.com/users/aredmondd/repos'
 
 let repos = ref([])
 let bestthree = ref([])
+let images = [
+  '/src/assets/PERFECT-KANA.png',
+  '/src/assets/PORTFOLIO.png',
+  '/src/assets/STRIDESPACE.png',
+]
 
 async function fetchRepos() {
   try {
@@ -27,14 +32,16 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="grid grid-cols-3 mb-12 gap-6">
+  <div class="grid grid-cols-3 mb-12 gap-12">
     <div
-      v-for="repo in bestthree"
+      v-for="(repo, index) in bestthree"
       :key="repo.id"
-      class="border-2 rounded-lg py-12 flex flex-col items-center justify-center hover:border-pink hover:text-pink"
+      class="py-12 flex flex-col items-center justify-center"
     >
-      <a :href="repo.html_url" target="_blank" class="text-xl">{{ repo.name }}</a>
-      <p v-if="repo.description != null" class="text-xs">{{ repo.description }}</p>
+      <a :href="repo.html_url" target="_blank" class="text-center">
+        <img :src="images[index]" alt="" class="rounded-lg" />
+        <p v-if="repo.description != null" class="text-sm mt-2">{{ repo.description }}</p>
+      </a>
     </div>
   </div>
 </template>
