@@ -22,11 +22,6 @@ const router = createRouter({
       name: 'unofficially',
       component: UnofficiallyView,
     },
-    {
-      path: '/blog',
-      name: 'blog',
-      component: BlogsView,
-    },
   ],
 })
 
