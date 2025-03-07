@@ -9,14 +9,14 @@ const hoveredTag = ref(null)
 
 // stephen ango's flexoki at 50% opacity :)
 let colorKey = {
-  site: 'rgba(175, 48, 41, 0.5)',
-  ui: 'rgba(188, 82, 21, 0.5)',
-  resource: 'rgba(173, 131, 1, 0.5)',
-  code: 'rgba(102, 128, 11, 0.5)',
-  app: 'rgba(36, 131, 123, 0.5)',
-  writing: 'rgba(32, 94, 166, 0.5)',
-  inspo: 'rgba(94, 64, 157, 0.5)',
-  addon: 'rgba(160, 47, 111, 0.5)',
+  site: 'rgba(175, 48, 41, 0.33)',
+  ui: 'rgba(188, 82, 21, 0.33)',
+  resource: 'rgba(173, 131, 1, 0.33)',
+  code: 'rgba(102, 128, 11, 0.33)',
+  app: 'rgba(36, 131, 123, 0.33)',
+  writing: 'rgba(32, 94, 166, 0.33)',
+  inspo: 'rgba(94, 64, 157, 0.33)',
+  addon: 'rgba(160, 47, 111, 0.33)',
 }
 
 async function fetchRaindrops() {
