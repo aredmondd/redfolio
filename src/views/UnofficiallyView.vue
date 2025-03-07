@@ -2,6 +2,7 @@
 import ContentScroller from '@/components/ContentScroller.vue'
 import Vault from '@/components/Vault.vue'
 import Projects from '@/components/Projects.vue'
+import Tools from '@/components/Tools.vue'
 </script>
 
 <template>
@@ -34,5 +35,10 @@ import Projects from '@/components/Projects.vue'
       click on one to see the github repo.
     </h3>
     <Projects />
+
+    <!-- tools i'm using -->
+    <h2 class="text-4xl font-bold mt-12 mb-3">tools i use 🧰</h2>
+    <h3 class="mb-6">here's the tools & technologies i use daily</h3>
+    <Tools />
   </div>
 </template>
