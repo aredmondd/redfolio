@@ -44,13 +44,13 @@ import ToolItem from './ToolItem.vue'
 
     <div class="flex flex-col grow">
       <h3 class="font-mono font-bold underline underline-offset-2">technology</h3>
-      <ToolItem text="tailwind" link="https://iterm2.com/" />
-      <ToolItem text="vue" link="https://iterm2.com/" />
-      <ToolItem text="supabase" link="https://iterm2.com/" />
-      <ToolItem text="netlify" link="https://iterm2.com/" />
-      <ToolItem text="cloudinary" link="https://iterm2.com/" />
-      <ToolItem text="github" link="https://iterm2.com/" />
-      <ToolItem text="porkbun" link="https://iterm2.com/" />
+      <ToolItem text="tailwind" link="https://tailwindcss.com/" />
+      <ToolItem text="vue" link="https://vuejs.org/" />
+      <ToolItem text="supabase" link="https://supabase.com/" />
+      <ToolItem text="netlify" link="https://www.netlify.com/" />
+      <ToolItem text="cloudinary" link="https://cloudinary.com/" />
+      <ToolItem text="github" link="https://github.com/" />
+      <ToolItem text="porkbun" link="https://porkbun.com/" />
     </div>
 
     <div class="flex flex-col">
