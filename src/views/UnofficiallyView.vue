@@ -4,10 +4,24 @@ import Vault from '@/components/Vault.vue'
 import Projects from '@/components/Projects.vue'
 import Tools from '@/components/Tools.vue'
 import BlogCollection from '@/components/BlogCollection.vue'
+import PhotographyGrid from '@/components/PhotographyGrid.vue'
 </script>
 
 <template>
   <div class="flex flex-col flex-1">
+    <!-- photograhpy -->
+    <h2 class="text-3xl font-bold mt-6 mb-6 sm:text-center">photography 📸</h2>
+    <h3 class="text-right mb-12 sm:text-sm sm:text-center">
+      when i'm not working or running - i'm taking photos. <br />
+      here are my favorites, but can you check out more
+      <RouterLink
+        to="/photography"
+        class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out"
+        >here &#x2197;</RouterLink
+      >
+    </h3>
+    <PhotographyGrid />
+
     <!-- what i'm loving section -->
     <h2 class="text-4xl font-bold mt-12 mb-3">what i'm loving 💚</h2>
     <h3 class="mb-6">
