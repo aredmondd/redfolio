@@ -5,6 +5,8 @@ import Projects from '@/components/Projects.vue'
 import Tools from '@/components/Tools.vue'
 import BlogCollection from '@/components/BlogCollection.vue'
 import PhotographyGrid from '@/components/PhotographyGrid.vue'
+import YTVideos from '@/components/YTVideos.vue'
+import Top5YTVideos from '@/components/Top5YTVideos.vue'
 </script>
 
 <template>
@@ -60,5 +62,14 @@ import PhotographyGrid from '@/components/PhotographyGrid.vue'
     <h2 class="text-4xl font-bold mt-12 mb-3 text-right">writing 👨🏽‍💻</h2>
     <h3 class="mb-6 text-right">working on communicating my ideas better...</h3>
     <BlogCollection />
+
+    <!-- youtube videos -->
+    <YTVideos />
+
+    <h3 class="mb-6 text-center">
+      if you're looking for top 10... here they are. <br />
+      (in no particular order)
+    </h3>
+    <Top5YTVideos />
   </div>
 </template>
