@@ -30,8 +30,8 @@ import PhotographyGrid from '@/components/PhotographyGrid.vue'
     <ContentScroller class="mb-12" />
 
     <!-- raindrop section -->
-    <h2 class="text-4xl font-bold mt-12 mb-3">the vault 🏛️</h2>
-    <h3 class="mb-6">
+    <h2 class="text-4xl font-bold mt-12 mb-3 text-right">the vault 🏛️</h2>
+    <h3 class="mb-6 text-right">
       this section is <span class="line-through">stolen from</span> inspired by
       <a
         href="https://www.iamrob.in/bookmarks"
@@ -44,8 +44,8 @@ import PhotographyGrid from '@/components/PhotographyGrid.vue'
     <Vault class="mb-12" />
 
     <!-- github projects section -->
-    <h2 class="text-4xl font-bold mt-12 mb-3">featured projects 🚧</h2>
-    <h3 class="mb-6">
+    <h2 class="text-4xl font-bold mt-12 mb-3 text-center">featured projects 🚧</h2>
+    <h3 class="mb-6 text-center">
       listed below are some project i've been working on recently. <br />
       click on one to see the github repo.
     </h3>
@@ -57,8 +57,8 @@ import PhotographyGrid from '@/components/PhotographyGrid.vue'
     <Tools />
 
     <!-- writing -->
-    <h2 class="text-4xl font-bold mt-12 mb-3">writing 👨🏽‍💻</h2>
-    <h3 class="mb-6">working on communicating my ideas better...</h3>
+    <h2 class="text-4xl font-bold mt-12 mb-3 text-right">writing 👨🏽‍💻</h2>
+    <h3 class="mb-6 text-right">working on communicating my ideas better...</h3>
     <BlogCollection />
   </div>
 </template>
