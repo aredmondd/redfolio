@@ -1,156 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-let base_URL = 'https://www.youtube.com/embed/'
+let baseURL = 'https://www.youtube.com/embed/'
 
-let images = [
-  'https://i.ytimg.com/vi/3aG9Spllx5I/mqdefault.jpg',
-  'https://i.ytimg.com/vi/gPHdypbzUU8/mqdefault.jpg',
-  'https://i.ytimg.com/vi/fIuhg0bjvQI/mqdefault.jpg',
-  'https://i.ytimg.com/vi/PK2SMIOHYig/mqdefault.jpg',
-  'https://i.ytimg.com/vi/O2C5R3FOWdE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/wuDbl75QITU/mqdefault.jpg',
-  'https://i.ytimg.com/vi/k2mwG2h2zVQ/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Sk8VtJ9ELQQ/mqdefault.jpg',
-  'https://i.ytimg.com/vi/J7r4rYb0aII/mqdefault.jpg',
-  'https://i.ytimg.com/vi/jI7hfqDAgd0/mqdefault.jpg',
-  'https://i.ytimg.com/vi/RPnQbKgotOw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/UmCW0xi_790/mqdefault.jpg',
-  'https://i.ytimg.com/vi/nkgAlnDIPMU/mqdefault.jpg',
-  'https://i.ytimg.com/vi/w61PT-HpCis/mqdefault.jpg',
-  'https://i.ytimg.com/vi/yRVY5969OZw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/-cJfZR59p-A/mqdefault.jpg',
-  'https://i.ytimg.com/vi/6nUsWvqbV7Y/mqdefault.jpg',
-  'https://i.ytimg.com/vi/R3r01BruBok/mqdefault.jpg',
-  'https://i.ytimg.com/vi/KI_DBvaBpR8/mqdefault.jpg',
-  'https://i.ytimg.com/vi/nwP3TeK-fPs/mqdefault.jpg',
-  'https://i.ytimg.com/vi/YzfUj-m2I6I/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Xne9CEwR7Rc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/76HijAoXi6k/mqdefault.jpg',
-  'https://i.ytimg.com/vi/C0WAWMmbPYc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_pNRuafoyZ4/mqdefault.jpg',
-  'https://i.ytimg.com/vi/LlCEmPF4-V0/mqdefault.jpg',
-  'https://i.ytimg.com/vi/YGvCjqIl9dI/mqdefault.jpg',
-  'https://i.ytimg.com/vi/dls1vkI8xY8/mqdefault.jpg',
-  'https://i.ytimg.com/vi/-dKZuyQsXWg/mqdefault.jpg',
-  'https://i.ytimg.com/vi/9xV7Lyui6SI/mqdefault.jpg',
-  'https://i.ytimg.com/vi/gIKR1kkIvWA/mqdefault.jpg',
-  'https://i.ytimg.com/vi/v2QfOkixp4k/mqdefault.jpg',
-  'https://i.ytimg.com/vi/sjberqBTFz0/mqdefault.jpg',
-  'https://i.ytimg.com/vi/WYsc-0Id1_Q/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_8m-SGKHuQ8/mqdefault.jpg',
-  'https://i.ytimg.com/vi/IJilkMPqvs0/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_vhYwGECRrs/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Edjkzz2jrT0/mqdefault.jpg',
-  'https://i.ytimg.com/vi/CNqzl92f5FY/mqdefault.jpg',
-  'https://i.ytimg.com/vi/5ggke9pDUho/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_M77_e85Nuc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/wYXPybDP6K8/mqdefault.jpg',
-  'https://i.ytimg.com/vi/RQdxHi4_Pvc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/5Jx5kzYfByo/mqdefault.jpg',
-  'https://i.ytimg.com/vi/B_sp7iJFp5I/mqdefault.jpg',
-  'https://i.ytimg.com/vi/1Y41l4FGHPg/mqdefault.jpg',
-  'https://i.ytimg.com/vi/BZfBZhrsaPE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/o53zLE7MxwM/mqdefault.jpg',
-  'https://i.ytimg.com/vi/8nArzvFMLqM/mqdefault.jpg',
-  'https://i.ytimg.com/vi/T-JrP0_OqFc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/y8wM-TVIqSA/mqdefault.jpg',
-  'https://i.ytimg.com/vi/0FGlsuTnt_U/mqdefault.jpg',
-  'https://i.ytimg.com/vi/O5Uli9nCDi8/mqdefault.jpg',
-  'https://i.ytimg.com/vi/5jZtuCtsjVA/mqdefault.jpg',
-  'https://i.ytimg.com/vi/wm_hfvgakcM/mqdefault.jpg',
-  'https://i.ytimg.com/vi/jQVTNuTjnFU/mqdefault.jpg',
-  'https://i.ytimg.com/vi/52avIJWQWAY/mqdefault.jpg',
-  'https://i.ytimg.com/vi/rRBupcAy8ds/mqdefault.jpg',
-  'https://i.ytimg.com/vi/icilp2OlBcM/mqdefault.jpg',
-  'https://i.ytimg.com/vi/CPNhH3tISZw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/p7mmFOohIsg/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_jeM1lQJmNg/mqdefault.jpg',
-  'https://i.ytimg.com/vi/7kIW80JzwS4/mqdefault.jpg',
-  'https://i.ytimg.com/vi/d0k7tCxylWo/mqdefault.jpg',
-  'https://i.ytimg.com/vi/2MQF00rTEJU/mqdefault.jpg',
-  'https://i.ytimg.com/vi/nNdma3ARe28/mqdefault.jpg',
-  'https://i.ytimg.com/vi/5bifn15-BnI/mqdefault.jpg',
-  'https://i.ytimg.com/vi/HIQuWvAWa5U/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_0ycrWbrCUE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/4SiFgB1lGxw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/IIEgtIEDfB0/mqdefault.jpg',
-  'https://i.ytimg.com/vi/sg2BLJGSwFs/mqdefault.jpg',
-  'https://i.ytimg.com/vi/eAMeMkVsjiw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/o8yIbDpx7ZA/mqdefault.jpg',
-  'https://i.ytimg.com/vi/IqVoEpRIaKg/mqdefault.jpg',
-  'https://i.ytimg.com/vi/JSFkpr_psJs/mqdefault.jpg',
-  'https://i.ytimg.com/vi/v68zYyaEmEA/mqdefault.jpg',
-  'https://i.ytimg.com/vi/LSIOcCcEVaE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/qUmgxoRbuWQ/mqdefault.jpg',
-  'https://i.ytimg.com/vi/5GhhVHpPR_M/mqdefault.jpg',
-  'https://i.ytimg.com/vi/hLlDGbwlIEE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Qxf592eakLE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/hS2emKDlGmE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/KxGRhd_iWuE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/9O0hjG-Gt7U/mqdefault.jpg',
-  'https://i.ytimg.com/vi/VwL-EFrjnGM/mqdefault.jpg',
-  'https://i.ytimg.com/vi/foEDIiSNbAY/mqdefault.jpg',
-  'https://i.ytimg.com/vi/gh5CYvi5E40/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_DEbVM6tgmk/mqdefault.jpg',
-  'https://i.ytimg.com/vi/G_jchNKMwV4/mqdefault.jpg',
-  'https://i.ytimg.com/vi/bWOYtkap6ec/mqdefault.jpg',
-  'https://i.ytimg.com/vi/tYAYqxocCXY/mqdefault.jpg',
-  'https://i.ytimg.com/vi/k7yTp25cpdc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/2cV75NeMRxk/mqdefault.jpg',
-  'https://i.ytimg.com/vi/8W2m7fW5j5k/mqdefault.jpg',
-  'https://i.ytimg.com/vi/b5xT0AAjMGc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/1mg3ojoR73g/mqdefault.jpg',
-  'https://i.ytimg.com/vi/OkVg_rRP0Mc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/gHrb1RfWK3M/mqdefault.jpg',
-  'https://i.ytimg.com/vi/0dxSJOxz2KE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/DIqWuUCsRnw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Km4pT58YRM0/mqdefault.jpg',
-  'https://i.ytimg.com/vi/GQAvce3MA44/mqdefault.jpg',
-  'https://i.ytimg.com/vi/fvUy9AIVJQs/mqdefault.jpg',
-  'https://i.ytimg.com/vi/pvoAWvE0wUM/mqdefault.jpg',
-  'https://i.ytimg.com/vi/8NpKLKcgOLo/mqdefault.jpg',
-  'https://i.ytimg.com/vi/tYk0BS84ItY/mqdefault.jpg',
-  'https://i.ytimg.com/vi/EzdNfC7JapM/mqdefault.jpg',
-  'https://i.ytimg.com/vi/2u3gd9FVzcw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/rs89EaMayyk/mqdefault.jpg',
-  'https://i.ytimg.com/vi/TkNqCuZzOQc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/9IiTdSnmS7E/mqdefault.jpg',
-  'https://i.ytimg.com/vi/GNhp16fpICs/mqdefault.jpg',
-  'https://i.ytimg.com/vi/wzHAL6h5Yi0/mqdefault.jpg',
-  'https://i.ytimg.com/vi/GFAeAQ0qQ9c/mqdefault.jpg',
-  'https://i.ytimg.com/vi/X5bY0skFp18/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_Fu4pE46-zM/mqdefault.jpg',
-  'https://i.ytimg.com/vi/IgdSANXdv1Y/mqdefault.jpg',
-  'https://i.ytimg.com/vi/BY-AR8MP3hw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/uI29qCR9PGk/mqdefault.jpg',
-  'https://i.ytimg.com/vi/sop2V_MREEI/mqdefault.jpg',
-  'https://i.ytimg.com/vi/E11viHMHEww/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Pa16NwdX2dw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/LSK5bYPBcmw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/PwTS-CcrSjQ/mqdefault.jpg',
-  'https://i.ytimg.com/vi/8BqNrpfrjr0/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_TOSjeql1Jw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/FGJjSbyA7f8/mqdefault.jpg',
-  'https://i.ytimg.com/vi/F3wJzNQUivw/mqdefault.jpg',
-  'https://i.ytimg.com/vi/ra3oh-G8rEA/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Ip6cw8gfHHI/mqdefault.jpg',
-  'https://i.ytimg.com/vi/RQY_oJd1QkY/mqdefault.jpg',
-  'https://i.ytimg.com/vi/FcGPpwFdE1Y/mqdefault.jpg',
-  'https://i.ytimg.com/vi/iu7wJwbLkpo/mqdefault.jpg',
-  'https://i.ytimg.com/vi/yutsIpLK2Rs/mqdefault.jpg',
-  'https://i.ytimg.com/vi/z10n6elrYkc/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Oo6s09Jcqac/mqdefault.jpg',
-  'https://i.ytimg.com/vi/tumZt0IbYaI/mqdefault.jpg',
-  'https://i.ytimg.com/vi/arFtIiUBga4/mqdefault.jpg',
-  'https://i.ytimg.com/vi/RVaDgIPEiW8/mqdefault.jpg',
-  'https://i.ytimg.com/vi/_7nPP11-4fg/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Uoa1OmMfyvY/mqdefault.jpg',
-  'https://i.ytimg.com/vi/cGzBaSBdikA/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Kj4R1vQTrUE/mqdefault.jpg',
-  'https://i.ytimg.com/vi/Ex_6IF3AGmQ/mqdefault.jpg',
-]
+const hoveredVideo = ref(null)
 
-let video_ids = [
+let videoIDs = [
   '3aG9Spllx5I',
   'gPHdypbzUU8',
   'fIuhg0bjvQI',
@@ -298,7 +152,7 @@ let video_ids = [
   'Ex_6IF3AGmQ',
 ]
 
-const randomVideoIndex = ref(Math.floor(Math.random() * video_ids.length))
+const randomVideoIndex = ref(Math.floor(Math.random() * videoIDs.length))
 </script>
 
 <template>
@@ -309,22 +163,23 @@ const randomVideoIndex = ref(Math.floor(Math.random() * video_ids.length))
   </h3>
   <p class="text-center mb-6">
     <a
-      :href="base_URL + video_ids[randomVideoIndex]"
+      :href="baseURL + videoIDs[randomVideoIndex]"
       target="_blank"
       class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
-      @click="randomVideoIndex = Math.floor(Math.random() * video_ids.length)"
+      @click="randomVideoIndex = Math.floor(Math.random() * videoIDs.length)"
       >click me ↗</a
     >
     to watch a random video.
   </p>
-  <div class="grid grid-cols-15 gap-1 mb-12">
+  <div class="grid grid-cols-14 gap-1 mb-12">
     <a
-      v-for="(image, index) in images"
+      v-for="(id, index) in videoIDs"
       :key="index"
-      :href="base_URL + video_ids[index]"
+      :href="baseURL + id"
       target="_blank"
+      @mouseenter="hoveredVideo = id"
     >
-      <img :src="image" alt="" />
+      <img :src="'https://i.ytimg.com/vi/' + id + '/mqdefault.jpg'" alt="" class="" />
     </a>
   </div>
 </template>

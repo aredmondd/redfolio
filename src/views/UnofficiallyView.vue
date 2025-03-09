@@ -1,12 +1,11 @@
 <script setup>
 import ContentScroller from '@/components/ContentScroller.vue'
 import Vault from '@/components/Vault.vue'
-import Projects from '@/components/Projects.vue'
+import Projects from '@/components/RecentProjects.vue'
 import Tools from '@/components/Tools.vue'
 import BlogCollection from '@/components/BlogCollection.vue'
 import PhotographyGrid from '@/components/PhotographyGrid.vue'
 import YTVideos from '@/components/YTVideos.vue'
-import Top5YTVideos from '@/components/Top5YTVideos.vue'
 </script>
 
 <template>
@@ -66,10 +65,10 @@ import Top5YTVideos from '@/components/Top5YTVideos.vue'
     <!-- youtube videos -->
     <YTVideos />
 
-    <h3 class="mb-6 text-center">
+    <!-- <h3 class="mb-6 text-center">
       if you're looking for top 10... here they are. <br />
       (in no particular order)
     </h3>
-    <Top5YTVideos />
+    <Top5YTVideos /> -->
   </div>
 </template>

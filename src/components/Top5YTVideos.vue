@@ -2,16 +2,16 @@
 let base_URL = 'https://www.youtube.com/embed/'
 
 let images = [
-  'https://i.ytimg.com/vi/6nUsWvqbV7Y/maxresdefault.jpg',
-  'https://i.ytimg.com/vi/BY-AR8MP3hw/maxresdefault.jpg',
-  'https://i.ytimg.com/vi/LSIOcCcEVaE/maxresdefault.jpg',
-  'https://i.ytimg.com/vi/cGzBaSBdikA/maxresdefault.jpg',
-  'https://i.ytimg.com/vi/_DEbVM6tgmk/maxresdefault.jpg',
-  'https://i.ytimg.com/vi/HIQuWvAWa5U/maxresdefault.jpg',
-  'https://i.ytimg.com/vi/RIxmr3dcDEc/maxresdefault.jpg',
-  'https://i.ytimg.com/vi/9IiTdSnmS7E/maxresdefault.jpg',
-  'https://i.ytimg.com/vi/DIqWuUCsRnw/maxresdefault.jpg',
-  'https://i.ytimg.com/vi/JSFkpr_psJs/maxresdefault.jpg',
+  'https://i.ytimg.com/vi/6nUsWvqbV7Y/hqdefault.jpg',
+  'https://i.ytimg.com/vi/BY-AR8MP3hw/hqdefault.jpg',
+  'https://i.ytimg.com/vi/LSIOcCcEVaE/hqdefault.jpg',
+  'https://i.ytimg.com/vi/cGzBaSBdikA/hqdefault.jpg',
+  'https://i.ytimg.com/vi/_DEbVM6tgmk/hqdefault.jpg',
+  'https://i.ytimg.com/vi/HIQuWvAWa5U/hqdefault.jpg',
+  'https://i.ytimg.com/vi/RIxmr3dcDEc/hqdefault.jpg',
+  'https://i.ytimg.com/vi/9IiTdSnmS7E/hqdefault.jpg',
+  'https://i.ytimg.com/vi/DIqWuUCsRnw/hqdefault.jpg',
+  'https://i.ytimg.com/vi/JSFkpr_psJs/hqdefault.jpg',
 ]
 
 let video_ids = [

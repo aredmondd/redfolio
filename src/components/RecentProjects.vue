@@ -1,11 +1,11 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-let github_url = 'https://api.github.com/users/aredmondd/repos'
+let githubURL = 'https://api.github.com/users/aredmondd/repos'
 
-let repos = ref([])
-let bestthree = ref([])
-let images = [
+const repos = ref([])
+const bestthree = ref([])
+const images = [
   '/src/assets/PERFECT-KANA.png',
   '/src/assets/PORTFOLIO.png',
   '/src/assets/STRIDESPACE.png',
@@ -13,7 +13,7 @@ let images = [
 
 async function fetchRepos() {
   try {
-    const response = await fetch(github_url)
+    const response = await fetch(githubURL)
     repos.value = await response.json()
     repos.value.forEach((repo) => {
       if (repo.name == 'perfect-kana' || repo.name == 'redfolio-v2' || repo.name == 'stridespace') {
