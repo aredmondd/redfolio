@@ -1,35 +1,14 @@
-# redfolio-v2
+# portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my professional & unprofessional portfolio! It holds my current projects, education, skills, and experience, but also holds my photography, favorite things, and monthly recaps.
 
-## Recommended IDE Setup
+## Tech Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Vue.js](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- Hosted on [Netlify](https://www.netlify.com/)
+- [Cloudinary](https://cloudinary.com/) as the CDN (for images mostly)
 
-## Customize configuration
+## Acknowledgements
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+All aspects of the website were design and implemented by me (aiden redmond). You can check out the final product at [aidenredmond.com](aidenredmond.com)!
