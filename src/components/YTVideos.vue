@@ -171,15 +171,21 @@ const randomVideoIndex = ref(Math.floor(Math.random() * videoIDs.length))
     >
     to watch a random video.
   </p>
-  <div class="grid grid-cols-14 gap-1 mb-12">
+  <div class="grid grid-cols-14 mb-12">
     <a
       v-for="(id, index) in videoIDs"
       :key="index"
       :href="baseURL + id"
       target="_blank"
       @mouseenter="hoveredVideo = id"
+      @mouseleave="hoveredVideo = null"
+      class="p-1 transition-all duration-200 ease-in-out"
+      :class="{
+        grayscale: hoveredVideo !== null && hoveredVideo !== id,
+        'opacity-33': hoveredVideo !== null && hoveredVideo !== id,
+      }"
     >
-      <img :src="'https://i.ytimg.com/vi/' + id + '/mqdefault.jpg'" alt="" class="" />
+      <img :src="'https://i.ytimg.com/vi/' + id + '/mqdefault.jpg'" alt="" />
     </a>
   </div>
 </template>

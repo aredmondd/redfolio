@@ -1,5 +1,5 @@
 <script setup>
-let base_URL = 'https://www.youtube.com/embed/'
+let baseURL = 'https://www.youtube.com/embed/'
 
 let images = [
   'https://i.ytimg.com/vi/6nUsWvqbV7Y/hqdefault.jpg',
@@ -14,7 +14,7 @@ let images = [
   'https://i.ytimg.com/vi/JSFkpr_psJs/hqdefault.jpg',
 ]
 
-let video_ids = [
+let videoIDs = [
   '6nUsWvqbV7Y',
   'BY-AR8MP3hw',
   'LSIOcCcEVaE',
@@ -33,7 +33,7 @@ let video_ids = [
     <a
       v-for="(image, index) in images"
       :key="index"
-      :href="base_URL + video_ids[index]"
+      :href="baseURL + videoIDs[index]"
       target="_blank"
     >
       <img :src="image" alt="" />

@@ -17,7 +17,6 @@ async function fetchRepos() {
     repos.value = await response.json()
     repos.value.forEach((repo) => {
       if (repo.name == 'perfect-kana' || repo.name == 'redfolio-v2' || repo.name == 'stridespace') {
-        console.log(repo)
         bestthree.value.push(repo)
       }
     })
