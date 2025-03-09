@@ -18,7 +18,7 @@ import Top5YTVideos from '@/components/Top5YTVideos.vue'
       here are my favorites, but can you check out more
       <RouterLink
         to="/photography"
-        class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out"
+        class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
         >here &#x2197;</RouterLink
       >
     </h3>
@@ -38,7 +38,7 @@ import Top5YTVideos from '@/components/Top5YTVideos.vue'
       <a
         href="https://www.iamrob.in/bookmarks"
         target="_blank"
-        class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out"
+        class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
         >iamrobin's bookmarks &#x2197;</a
       >. <br />
       here are some of my favorite websites, tools, & more.
