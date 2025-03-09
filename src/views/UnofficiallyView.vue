@@ -12,8 +12,8 @@ import Top5YTVideos from '@/components/Top5YTVideos.vue'
 <template>
   <div class="flex flex-col flex-1">
     <!-- photograhpy -->
-    <h2 class="text-3xl font-bold mt-6 mb-6 sm:text-center">photography 📸</h2>
-    <h3 class="text-right mb-12 sm:text-sm sm:text-center">
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-center">photography 📸</h2>
+    <h3 class="mb-12 text-center">
       when i'm not working or running - i'm taking photos. <br />
       here are my favorites, but can you check out more
       <RouterLink
@@ -25,15 +25,15 @@ import Top5YTVideos from '@/components/Top5YTVideos.vue'
     <PhotographyGrid />
 
     <!-- what i'm loving section -->
-    <h2 class="text-4xl font-bold mt-12 mb-3">what i'm loving 💚</h2>
-    <h3 class="mb-6">
+    <h2 class="text-4xl font-bold mt-12 mb-3 text-center">what i'm loving 💚</h2>
+    <h3 class="mb-12 text-center">
       a huge part of my inspiration comes from media. <br />click on a card to learn more.
     </h3>
     <ContentScroller class="mb-12" />
 
     <!-- raindrop section -->
-    <h2 class="text-4xl font-bold mt-12 mb-3 text-right">the vault 🏛️</h2>
-    <h3 class="mb-6 text-right">
+    <h2 class="text-4xl font-bold mt-12 mb-3 text-center">the vault 🏛️</h2>
+    <h3 class="mb-12 text-center">
       this section is <span class="line-through">stolen from</span> inspired by
       <a
         href="https://www.iamrob.in/bookmarks"
@@ -54,13 +54,13 @@ import Top5YTVideos from '@/components/Top5YTVideos.vue'
     <Projects />
 
     <!-- tools i'm using -->
-    <h2 class="text-4xl font-bold mt-12 mb-3">tools i use 🧰</h2>
-    <h3 class="mb-6">here's the tools & technologies i use daily</h3>
+    <h2 class="text-4xl font-bold mt-12 mb-3 text-center">tools i use 🧰</h2>
+    <h3 class="mb-12 text-center">here's the tools & technologies i use daily</h3>
     <Tools />
 
     <!-- writing -->
-    <h2 class="text-4xl font-bold mt-12 mb-3 text-right">writing 👨🏽‍💻</h2>
-    <h3 class="mb-6 text-right">working on communicating my ideas better...</h3>
+    <h2 class="text-4xl font-bold mt-12 mb-3 text-center">writing 👨🏽‍💻</h2>
+    <h3 class="mb-6 text-center">working on communicating my ideas better...</h3>
     <BlogCollection />
 
     <!-- youtube videos -->

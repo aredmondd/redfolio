@@ -70,7 +70,7 @@ onMounted(() => {
   <div>
     <div v-if="error" class="text-red-500">{{ error }}</div>
 
-    <div class="flex">
+    <!-- <div class="flex">
       <div
         v-for="tag in tags"
         :key="tag"
@@ -81,7 +81,7 @@ onMounted(() => {
       >
         #{{ tag._id }}
       </div>
-    </div>
+    </div> -->
 
     <ul class="flex flex-col gap-1">
       <li v-for="raindrop in raindrops" :key="raindrop._id" class="flex items-center">
