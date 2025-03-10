@@ -2,7 +2,7 @@
 import ContentScroller from '@/components/ContentScroller.vue'
 import Vault from '@/components/Vault.vue'
 import Tools from '@/components/Tools.vue'
-import BlogCollection from '@/components/BlogCollection.vue'
+import BlogList from '@/components/BlogList.vue'
 import PhotographyGrid from '@/components/PhotographyGrid.vue'
 import YTVideos from '@/components/YTVideos.vue'
 import RecentProjectsRework from '@/components/RecentProjectsRework.vue'
@@ -60,7 +60,7 @@ import RecentProjectsRework from '@/components/RecentProjectsRework.vue'
     <!-- writing -->
     <h2 class="text-4xl font-bold mt-24 mb-3 text-center">writing 👨🏽‍💻</h2>
     <h3 class="mb-6 text-center">working on communicating my ideas better...</h3>
-    <BlogCollection />
+    <BlogList />
 
     <!-- youtube videos -->
     <YTVideos />
