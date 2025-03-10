@@ -1,11 +1,12 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import { RouterLink } from 'vue-router'
 import { supabase } from '../lib/supabaseClient'
 
 const blogs = ref([])
 
 async function getBlogs() {
-  const { data, error } = await supabase.from('blogs').select('*').filter('public', 'is', true)
+  const { data, error } = await supabase.from('blog_posts').select('*')
 
   if (error) {
     console.error('Error fetching blogs:', error.message)
@@ -20,11 +21,16 @@ onMounted(() => {
 </script>
 
 <template>
-  <ul class="">
-    <li v-for="blog in blogs" :key="blog.id">
+  <div class="flex">
+    <RouterLink
+      v-for="blog in blogs"
+      :key="blog.id"
+      href=""
+      :to="'/writing/' + blog.slug"
+      class="border border-green rounded-md p-2 hover:bg-green hover:text-white"
+    >
       <h1>{{ blog.title }}</h1>
-      <p>{{ blog.content }}</p>
       <p>{{ blog.created_at.substring(0, blog.created_at.indexOf('T')) }}</p>
-    </li>
-  </ul>
+    </RouterLink>
+  </div>
 </template>
