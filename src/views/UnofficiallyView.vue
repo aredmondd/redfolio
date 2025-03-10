@@ -1,11 +1,11 @@
 <script setup>
 import ContentScroller from '@/components/ContentScroller.vue'
 import Vault from '@/components/Vault.vue'
-import Projects from '@/components/RecentProjects.vue'
 import Tools from '@/components/Tools.vue'
 import BlogCollection from '@/components/BlogCollection.vue'
 import PhotographyGrid from '@/components/PhotographyGrid.vue'
 import YTVideos from '@/components/YTVideos.vue'
+import RecentProjectsRework from '@/components/RecentProjectsRework.vue'
 </script>
 
 <template>
@@ -50,7 +50,7 @@ import YTVideos from '@/components/YTVideos.vue'
       listed below are some project i've been working on recently. <br />
       click on one to see the github repo.
     </h3>
-    <Projects />
+    <RecentProjectsRework />
 
     <!-- tools i'm using -->
     <h2 class="text-4xl font-bold mt-12 mb-3 text-center">tools i use 🧰</h2>
