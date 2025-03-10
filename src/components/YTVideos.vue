@@ -156,10 +156,10 @@ const randomVideoIndex = ref(Math.floor(Math.random() * videoIDs.length))
 </script>
 
 <template>
-  <h2 class="text-4xl font-bold mt-12 mb-3 text-center">important videos 📺</h2>
+  <h2 class="text-4xl font-bold mt-24 mb-3 text-center">important videos 📺</h2>
   <h3 class="text-center">
-    there's nothing like a good youtube video. no seriously. <br />some of these videos changed my
-    life trajectory permenantly.
+    this is a collection of some of my favorite youtube videos. <br />
+    some changed my life, and some are just funny.
   </h3>
   <p class="text-center mb-6">
     <a

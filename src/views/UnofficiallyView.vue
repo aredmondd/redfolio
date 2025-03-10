@@ -45,7 +45,7 @@ import RecentProjectsRework from '@/components/RecentProjectsRework.vue'
     <Vault class="mb-12" />
 
     <!-- github projects section -->
-    <h2 class="text-4xl font-bold mt-12 mb-3 text-center">featured projects 🚧</h2>
+    <h2 class="text-4xl font-bold mt-24 mb-3 text-center">featured projects 🚧</h2>
     <h3 class="mb-6 text-center">
       listed below are some project i've been working on recently. <br />
       click on one to see the github repo.
@@ -53,22 +53,16 @@ import RecentProjectsRework from '@/components/RecentProjectsRework.vue'
     <RecentProjectsRework />
 
     <!-- tools i'm using -->
-    <h2 class="text-4xl font-bold mt-12 mb-3 text-center">tools i use 🧰</h2>
+    <h2 class="text-4xl font-bold mt-24 mb-3 text-center">tools i use 🧰</h2>
     <h3 class="mb-12 text-center">here's the tools & technologies i use daily</h3>
     <Tools />
 
     <!-- writing -->
-    <h2 class="text-4xl font-bold mt-12 mb-3 text-center">writing 👨🏽‍💻</h2>
+    <h2 class="text-4xl font-bold mt-24 mb-3 text-center">writing 👨🏽‍💻</h2>
     <h3 class="mb-6 text-center">working on communicating my ideas better...</h3>
     <BlogCollection />
 
     <!-- youtube videos -->
     <YTVideos />
-
-    <!-- <h3 class="mb-6 text-center">
-      if you're looking for top 10... here they are. <br />
-      (in no particular order)
-    </h3>
-    <Top5YTVideos /> -->
   </div>
 </template>
