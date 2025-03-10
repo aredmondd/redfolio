@@ -4,7 +4,7 @@ import ToolItem from './ToolItem.vue'
 <template>
   <div class="flex mb-12 text-lg">
     <div class="flex flex-col grow">
-      <h3 class="font-mono font-bold underline underline-offset-2">apps</h3>
+      <h3 class="font-mono font-bold mb-3">apps</h3>
       <ToolItem text="magnet" link="https://magnet.crowdcafe.com/" />
       <ToolItem text="obsidian" link="https://obsidian.md/" />
       <ToolItem text="brave" link="https://brave.com/" />
@@ -13,7 +13,7 @@ import ToolItem from './ToolItem.vue'
     </div>
 
     <div class="flex flex-col grow">
-      <h3 class="font-mono font-bold underline underline-offset-2">sites</h3>
+      <h3 class="font-mono font-bold mb-3">sites</h3>
       <ToolItem text="codewars" link="https://www.codewars.com/" />
       <ToolItem text="simplePDF" link="https://simplepdf.com/" />
       <ToolItem
@@ -25,7 +25,7 @@ import ToolItem from './ToolItem.vue'
     </div>
 
     <div class="flex flex-col grow">
-      <h3 class="font-mono font-bold underline underline-offset-2">design</h3>
+      <h3 class="font-mono font-bold mb-3">design</h3>
       <ToolItem text="figma" link="https://www.figma.com/design/" />
       <ToolItem
         text="affinity suite"
@@ -36,14 +36,14 @@ import ToolItem from './ToolItem.vue'
     </div>
 
     <div class="flex flex-col grow">
-      <h3 class="font-mono font-bold underline underline-offset-2">code</h3>
+      <h3 class="font-mono font-bold mb-3">code</h3>
       <ToolItem text="vscode" link="https://code.visualstudio.com/" />
       <ToolItem text="zed" link="https://zed.dev/" />
       <ToolItem text="iterm" link="https://iterm2.com/" />
     </div>
 
     <div class="flex flex-col grow">
-      <h3 class="font-mono font-bold underline underline-offset-2">technology</h3>
+      <h3 class="font-mono font-bold mb-3">technology</h3>
       <ToolItem text="tailwind" link="https://tailwindcss.com/" />
       <ToolItem text="vue" link="https://vuejs.org/" />
       <ToolItem text="supabase" link="https://supabase.com/" />
@@ -54,7 +54,7 @@ import ToolItem from './ToolItem.vue'
     </div>
 
     <div class="flex flex-col">
-      <h3 class="font-mono font-bold underline underline-offset-2">other</h3>
+      <h3 class="font-mono font-bold mb-3">other</h3>
       <ToolItem text="martian mono" noimage link="https://evilmartians.com/products/martian-mono" />
       <ToolItem text="oneclock" noimage link="https://www.oneclock.co/" />
       <ToolItem

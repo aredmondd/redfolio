@@ -167,7 +167,7 @@ const randomVideoIndex = ref(Math.floor(Math.random() * videoIDs.length))
       target="_blank"
       class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
       @click="randomVideoIndex = Math.floor(Math.random() * videoIDs.length)"
-      >click me ↗</a
+      >click me</a
     >
     to watch a random video.
   </p>

@@ -18,7 +18,7 @@ import YTVideos from '@/components/YTVideos.vue'
       <RouterLink
         to="/photography"
         class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
-        >here &#x2197;</RouterLink
+        >here</RouterLink
       >
     </h3>
     <PhotographyGrid />
@@ -38,7 +38,7 @@ import YTVideos from '@/components/YTVideos.vue'
         href="https://www.iamrob.in/bookmarks"
         target="_blank"
         class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
-        >iamrobin's bookmarks &#x2197;</a
+        >iamrobin's bookmarks</a
       >. <br />
       here are some of my favorite websites, tools, & more.
     </h3>
