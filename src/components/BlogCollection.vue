@@ -27,7 +27,7 @@ onMounted(() => {
       :key="blog.id"
       href=""
       :to="'/writing/' + blog.slug"
-      class="border border-green rounded-md p-2 hover:bg-green hover:text-white"
+      class="border border-green rounded-md p-2 hover:bg-green hover:text-white transition-all duration-200 ease-in-out"
     >
       <h1>{{ blog.title }}</h1>
       <p>{{ blog.created_at.substring(0, blog.created_at.indexOf('T')) }}</p>
