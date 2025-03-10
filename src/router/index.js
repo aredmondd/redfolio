@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import OfficiallyView from '@/views/OfficiallyView.vue'
 import UnofficiallyView from '@/views/UnofficiallyView.vue'
 import FourOhFour from '@/views/FourOhFour.vue'
+import BlogPost from '@/components/BlogPost.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,6 +26,12 @@ const router = createRouter({
     {
       path: '/:pathMatch(.*)*',
       component: FourOhFour,
+    },
+    {
+      path: '/writing/:slug',
+      name: 'blogPost',
+      component: BlogPost,
+      props: true,
     },
   ],
 })

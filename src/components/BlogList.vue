@@ -4,6 +4,8 @@ import { RouterLink } from 'vue-router'
 import { supabase } from '../lib/supabaseClient'
 
 const blogs = ref([])
+const loading = ref(true)
+const empty = ref(false)
 
 async function getBlogs() {
   const { data, error } = await supabase.from('blog_posts').select('*')
@@ -12,6 +14,10 @@ async function getBlogs() {
     console.error('Error fetching blogs:', error.message)
   } else {
     blogs.value = data
+    loading.value = false
+    if (blogs.value.length == 0) {
+      empty.value = true
+    }
   }
 }
 
@@ -21,16 +27,22 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex">
+  <div v-if="!loading && !empty" class="flex">
     <RouterLink
       v-for="blog in blogs"
       :key="blog.id"
       href=""
-      :to="'/writing/' + blog.slug"
+      :to="{
+        name: 'blogPost',
+        params: {
+          slug: blog.slug,
+        },
+      }"
       class="border border-green rounded-md p-2 hover:bg-green hover:text-white transition-all duration-200 ease-in-out"
     >
       <h1>{{ blog.title }}</h1>
       <p>{{ blog.created_at.substring(0, blog.created_at.indexOf('T')) }}</p>
     </RouterLink>
   </div>
+  <div v-else class="text-center text-black/50">so emtpy...</div>
 </template>
