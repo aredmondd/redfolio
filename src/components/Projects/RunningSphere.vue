@@ -2,7 +2,7 @@
 
 <template>
   <div class="flex flex-col justify-center mx-96 mt-6">
-    <img src="@/assets/headers/running-sphere-header.png" alt="" />
+    <img src="@/assets/images/headers/running-sphere-header.png" alt="" />
     <div class="flex justify-between text-black/50 mt-3">
       <p>Typography & Layout</p>
       <p>Spring 2024</p>

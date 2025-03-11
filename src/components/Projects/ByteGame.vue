@@ -19,7 +19,7 @@ function closeModal(event) {
 
 <template>
   <div class="flex flex-col justify-center mx-96 mt-6">
-    <img src="@/assets/headers/byte-header.png" alt="" />
+    <img src="@/assets/images/headers/byte-header.png" alt="" />
     <div class="flex justify-between text-black/50">
       <p>Game Design</p>
       <p>Spring 2024</p>
@@ -57,7 +57,7 @@ function closeModal(event) {
   </div>
 
   <div class="grid grid-cols-3 gap-6 my-6">
-    <!-- <img src="@/assets/nike-dragonfly-1.png" alt="" @click="openModal($event.target.src)" /> -->
+    <!-- <img src="@/assets/images/nike-dragonfly-1.png" alt="" @click="openModal($event.target.src)" /> -->
   </div>
 
   <!-- Modal -->

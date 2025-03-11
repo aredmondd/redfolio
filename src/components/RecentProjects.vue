@@ -5,7 +5,7 @@
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#e3f2fd] transition-all duration-500 ease-in-out"
         >
-          <img src="@/assets/PERFECT-KANA.png" />
+          <img src="@/assets/images/PERFECT-KANA.png" />
         </div>
         <p class="text-sm mt-2 text-center">a customizable app made to practice japanese kana</p>
       </div>
@@ -15,7 +15,7 @@
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-green transition-all duration-500 ease-in-out"
         >
-          <img src="@/assets/PORTFOLIO.png" />
+          <img src="@/assets/images/PORTFOLIO.png" />
         </div>
         <p class="text-sm mt-2 text-center">the 2nd version of my personal portfolio</p>
       </div>
@@ -25,7 +25,7 @@
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#000000] transition-all duration-500 ease-in-out invert hover:invert-0"
         >
-          <img src="@/assets/STRIDESPACE.png" />
+          <img src="@/assets/images/STRIDESPACE.png" />
         </div>
         <p class="text-sm mt-2 text-center">web design project that generates art based on runs</p>
       </div>
