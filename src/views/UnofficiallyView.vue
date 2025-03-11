@@ -5,7 +5,7 @@ import Tools from '@/components/Tools.vue'
 import BlogList from '@/components/BlogList.vue'
 import PhotographyGrid from '@/components/PhotographyGrid.vue'
 import YTVideos from '@/components/YTVideos.vue'
-import RecentProjectsRework from '@/components/RecentProjectsRework.vue'
+import RecentProjects from '@/components/RecentProjects.vue'
 </script>
 
 <template>
@@ -50,7 +50,7 @@ import RecentProjectsRework from '@/components/RecentProjectsRework.vue'
       listed below are some project i've been working on recently. <br />
       click on one to see the github repo.
     </h3>
-    <RecentProjectsRework />
+    <RecentProjects />
 
     <!-- tools i'm using -->
     <h2 class="text-4xl font-bold mt-24 mb-3 text-center">tools i use 🧰</h2>

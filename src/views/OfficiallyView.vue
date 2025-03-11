@@ -71,5 +71,51 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
     />
   </div>
 
+  <!-- EXPERIENCE -->
+
+  <!-- EXPERIENCE -->
+  <div class="flex justify-between items-start mb-48 mx-24">
+    <div class="flex flex-col left-item">
+      <h2 class="text-left text-5xl font-bold mb-12">EXPERIENCE</h2>
+      <div class="flex justify-between">
+        <div class="flex flex-col">
+          <div class="flex items-center justify-start">
+            <img src="@/assets/aer_logo_png.png" alt="" width="30" />
+            <h2 class="text-3xl font-bold text-right ml-2">Alter Ego Running</h2>
+          </div>
+          <p class="text-sm text-black/50 mt-1">
+            Business Development Analyst (and model) - Summer '23, '24
+          </p>
+
+          <!-- DESKTOP -->
+          <div class="flex flex-col space-y-2 text-md text-black/75 mt-2">
+            <p>
+              - Redesigned the inventory tracking system using JavaScript & Shopify, increasing
+              <br />
+              efficiency by over 60%.
+            </p>
+            <p>
+              - Designed a system to optimize product flow, label & identify items, and <br />
+              streamline inventory updates, leading to a notable reduction in human error <br />
+              and improving overall operational accuracy.
+            </p>
+            <p>
+              - Coordinated end-to-end implementation of
+              <a target="_blank" class="underline" href="https://www.gorgias.com/">Gorgias</a>,
+              halving <br />
+              response time and tripling daily ticket resolutions through optimized <br />
+              workflows, templates, and staff training.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled-2_sm6aqm.png"
+      alt=""
+      class="h-[350px] rounded-lg"
+    />
+  </div>
+
   <OfficiallyProjectsSection />
 </template>

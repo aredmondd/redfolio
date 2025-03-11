@@ -31,7 +31,7 @@ onMounted(() => {
               :key="index"
               :src="image.src"
               :alt="image.alt"
-              class="border border-transparent rounded-md w-full h-full object-cover"
+              class="border border-transparent rounded-lg w-full h-full object-cover"
             />
           </a>
         </div>
@@ -43,7 +43,7 @@ onMounted(() => {
               :key="index"
               :src="image.src"
               :alt="image.alt"
-              class="border border-transparent rounded-md w-full h-full object-cover"
+              class="border border-transparent rounded-lg w-full h-full object-cover"
             />
           </a>
         </div>

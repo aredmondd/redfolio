@@ -38,7 +38,7 @@ onMounted(() => {
           slug: blog.slug,
         },
       }"
-      class="border border-green rounded-md p-2 hover:bg-green hover:text-white transition-all duration-200 ease-in-out"
+      class="border border-green rounded-lg p-2 hover:bg-green hover:text-white transition-all duration-200 ease-in-out"
     >
       <h1>{{ blog.title }}</h1>
       <p>{{ blog.created_at.substring(0, blog.created_at.indexOf('T')) }}</p>

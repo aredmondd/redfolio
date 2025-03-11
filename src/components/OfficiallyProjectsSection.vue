@@ -68,7 +68,7 @@
           <img src="@/assets/dragonfly.png" />
         </div>
         <p class="text-center mt-6">A shoe ad for old shoes</p>
-        <p class="text-black/50 text-sm text-center mt-1">Typography & Layout - Spring 2024</p>
+        <p class="text-black/50 text-sm text-center mt-1">Typography & Layout - Spring 2023</p>
       </div>
     </RouterLink>
   </div>

@@ -9,7 +9,7 @@ pink - `#ff5964`
 
 ### STYLES
 
-`rounded-md` for all borders\
+`rounded-lg` for all borders\
 `lowercase` or `uppercase` for all text that is non-branded\
 all non monospaced text is `inter`\
 all monospaced text is `martian mono`\
