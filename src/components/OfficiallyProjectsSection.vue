@@ -1,9 +1,9 @@
 <template>
   <!-- PROJECTS SECTION -->
-  <h2 class="text-center text-5xl font-bold mt-12">PROJECTS</h2>
+  <h2 class="text-center text-5xl font-bold">PROJECTS</h2>
   <p class="text-black/50 text-sm text-center mt-3 mb-12">(click on one to learn more)</p>
   <div class="grid grid-cols-1 place-items-center gap-12 mx-24 mb-12 sm:grid-cols-3 sm:gap-24">
-    <RouterLink to="/Reservoir" class="project">
+    <RouterLink to="/project/Reservoir" class="project">
       <div class="flex flex-col h-full">
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#0A1826] transition-all duration-500 ease-in-out"
@@ -14,7 +14,7 @@
         <p class="text-md text-black/50 text-sm text-center mt-1">Senior Project - Fall 2024</p>
       </div>
     </RouterLink>
-    <RouterLink to="/nihonGO" class="project">
+    <RouterLink to="/project/nihonGO" class="project">
       <div class="flex flex-col h-full">
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#f1cd9d] transition-all duration-500 ease-in-out"
@@ -25,7 +25,7 @@
         <p class="text-black/50 text-sm text-center mt-1">Software Engineering - Fall 2024</p>
       </div>
     </RouterLink>
-    <RouterLink to="/JASIAH" class="project">
+    <RouterLink to="/project/JASIAH" class="project">
       <div class="flex flex-col h-full">
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#ffffff] transition-all duration-500 ease-in-out hover:invert"
@@ -38,29 +38,29 @@
     </RouterLink>
   </div>
   <div class="grid grid-cols-1 place-items-center gap-12 mx-24 mb-24 sm:grid-cols-3 sm:gap-24">
-    <RouterLink to="/nihonGO" class="project">
+    <RouterLink to="/project/running-sphere" class="project">
       <div class="flex flex-col h-full">
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#eeeeee] transition-all duration-500 ease-in-out"
         >
           <img src="@/assets/running-sphere.png" />
         </div>
-        <p class="text-center mt-6">A magazine for a concept brand</p>
-        <p class="text-black/50 text-sm text-center mt-1">Typography & Layout - Spring 2023</p>
+        <p class="text-center mt-6">A magazine designed & printed</p>
+        <p class="text-black/50 text-sm text-center mt-1">Typography & Layout - Spring 2024</p>
       </div>
     </RouterLink>
-    <RouterLink to="/Reservoir" class="project">
+    <RouterLink to="/project/byte" class="project">
       <div class="flex flex-col h-full">
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#000000] transition-all duration-500 ease-in-out"
         >
           <img src="@/assets/byte.png" />
         </div>
-        <p class="text-lg text-center mt-6">An award-winning hand drawn game</p>
-        <p class="text-md text-black/50 text-sm text-center mt-1">Game Design - Spring 2023</p>
+        <p class="text-lg text-center mt-6">An award-winning game</p>
+        <p class="text-md text-black/50 text-sm text-center mt-1">Game Design - Spring 2024</p>
       </div>
     </RouterLink>
-    <RouterLink to="/JASIAH" class="project">
+    <RouterLink to="/project/nike-dragonfly" class="project">
       <div class="flex flex-col h-full">
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#caf840] transition-all duration-500 ease-in-out"
@@ -68,7 +68,7 @@
           <img src="@/assets/dragonfly.png" />
         </div>
         <p class="text-center mt-6">A shoe ad for old shoes</p>
-        <p class="text-black/50 text-sm text-center mt-1">Typography & Layout - Spring 2023</p>
+        <p class="text-black/50 text-sm text-center mt-1">Typography & Layout - Spring 2024</p>
       </div>
     </RouterLink>
   </div>

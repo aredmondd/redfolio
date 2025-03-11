@@ -4,6 +4,9 @@ import OfficiallyView from '@/views/OfficiallyView.vue'
 import UnofficiallyView from '@/views/UnofficiallyView.vue'
 import FourOhFour from '@/views/FourOhFour.vue'
 import BlogPost from '@/components/BlogPost.vue'
+import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
+import ByteGame from '@/components/Projects/ByteGame.vue'
+import RunningSphere from '@/components/Projects/RunningSphere.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +35,18 @@ const router = createRouter({
       name: 'blogPost',
       component: BlogPost,
       props: true,
+    },
+    {
+      path: '/project/nike-dragonfly',
+      component: NikeDragonfly,
+    },
+    {
+      path: '/project/byte',
+      component: ByteGame,
+    },
+    {
+      path: '/project/running-sphere',
+      component: RunningSphere,
     },
   ],
 })

@@ -97,7 +97,7 @@ function closeModal(event) {
   <div
     v-if="isModalOpen"
     id="imageModal"
-    class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center"
+    class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
     @click="closeModal"
   >
     <div class="relative">

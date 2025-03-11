@@ -4,7 +4,7 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
 
 <template>
   <!-- PROFILE -->
-  <div class="flex justify-between items-start mb-48 mx-24 mt-24">
+  <div class="flex justify-between items-start mb-36 mx-24 mt-24">
     <div class="flex flex-col left-item">
       <!-- mobile -->
       <div>
@@ -72,9 +72,7 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
   </div>
 
   <!-- EXPERIENCE -->
-
-  <!-- EXPERIENCE -->
-  <div class="flex justify-between items-start mb-48 mx-24">
+  <div class="flex justify-between items-start mb-36 mx-24">
     <div class="flex flex-col left-item">
       <h2 class="text-left text-5xl font-bold mb-12">EXPERIENCE</h2>
       <div class="flex justify-between">
