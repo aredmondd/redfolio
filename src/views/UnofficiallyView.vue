@@ -15,11 +15,7 @@ import RecentProjects from '@/components/RecentProjects.vue'
     <h3 class="mb-12 text-center">
       when i'm not working or running - i'm taking photos. <br />
       here are my favorites, but can you check out more
-      <RouterLink
-        to="/photography"
-        class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
-        >here</RouterLink
-      >
+      <RouterLink to="/photography" class="link">here</RouterLink>
     </h3>
     <PhotographyGrid />
 
@@ -34,11 +30,7 @@ import RecentProjects from '@/components/RecentProjects.vue'
     <h2 class="text-4xl font-bold mt-12 mb-3 text-center">the vault 🏛️</h2>
     <h3 class="mb-12 text-center">
       this section is <span class="line-through">stolen from</span> inspired by
-      <a
-        href="https://www.iamrob.in/bookmarks"
-        target="_blank"
-        class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
-        >iamrobin's bookmarks</a
+      <a href="https://www.iamrob.in/bookmarks" target="_blank" class="link">iamrobin's bookmarks</a
       >. <br />
       here are some of my favorite websites, tools, & more.
     </h3>

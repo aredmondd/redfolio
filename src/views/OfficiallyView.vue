@@ -18,19 +18,9 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
         <p class="text-sm text-black/50 mt-1">web developer, student-athlete, artist</p>
         <div class="text-md text-black/75 mt-2">
           - working on
-          <a
-            href="https://www.aidenredmond.com"
-            target="_blank"
-            class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
-            >aidenredmond.com</a
-          >
+          <a href="https://www.aidenredmond.com" target="_blank" class="link">aidenredmond.com</a>
           &
-          <a
-            href="https://www.stridespace.xyz"
-            target="_blank"
-            class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
-            >stridespace.xyz</a
-          >
+          <a href="https://www.stridespace.xyz" target="_blank" class="link">stridespace.xyz</a>
           <br />
           - learning vue.js, japanese, & obsidian <br />
           - loves manga, music, video games, and running

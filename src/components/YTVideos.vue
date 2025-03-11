@@ -165,7 +165,7 @@ const randomVideoIndex = ref(Math.floor(Math.random() * videoIDs.length))
     <a
       :href="baseURL + videoIDs[randomVideoIndex]"
       target="_blank"
-      class="underline underline-offset-2 hover:underline-offset-4 hover:cursor-pointer transition-all duration-200 ease-in-out"
+      class="link"
       @click="randomVideoIndex = Math.floor(Math.random() * videoIDs.length)"
       >click me</a
     >

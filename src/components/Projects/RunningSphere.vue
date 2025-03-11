@@ -1,21 +1,4 @@
-<script setup>
-import { ref } from 'vue'
-
-const isModalOpen = ref(false)
-const modalImage = ref('')
-
-function openModal(imageSrc) {
-  modalImage.value = imageSrc
-  isModalOpen.value = true
-  document.body.style.overflow = 'hidden' // Disable scrolling
-}
-function closeModal(event) {
-  if (event.target === event.currentTarget) {
-    isModalOpen.value = false
-    document.body.style.overflow = '' // Restore scrolling
-  }
-}
-</script>
+<script setup></script>
 
 <template>
   <div class="flex flex-col justify-center mx-96 mt-6">
@@ -67,19 +50,8 @@ function closeModal(event) {
     </p>
   </div>
 
-  <div class="grid grid-cols-3 gap-6 my-6">
-    <!-- <img src="@/assets/nike-dragonfly-1.png" alt="" @click="openModal($event.target.src)" /> -->
-  </div>
-
-  <!-- Modal -->
-  <div
-    v-if="isModalOpen"
-    id="imageModal"
-    class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
-    @click="closeModal"
-  >
-    <div class="relative">
-      <img id="modalImage" :src="modalImage" class="max-w-full max-h-screen my-12" />
-    </div>
-  </div>
+  <p>
+    you can read the magazine
+    <a href="/running-sphere.pdf" class="link" target="_blank">here</a>
+  </p>
 </template>
