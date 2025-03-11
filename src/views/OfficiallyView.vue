@@ -89,8 +89,8 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
             </p>
             <p>
               - Coordinated end-to-end implementation of
-              <a target="_blank" class="underline" href="https://www.gorgias.com/">Gorgias</a>,
-              halving <br />
+              <a target="_blank" class="link" href="https://www.gorgias.com/">Gorgias</a>, halving
+              <br />
               response time and tripling daily ticket resolutions through optimized <br />
               workflows, templates, and staff training.
             </p>

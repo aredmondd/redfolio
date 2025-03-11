@@ -5,9 +5,8 @@ import axios from 'axios'
 const raindrops = ref([])
 const tags = ref([])
 const error = ref(null)
-const hoveredTag = ref(null)
 
-// stephen ango's flexoki at 50% opacity :)
+// stephen ango's flexoki at 33% opacity :)
 let colorKey = {
   site: 'rgba(175, 48, 41, 0.33)',
   ui: 'rgba(188, 82, 21, 0.33)',
@@ -70,22 +69,9 @@ onMounted(() => {
   <div>
     <div v-if="error" class="text-red-500">{{ error }}</div>
 
-    <!-- <div class="flex">
-      <div
-        v-for="tag in tags"
-        :key="tag"
-        class="px-2 rounded-full mr-2 text-xs text-black mb-6 border border-black transition-colors duration-200"
-        @mouseover="hoveredTag = tag._id"
-        @mouseleave="hoveredTag = null"
-        :style="{ backgroundColor: hoveredTag === tag._id ? colorKey[tag._id] : 'transparent' }"
-      >
-        #{{ tag._id }}
-      </div>
-    </div> -->
-
     <ul class="flex flex-col gap-1">
       <li v-for="raindrop in raindrops" :key="raindrop._id" class="flex items-center">
-        <!-- Left: Title -->
+        <!-- Title -->
         <a
           v-bind:href="raindrop.link"
           target="_blank"
@@ -104,10 +90,10 @@ onMounted(() => {
           #{{ tag }}
         </div>
 
-        <!-- Middle: Dots -->
+        <!-- Dots -->
         <span class="flex-grow mx-2 border-b-2 border-dotted border-black border-opacity-50"></span>
 
-        <!-- Right: Date -->
+        <!-- Date -->
         <span class="text-black font-mono font-light">
           {{ generateDate(raindrop.created) }}
         </span>

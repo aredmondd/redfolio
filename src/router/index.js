@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import OfficiallyView from '@/views/OfficiallyView.vue'
 import UnofficiallyView from '@/views/UnofficiallyView.vue'
-import FourOhFour from '@/views/FourOhFour.vue'
+import NotFound from '@/views/NotFound.vue'
 import BlogPost from '@/components/BlogPost.vue'
 import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
 import ByteGame from '@/components/Projects/ByteGame.vue'
@@ -28,7 +28,7 @@ const router = createRouter({
     },
     {
       path: '/:pathMatch(.*)*',
-      component: FourOhFour,
+      component: NotFound,
     },
     {
       path: '/writing/:slug',
