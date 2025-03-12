@@ -8,6 +8,7 @@ import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
 import ByteGame from '@/components/Projects/ByteGame.vue'
 import RunningSphere from '@/components/Projects/RunningSphere.vue'
 import PhotographyView from '@/views/PhotographyView.vue'
+import Carousel from '@/components/Carousel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,6 +53,12 @@ const router = createRouter({
     {
       path: '/photography',
       component: PhotographyView,
+    },
+    {
+      path: '/photography/:slug',
+      component: Carousel,
+      name: 'carousel',
+      props: true,
     },
   ],
 })
