@@ -7,6 +7,7 @@ import BlogPost from '@/components/BlogPost.vue'
 import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
 import ByteGame from '@/components/Projects/ByteGame.vue'
 import RunningSphere from '@/components/Projects/RunningSphere.vue'
+import PhotographyView from '@/views/PhotographyView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -47,6 +48,10 @@ const router = createRouter({
     {
       path: '/project/running-sphere',
       component: RunningSphere,
+    },
+    {
+      path: '/photography',
+      component: PhotographyView,
     },
   ],
 })
