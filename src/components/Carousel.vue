@@ -8,11 +8,13 @@ const props = defineProps({
   slug: String,
 })
 
-let slides = ref([])
-let text = ref(null)
-let title = ref(null)
-let date = ref(null)
-let inspirations = ref(null)
+const loading = ref(true)
+
+const slides = ref([])
+const text = ref(null)
+const title = ref(null)
+const date = ref(null)
+const inspirations = ref(null)
 
 async function getImages() {
   const { data, error } = await supabase
@@ -29,7 +31,7 @@ async function getImages() {
     title.value = data.title
     date.value = data.date
     inspirations.value = data.inspirations
-    console.log(slides.value, text.value)
+    loading.value = false
   }
 }
 
@@ -37,27 +39,29 @@ onMounted(getImages)
 </script>
 
 <template>
-  <div class="flex flex-col flex-1 justify-center items-center">
-    <div class="flex flex-col mx-80">
-      <div class="flex justify-between items-end my-6">
-        <h1 class="font-bold text-3xl">{{ title }}</h1>
-        <p class="text-black/50">{{ date }}</p>
+  <Transition appear>
+    <div v-if="!loading" class="flex flex-col flex-1 justify-center items-center">
+      <div class="flex flex-col mx-80">
+        <div class="flex justify-between items-end my-6">
+          <h1 class="font-bold text-3xl">{{ title }}</h1>
+          <p class="text-black/50">{{ date }}</p>
+        </div>
+        <div v-html="text"></div>
+        <p v-if="inspirations != null" class="mt-3 italic text-black/50">
+          Inspirations include: {{ inspirations }}
+        </p>
       </div>
-      <div v-html="text"></div>
-      <p v-if="inspirations != null" class="mt-3 italic text-black/50">
-        Inspirations include: {{ inspirations }}
-      </p>
+      <vueper-slides
+        class="no-shadow my-6"
+        :touchable="false"
+        :bullets="false"
+        fade
+        fixed-height="666.5px"
+        style="width: 1000px"
+        arrows-outside
+      >
+        <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
+      </vueper-slides>
     </div>
-    <vueper-slides
-      class="no-shadow my-6"
-      :touchable="false"
-      :bullets="false"
-      fade
-      fixed-height="666.5px"
-      style="width: 1000px"
-      arrows-outside
-    >
-      <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
-    </vueper-slides>
-  </div>
+  </Transition>
 </template>

@@ -30,3 +30,15 @@
 .paused {
   animation-play-state: paused;
 }
+
+.v-enter-active {
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  transition-delay: var(--delay, 0ms);
+}
+
+.v-enter-from {
+  opacity: 0;
+  transform: translateY(48px);
+}

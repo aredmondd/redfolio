@@ -59,7 +59,7 @@ function closeModal(event) {
       <div>
         <img
           class="h-auto max-w-full rounded-lg"
-          src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733763915/_MG_8718_au610y.jpg"
+          src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704773/_MG_8530_ibfvbq.jpg"
           alt=""
           @click="openModal($event.target.src)"
         />

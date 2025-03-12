@@ -19,17 +19,3 @@ const elements = [
   '<div class="text-sm flex gap-2"><a href="mailto:aidenredmondd@gmail.com" class="link">aidenredmondd@gmail.com</a>|<a href="https://github.com/aredmondd" target="_blank" class="link">github/aredmondd</a></div>',
 ]
 </script>
-
-<style scoped>
-.v-enter-active {
-  transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
-  transition-delay: var(--delay, 0ms);
-}
-
-.v-enter-from {
-  opacity: 0;
-  transform: translateY(48px);
-}
-</style>

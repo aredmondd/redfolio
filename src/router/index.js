@@ -9,6 +9,7 @@ import ByteGame from '@/components/Projects/ByteGame.vue'
 import RunningSphere from '@/components/Projects/RunningSphere.vue'
 import PhotographyView from '@/views/PhotographyView.vue'
 import Carousel from '@/components/Carousel.vue'
+import LongCarousel from '@/components/LongCarousel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -55,10 +56,21 @@ const router = createRouter({
       component: PhotographyView,
     },
     {
+      path: '/photography/non-project-photos',
+      component: LongCarousel,
+    },
+    {
       path: '/photography/:slug',
       component: Carousel,
       name: 'carousel',
       props: true,
+      beforeEnter: (to, from, next) => {
+        if (to.params.slug === 'non-project-photos') {
+          next('/photography/non-project-photos') // Redirect
+        } else {
+          next() // Proceed normally
+        }
+      },
     },
   ],
 })
