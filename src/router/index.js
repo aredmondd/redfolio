@@ -8,8 +8,11 @@ import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
 import ByteGame from '@/components/Projects/ByteGame.vue'
 import RunningSphere from '@/components/Projects/RunningSphere.vue'
 import PhotographyView from '@/views/PhotographyView.vue'
-import Carousel from '@/components/Carousel.vue'
+import PhotographyCarousel from '@/components/PhotographyCarousel.vue'
 import LongCarousel from '@/components/LongCarousel.vue'
+import Reservoir from '@/components/Projects/Reservoir.vue'
+import NihonGO from '@/components/Projects/nihonGO.vue'
+import JASIAH from '@/components/Projects/JASIAH.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -52,6 +55,18 @@ const router = createRouter({
       component: RunningSphere,
     },
     {
+      path: '/project/reservoir',
+      component: Reservoir,
+    },
+    {
+      path: '/project/nihonGO',
+      component: NihonGO,
+    },
+    {
+      path: '/project/JASIAH',
+      component: JASIAH,
+    },
+    {
       path: '/photography',
       component: PhotographyView,
     },
@@ -61,14 +76,14 @@ const router = createRouter({
     },
     {
       path: '/photography/:slug',
-      component: Carousel,
+      component: PhotographyCarousel,
       name: 'carousel',
       props: true,
       beforeEnter: (to, from, next) => {
         if (to.params.slug === 'non-project-photos') {
-          next('/photography/non-project-photos') // Redirect
+          next('/photography/non-project-photos')
         } else {
-          next() // Proceed normally
+          next()
         }
       },
     },
