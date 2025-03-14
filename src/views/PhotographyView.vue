@@ -1,7 +1,10 @@
 <template>
   <div class="flex flex-1 gap-24 justify-center items-start mt-12">
     <div class="flex flex-col">
-      <h1 class="font-bold mb-6">digital photography (2024-8-20 to 2024-12-8)</h1>
+      <h1 class="font-bold mb-6">
+        digital photography <br />
+        <span class="text-black/50 font-medium">2024-8-20 to 2024-12-8</span>
+      </h1>
       <div class="flex flex-col">
         <RouterLink
           :to="{
@@ -73,10 +76,11 @@
     </div>
 
     <div class="flex flex-col">
-      <h1 class="font-bold mb-6">the final spring (2024-12-12 to 2025-5-3)</h1>
-      <div class="flex flex-col">
-        <a class="hover:text-pink duration-200 ease-in-out transition-all"> 186000 </a>
-      </div>
+      <h1 class="font-bold mb-6">
+        the final spring <br />
+        <span class="text-black/50 font-medium">2024-12-12 to 2025-5-3</span>
+      </h1>
+      <p class="text-black/50">so empty...</p>
     </div>
   </div>
 </template>
