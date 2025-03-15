@@ -19,7 +19,7 @@ function closeModal(event) {
 
 <template>
   <Transition appear>
-    <div class="grid grid-cols-4 gap-4 mb-12">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
       <div class="grid gap-4 photo-col">
         <div>
           <img

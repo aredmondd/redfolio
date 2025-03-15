@@ -44,5 +44,5 @@ onMounted(() => {
       <p>{{ blog.created_at.substring(0, blog.created_at.indexOf('T')) }}</p>
     </RouterLink>
   </div>
-  <div v-else class="text-center text-black/50">so emtpy...</div>
+  <div v-else class="text-center text-black/50">so empty...</div>
 </template>

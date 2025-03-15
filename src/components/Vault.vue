@@ -84,7 +84,7 @@ onMounted(() => {
         <div
           v-for="(tag, index) in raindrop.tags"
           :key="index"
-          class="px-2 rounded-full mr-2 text-xs text-black border-1"
+          class="hidden sm:block px-2 rounded-full mr-2 text-xs text-black border-1"
           :style="{ backgroundColor: colorKey[tag] }"
         >
           #{{ tag }}

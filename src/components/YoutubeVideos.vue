@@ -156,12 +156,12 @@ const randomVideoIndex = ref(Math.floor(Math.random() * videoIDs.length))
 </script>
 
 <template>
-  <h2 class="text-4xl font-bold mt-24 mb-3 text-center">important videos 📺</h2>
-  <h3 class="text-center">
+  <h2 class="text-2xl sm:text-4xl font-bold mt-24 mb-3 text-center">important videos 📺</h2>
+  <h3 class="text-center text-sm">
     this is a collection of some of my favorite youtube videos. <br />
     some changed my life, and some are just funny.
   </h3>
-  <p class="text-center mb-6">
+  <p class="text-center mb-6 text-sm">
     <a
       :href="baseURL + videoIDs[randomVideoIndex]"
       target="_blank"
@@ -171,7 +171,7 @@ const randomVideoIndex = ref(Math.floor(Math.random() * videoIDs.length))
     >
     to watch a random video.
   </p>
-  <div class="grid grid-cols-14 mb-12">
+  <div class="grid grid-cols-5 sm:grid-cols-14 mb-12">
     <a
       v-for="(id, index) in videoIDs"
       :key="index"
