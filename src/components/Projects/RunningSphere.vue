@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import flipbook from 'flipbook-vue'
+</script>
 
 <template>
   <div class="flex flex-col justify-center mx-96 mt-6">
@@ -50,8 +52,35 @@
     </p>
   </div>
 
-  <p>
-    you can read the magazine
-    <a href="/running-sphere.pdf" class="link" target="_blank">here</a>
-  </p>
+  <div class="flex justify-center items-center my-12">
+    <flipbook
+      class="flipbook"
+      :pages="[
+        null,
+        '/src/assets/images/running-sphere/rs1.jpg',
+        '/src/assets/images/running-sphere/rs2.jpg',
+        '/src/assets/images/running-sphere/rs3.jpg',
+        '/src/assets/images/running-sphere/rs4.jpg',
+        '/src/assets/images/running-sphere/rs5.jpg',
+        '/src/assets/images/running-sphere/rs6.jpg',
+        '/src/assets/images/running-sphere/rs7.jpg',
+        '/src/assets/images/running-sphere/rs8.jpg',
+        '/src/assets/images/running-sphere/rs9.jpg',
+        '/src/assets/images/running-sphere/rs10.jpg',
+        '/src/assets/images/running-sphere/rs11.jpg',
+        '/src/assets/images/running-sphere/rs12.jpg',
+        '/src/assets/images/running-sphere/rs13.jpg',
+        '/src/assets/images/running-sphere/rs14.jpg',
+        '/src/assets/images/running-sphere/rs15.jpg',
+        '/src/assets/images/running-sphere/rs16.jpg',
+      ]"
+    ></flipbook>
+  </div>
 </template>
+
+<style>
+.flipbook {
+  width: 90vw;
+  height: 90vh;
+}
+</style>
