@@ -4,29 +4,35 @@ import GenericCarousel from '../GenericCarousel.vue'
 
 const slides = ref([
   {
-    image: '/src/assets/images/reservoir/reservoir-friends.png',
+    image:
+      'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153378/reservoir-friends_k6iil7.png',
   },
   {
-    image: '/src/assets/images/reservoir/reservoir-home.png',
+    image:
+      'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153378/reservoir-home_ayshfy.png',
   },
   {
-    image: '/src/assets/images/reservoir/reservoir-my-reservoir.png',
+    image:
+      'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153378/reservoir-my-reservoir_kngodr.png',
   },
   {
-    image: '/src/assets/images/reservoir/reservoir-profile.png',
+    image:
+      'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153379/reservoir-profile_zqvfdd.png',
   },
   {
-    image: '/src/assets/images/reservoir/reservoir-search.png',
+    image:
+      'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153379/reservoir-search_kq8jw7.png',
   },
   {
-    image: '/src/assets/images/reservoir/reservoir-sign-up.png',
+    image:
+      'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153379/reservoir-sign-up_xn5ia5.png',
   },
 ])
 </script>
 
 <template>
   <div class="flex flex-col justify-center sm:mx-96 mt-6">
-    <img src="@/assets/images/headers/reservoir-header.png" alt="" />
+    <img src="/headers/reservoir.png" alt="" />
     <div class="flex justify-between text-black/50 mx-2">
       <p>Senior Project</p>
       <p>Fall 2024</p>

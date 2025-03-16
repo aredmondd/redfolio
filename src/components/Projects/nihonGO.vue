@@ -4,29 +4,31 @@ import GenericCarousel from '../GenericCarousel.vue'
 
 const slides = ref([
   {
-    image: '/src/assets/images/nihongo/nihongo-home.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153256/nihongo-home_fgw9um.png',
   },
   {
-    image: '/src/assets/images/nihongo/nihongo-about.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153256/nihongo-about_yw9e5w.png',
   },
   {
-    image: '/src/assets/images/nihongo/nihongo-register.png',
+    image:
+      'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153256/nihongo-register_sgxrje.png',
   },
   {
-    image: '/src/assets/images/nihongo/nihongo-messaging.png',
+    image:
+      'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153256/nihongo-messaging_lc3xnt.png',
   },
   {
-    image: '/src/assets/images/nihongo/nihongo-forum.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153256/nihongo-forum_jhixmg.png',
   },
   {
-    image: '/src/assets/images/nihongo/nihongo-study.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742153257/nihongo-study_phryfh.png',
   },
 ])
 </script>
 
 <template>
   <div class="flex flex-col justify-center sm:mx-96 mt-6">
-    <img src="@/assets/images/headers/nihongo-header.png" alt="" />
+    <img src="/headers/nihongo.png" alt="" />
     <div class="flex justify-between text-black/50 mx-2">
       <p>Software Engineering</p>
       <p>Fall 2024</p>

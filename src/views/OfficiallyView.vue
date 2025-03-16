@@ -11,7 +11,7 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
       </div>
       <div class="flex flex-col">
         <div class="flex items-center justify-start">
-          <img src="@/assets/images/logo_regular.png" alt="" width="50" />
+          <img src="/logo_regular.png" alt="" width="50" />
           <h2 class="text-xl sm:text-2xl font-bold text-right ml-2">Aiden Redmond</h2>
         </div>
         <p class="text-sm text-black/50 mt-1">web developer, student-athlete, artist</p>
@@ -27,12 +27,16 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
       </div>
     </div>
     <img
-      src="@/assets/images/red-profile.jpeg"
+      src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742152811/red-profile_sp7snx.jpg"
       alt=""
       class="h-[350px] rounded-lg hidden sm:block"
     />
   </div>
-  <img src="@/assets/images/red-profile.jpeg" alt="" class="rounded-lg block sm:hidden mb-24" />
+  <img
+    src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742152811/red-profile_sp7snx.jpg"
+    alt=""
+    class="rounded-lg block sm:hidden mb-24"
+  />
 
   <!-- EDUCATION -->
   <div class="flex justify-between items-start mb-6 sm:mb-36 sm:mx-24">
@@ -41,7 +45,7 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
       <div class="flex justify-between">
         <div class="flex flex-col">
           <div class="flex items-end justify-start">
-            <img src="@/assets/images/fsc-svg.svg" alt="" width="20" class="mb-2 sm:w-5" />
+            <img src="/fsc-svg.svg" alt="" width="20" class="mb-2 sm:w-5" />
             <h2 class="text-xl sm:text-2xl font-bold ml-3">Florida Southern College</h2>
           </div>
           <p class="text-sm text-black/50 mt-2">Lakeland, FL | Aug 2021 - May 2025</p>
@@ -77,7 +81,7 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
       <div class="flex justify-between">
         <div class="flex flex-col">
           <div class="flex items-center justify-start">
-            <img src="@/assets/images/aer_logo_png.png" alt="" width="30" />
+            <img src="/aer_logo_png.png" alt="" width="30" />
             <h2 class="text-xl sm:text-2xl font-bold text-right ml-2">Alter Ego Running</h2>
           </div>
           <p class="text-xs sm:text-sm text-black/50 mt-1">

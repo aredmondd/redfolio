@@ -4,7 +4,7 @@ import flipbook from 'flipbook-vue'
 
 <template>
   <div class="flex flex-col justify-center sm:mx-96 mt-6">
-    <img src="@/assets/images/headers/running-sphere-header.png" alt="" />
+    <img src="/headers/running-sphere.png" alt="" />
     <div class="flex justify-between text-black/50 mt-3">
       <p>Typography & Layout</p>
       <p>Spring 2024</p>
@@ -57,22 +57,22 @@ import flipbook from 'flipbook-vue'
       class="flipbook"
       :pages="[
         null,
-        '/src/assets/images/running-sphere/pg1.jpg',
-        '/src/assets/images/running-sphere/pg2.png',
-        '/src/assets/images/running-sphere/pg3.png',
-        '/src/assets/images/running-sphere/pg4.jpg',
-        '/src/assets/images/running-sphere/pg5.jpg',
-        '/src/assets/images/running-sphere/pg6.png',
-        '/src/assets/images/running-sphere/pg7.png',
-        '/src/assets/images/running-sphere/pg8.jpg',
-        '/src/assets/images/running-sphere/pg9.jpg',
-        '/src/assets/images/running-sphere/pg10.png',
-        '/src/assets/images/running-sphere/pg11.png',
-        '/src/assets/images/running-sphere/pg12.png',
-        '/src/assets/images/running-sphere/pg13.png',
-        '/src/assets/images/running-sphere/pg14.png',
-        '/src/assets/images/running-sphere/pg15.png',
-        '/src/assets/images/running-sphere/pg16.jpg',
+        '/running-sphere/pg1.jpg',
+        '/running-sphere/pg2.png',
+        '/running-sphere/pg3.png',
+        '/running-sphere/pg4.jpg',
+        '/running-sphere/pg5.jpg',
+        '/running-sphere/pg6.png',
+        '/running-sphere/pg7.png',
+        '/running-sphere/pg8.jpg',
+        '/running-sphere/pg9.jpg',
+        '/running-sphere/pg10.png',
+        '/running-sphere/pg11.png',
+        '/running-sphere/pg12.png',
+        '/running-sphere/pg13.png',
+        '/running-sphere/pg14.png',
+        '/running-sphere/pg15.png',
+        '/running-sphere/pg16.jpg',
       ]"
     ></flipbook>
   </div>

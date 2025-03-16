@@ -17,7 +17,7 @@ const hoverClass = computed(() => {
   return classes.join(' ')
 })
 
-const imageLocation = computed(() => `/projects/${props.name}.png`)
+const imageLocation = computed(() => `/headers/${props.name}.png`)
 </script>
 
 <template>

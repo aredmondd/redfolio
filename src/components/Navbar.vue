@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router'
     >
 
     <RouterLink to="/">
-      <img src="@/assets/images/logo_regular.png" alt="" class="w-20" />
+      <img src="/logo_regular.png" alt="" class="w-20" />
     </RouterLink>
 
     <RouterLink to="/unofficially" class="hover:text-pink text-right text-sm">

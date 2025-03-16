@@ -47,7 +47,7 @@ const slides = ref([
 
 <template>
   <div class="flex flex-col justify-center sm:mx-96 mt-6">
-    <img src="@/assets/images/headers/byte-header.png" alt="" />
+    <img src="/headers/byte.png" alt="" />
     <div class="flex justify-between text-black/50">
       <p>Game Design</p>
       <p>Spring 2024</p>
