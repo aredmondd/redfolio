@@ -41,10 +41,10 @@ onMounted(getImages)
 <template>
   <Transition appear>
     <div v-if="!loading" class="flex flex-col flex-1 justify-center items-center">
-      <div class="flex flex-col mx-80">
+      <div class="flex flex-col sm:mx-80">
         <div class="flex justify-between items-end my-6">
-          <h1 class="font-bold text-3xl">{{ title }}</h1>
-          <p class="text-black/50">{{ date }}</p>
+          <h1 class="font-bold text-lg sm:text-2xl">{{ title }}</h1>
+          <p class="text-black/50 text-xs sm:text-md">{{ date }}</p>
         </div>
         <div v-html="text"></div>
         <p v-if="inspirations != null" class="mt-3 italic text-black/50">
@@ -52,7 +52,7 @@ onMounted(getImages)
         </p>
       </div>
       <vueper-slides
-        class="no-shadow my-6"
+        class="hidden sm:block no-shadow my-6"
         :touchable="false"
         :bullets="false"
         fade
@@ -62,6 +62,18 @@ onMounted(getImages)
       >
         <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
       </vueper-slides>
+
+      <vueper-slides
+        class="block sm:hidden no-shadow my-6"
+        :bullets="false"
+        :arrows="false"
+        fade
+        fixed-height="183.29px"
+        style="width: 275px"
+      >
+        <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
+      </vueper-slides>
+      <p class="block sm:hidden text-black/50">(swipe to scroll through the images)</p>
     </div>
   </Transition>
 </template>

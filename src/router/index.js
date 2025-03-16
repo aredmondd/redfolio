@@ -8,8 +8,8 @@ import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
 import ByteGame from '@/components/Projects/ByteGame.vue'
 import RunningSphere from '@/components/Projects/RunningSphere.vue'
 import PhotographyView from '@/views/PhotographyView.vue'
-import PhotographyCarousel from '@/components/PhotographyCarousel.vue'
-import LongCarousel from '@/components/LongCarousel.vue'
+import PhotographyProjectView from '@/views/PhotographyProjectView.vue'
+import NonProjectPhotosView from '@/views/NonProjectPhotosView.vue'
 import Reservoir from '@/components/Projects/Reservoir.vue'
 import NihonGO from '@/components/Projects/nihonGO.vue'
 import JASIAH from '@/components/Projects/JASIAH.vue'
@@ -72,11 +72,11 @@ const router = createRouter({
     },
     {
       path: '/photography/non-project-photos',
-      component: LongCarousel,
+      component: NonProjectPhotosView,
     },
     {
       path: '/photography/:slug',
-      component: PhotographyCarousel,
+      component: PhotographyProjectView,
       name: 'carousel',
       props: true,
       beforeEnter: (to, from, next) => {

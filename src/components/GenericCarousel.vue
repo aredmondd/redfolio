@@ -1,7 +1,6 @@
 <script setup>
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
-import { ref } from 'vue'
 
 const props = defineProps(['slides'])
 </script>

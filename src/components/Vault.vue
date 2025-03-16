@@ -75,7 +75,7 @@ onMounted(() => {
         <a
           v-bind:href="raindrop.link"
           target="_blank"
-          class="hover:text-pink truncate font-medium mr-2"
+          class="hover:text-pink truncate font-medium mr-2 text-sm sm:text-md"
         >
           {{ raindrop.title }}
         </a>
@@ -94,7 +94,7 @@ onMounted(() => {
         <span class="flex-grow mx-2 border-b-2 border-dotted border-black border-opacity-50"></span>
 
         <!-- Date -->
-        <span class="text-black font-mono font-light">
+        <span class="text-black font-mono font-light text-sm sm:text-md">
           {{ generateDate(raindrop.created) }}
         </span>
       </li>

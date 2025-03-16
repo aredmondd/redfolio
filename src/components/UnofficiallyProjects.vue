@@ -7,7 +7,9 @@
         >
           <img src="@/assets/images/PERFECT-KANA.png" />
         </div>
-        <p class="text-sm mt-2 text-center">a customizable app made to practice japanese kana</p>
+        <p class="text-xs sm:text-sm mt-2 text-center">
+          a customizable app made to practice japanese kana
+        </p>
       </div>
     </a>
     <a href="https://github.com/aredmondd/redfolio-v2" target="_blank">
@@ -17,7 +19,7 @@
         >
           <img src="@/assets/images/PORTFOLIO.png" />
         </div>
-        <p class="text-sm mt-2 text-center">the 2nd version of my personal portfolio</p>
+        <p class="text-xs sm:text-sm mt-2 text-center">the 2nd version of my personal portfolio</p>
       </div>
     </a>
     <a href="https://github.com/aredmondd/stridespace" target="_blank">
@@ -27,7 +29,9 @@
         >
           <img src="@/assets/images/STRIDESPACE.png" />
         </div>
-        <p class="text-sm mt-2 text-center">web design project that generates art based on runs</p>
+        <p class="text-xs sm:text-sm mt-2 text-center">
+          web design project that generates art based on runs
+        </p>
       </div>
     </a>
   </div>
