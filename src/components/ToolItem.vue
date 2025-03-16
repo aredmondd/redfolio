@@ -9,9 +9,7 @@ const props = defineProps({
 })
 
 const imageSource = computed(() =>
-  props.image
-    ? `/src/assets/images/tools/${props.image}`
-    : `/src/assets/images/tools/${props.text}.png`,
+  props.image ? `@/assets/images/tools/${props.image}` : `@/assets/images/tools/${props.text}.png`,
 )
 
 const isHovered = ref(false)
