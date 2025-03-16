@@ -16,6 +16,7 @@ import OfficiallyProjectItem from './OfficiallyProjectItem.vue'
 
     <OfficiallyProjectItem
       name="nihongo"
+      image="reservoir.png"
       description="A language-learning app focused on Japanese"
       time="Software Engineering - Fall 2024"
       hover="#f1cd9d"
@@ -23,6 +24,7 @@ import OfficiallyProjectItem from './OfficiallyProjectItem.vue'
 
     <OfficiallyProjectItem
       name="jasiah"
+      image="reservoir.png"
       description="An automated inventory management script"
       time="Alter Ego Running - Summer 2024"
       hover="#ffffff"

@@ -4,6 +4,7 @@ import { computed } from 'vue'
 const props = defineProps({
   name: String,
   description: String,
+  image: String,
   time: String,
   hover: String,
   invert: Boolean,
@@ -16,6 +17,10 @@ const hoverClass = computed(() => {
   }
   return classes.join(' ')
 })
+
+const getImageUrl = (name) => {
+  return new URL(`../assets/images/projects/${name}.png`, import.meta.url).href
+}
 </script>
 
 <template>
@@ -25,7 +30,7 @@ const hoverClass = computed(() => {
         class="flex items-center justify-center h-full rounded-lg transition-all duration-500 ease-in-out"
         :class="hoverClass"
       >
-        <img :src="'/src/assets/images/projects/' + props.name + '.png'" />
+        <img :src="getImageUrl(props.name)" />
       </div>
       <p class="text-sm sm:text-md text-center mt-6">{{ props.description }}</p>
       <p class="text-black/50 text-xs sm:text-sm text-center mt-1">{{ props.time }}</p>
