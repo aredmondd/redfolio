@@ -4,19 +4,18 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
 
 <template>
   <!-- PROFILE -->
-  <div class="flex justify-between items-start mb-36 mx-24 mt-24">
+  <div class="flex justify-between items-start mb-6 sm:mb-36 sm:mx-24 mt-12 sm:mt-24">
     <div class="flex flex-col left-item">
-      <!-- mobile -->
       <div>
-        <h2 class="text-5xl font-bold mb-12">PROFILE</h2>
+        <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-12">PROFILE</h2>
       </div>
       <div class="flex flex-col">
         <div class="flex items-center justify-start">
           <img src="@/assets/images/logo_regular.png" alt="" width="50" />
-          <h2 class="text-3xl font-bold text-right ml-2">Aiden Redmond</h2>
+          <h2 class="text-xl sm:text-2xl font-bold text-right ml-2">Aiden Redmond</h2>
         </div>
         <p class="text-sm text-black/50 mt-1">web developer, student-athlete, artist</p>
-        <div class="text-md text-black/75 mt-2">
+        <div class="text-sm sm:text-md text-black/75 mt-2">
           - working on
           <a href="https://www.aidenredmond.com" target="_blank" class="link">aidenredmond.com</a>
           &
@@ -27,25 +26,30 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
         </div>
       </div>
     </div>
-    <img src="@/assets/images/red-profile.jpeg" alt="" class="h-[350px] rounded-lg" />
+    <img
+      src="@/assets/images/red-profile.jpeg"
+      alt=""
+      class="h-[350px] rounded-lg hidden sm:block"
+    />
   </div>
+  <img src="@/assets/images/red-profile.jpeg" alt="" class="rounded-lg block sm:hidden mb-24" />
 
   <!-- EDUCATION -->
-  <div class="flex justify-between items-start mb-36 mx-24">
+  <div class="flex justify-between items-start mb-6 sm:mb-36 sm:mx-24">
     <div class="flex flex-col left-item">
-      <h2 class="text-center text-5xl font-bold sm:text-left mb-12">EDUCATION</h2>
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-12">EDUCATION</h2>
       <div class="flex justify-between">
         <div class="flex flex-col">
           <div class="flex items-end justify-start">
             <img src="@/assets/images/fsc-svg.svg" alt="" width="20" class="mb-2 sm:w-5" />
-            <h2 class="text-2xl font-bold ml-3">Florida Southern College</h2>
+            <h2 class="text-xl sm:text-2xl font-bold ml-3">Florida Southern College</h2>
           </div>
-          <p class="text-sm text-black/50">Lakeland, FL | Aug 2021 - May 2025</p>
-          <h3 class="text-black/75 mt-2">
+          <p class="text-sm text-black/50 mt-2">Lakeland, FL | Aug 2021 - May 2025</p>
+          <h3 class="text-black/75 mt-2 text-sm sm:text-md">
             B.S in Computer Science (Web & Cloud Computing)<br />
             <span class="italic">Minor in Graphic Design</span>
           </h3>
-          <h4 class="mt-2 text-sm text-black/50">
+          <h4 class="mt-4 text-xs sm:text-sm text-black/50">
             - <span class="font-bold">Cumulative GPA: 3.85;</span> Deanʼs list or higher every
             semester. <br />
             - <span class="font-bold">NCAA DII Collegiate Athlete</span>: Compete year-round in
@@ -57,26 +61,30 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
     <img
       src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled_hhxhcj.png"
       alt=""
-      class="h-[350px] rounded-lg"
+      class="h-[350px] rounded-lg hidden sm:block"
     />
   </div>
+  <img
+    src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled_hhxhcj.png"
+    alt=""
+    class="rounded-lg block sm:hidden mb-24"
+  />
 
   <!-- EXPERIENCE -->
-  <div class="flex justify-between items-start mb-36 mx-24">
+  <div class="flex justify-between items-start mb-6 sm:mb-36 sm:mx-24">
     <div class="flex flex-col left-item">
-      <h2 class="text-left text-5xl font-bold mb-12">EXPERIENCE</h2>
+      <h2 class="text-4xl sm:text-5xl font-bold mb-12">EXPERIENCE</h2>
       <div class="flex justify-between">
         <div class="flex flex-col">
           <div class="flex items-center justify-start">
             <img src="@/assets/images/aer_logo_png.png" alt="" width="30" />
-            <h2 class="text-3xl font-bold text-right ml-2">Alter Ego Running</h2>
+            <h2 class="text-xl sm:text-2xl font-bold text-right ml-2">Alter Ego Running</h2>
           </div>
-          <p class="text-sm text-black/50 mt-1">
+          <p class="text-xs sm:text-sm text-black/50 mt-1">
             Business Development Analyst (and model) - Summer '23, '24
           </p>
 
-          <!-- DESKTOP -->
-          <div class="flex flex-col space-y-2 text-md text-black/75 mt-2">
+          <div class="text-sm sm:text-md flex flex-col space-y-2 text-md text-black/75 mt-2">
             <p>
               - Redesigned the inventory tracking system using JavaScript & Shopify, increasing
               <br />
@@ -101,9 +109,14 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
     <img
       src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled-2_sm6aqm.png"
       alt=""
-      class="h-[350px] rounded-lg"
+      class="h-[350px] rounded-lg hidden sm:block"
     />
   </div>
+  <img
+    src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled-2_sm6aqm.png"
+    alt=""
+    class="rounded-lg block sm:hidden mb-24"
+  />
 
   <OfficiallyProjectsSection />
 </template>

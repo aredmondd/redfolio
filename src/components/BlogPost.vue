@@ -34,7 +34,7 @@ const timeToRead = computed(() => {
 </script>
 
 <template>
-  <div class="flex flex-col mx-80 mt-6">
+  <div class="flex flex-col sm:mx-80 mt-6">
     <h1 class="text-5xl font-semibold">{{ blogData?.title }}</h1>
     <div class="flex gap-2 mt-2 font-mono font-light">
       <h3>{{ formattedDate }}</h3>
