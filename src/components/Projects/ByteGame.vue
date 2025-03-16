@@ -4,43 +4,43 @@ import GenericCarousel from '../GenericCarousel.vue'
 
 const slides = ref([
   {
-    image: '/src/assets/images/byte/title.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152123/title_2_zgqjiy.png',
   },
   {
-    image: '/src/assets/images/byte/title_1.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152123/title_y7ahgl.png',
   },
   {
-    image: '/src/assets/images/byte/title_2.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152123/title_3_euua79.png',
   },
   {
-    image: '/src/assets/images/byte/title_3.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152122/title_1_hmtgfo.png',
   },
   {
-    image: '/src/assets/images/byte/lvl1.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152122/lvl8_pfcqvn.png',
   },
   {
-    image: '/src/assets/images/byte/cut1.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152121/lvl4_d3mtgq.png',
   },
   {
-    image: '/src/assets/images/byte/cut2.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152121/lvl1_ihtrbz.png',
   },
   {
-    image: '/src/assets/images/byte/lvl4.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152119/cut2_qw9sxg.png',
   },
   {
-    image: '/src/assets/images/byte/death.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152120/death_qs6sei.png',
   },
   {
-    image: '/src/assets/images/byte/cut3.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152119/cut3_ohkjve.png',
   },
   {
-    image: '/src/assets/images/byte/cut4.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152120/cut4_nnllak.png',
   },
   {
-    image: '/src/assets/images/byte/lvl8.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152119/cut1_crbvvr.png',
   },
   {
-    image: '/src/assets/images/byte/finale.png',
+    image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1742152120/finale_w6r5a0.png',
   },
 ])
 </script>

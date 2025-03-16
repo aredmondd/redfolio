@@ -64,9 +64,21 @@ function closeModal(event) {
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 my-6">
-    <img src="@/assets/images/nike-dragonfly-1.png" alt="" @click="openModal($event.target.src)" />
-    <img src="@/assets/images/nike-dragonfly-2.png" alt="" @click="openModal($event.target.src)" />
-    <img src="@/assets/images/nike-dragonfly-3.png" alt="" @click="openModal($event.target.src)" />
+    <img
+      src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742151963/dragonfly-1_zdd7bq.png"
+      alt=""
+      @click="openModal($event.target.src)"
+    />
+    <img
+      src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742151963/dragonfly-2_rkszrt.png"
+      alt=""
+      @click="openModal($event.target.src)"
+    />
+    <img
+      src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742151964/dragonfly-3_lwzwhv.png"
+      alt=""
+      @click="openModal($event.target.src)"
+    />
   </div>
 
   <!-- Modal -->

@@ -5,7 +5,9 @@
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#e3f2fd] transition-all duration-500 ease-in-out"
         >
-          <img src="@/assets/images/PERFECT-KANA.png" />
+          <img
+            src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742152307/PERFECT-KANA_mh11o5.png"
+          />
         </div>
         <p class="text-xs sm:text-sm mt-2 text-center">
           a customizable app made to practice japanese kana
@@ -17,7 +19,9 @@
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-green transition-all duration-500 ease-in-out"
         >
-          <img src="@/assets/images/PORTFOLIO.png" />
+          <img
+            src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742152307/PORTFOLIO_aevsxs.png"
+          />
         </div>
         <p class="text-xs sm:text-sm mt-2 text-center">the 2nd version of my personal portfolio</p>
       </div>
@@ -27,7 +31,9 @@
         <div
           class="flex items-center justify-center h-full rounded-lg hover:bg-[#000000] transition-all duration-500 ease-in-out invert hover:invert-0"
         >
-          <img src="@/assets/images/STRIDESPACE.png" />
+          <img
+            src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742152308/STRIDESPACE_ywzt06.png"
+          />
         </div>
         <p class="text-xs sm:text-sm mt-2 text-center">
           web design project that generates art based on runs
