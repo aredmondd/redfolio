@@ -18,14 +18,14 @@ function closeModal(event) {
 </script>
 
 <template>
-  <div class="flex flex-col justify-center mx-96 mt-6">
+  <div class="flex flex-col justify-center sm:mx-96 mt-6">
     <img src="@/assets/images/headers/byte-header.png" alt="" />
     <div class="flex justify-between text-black/50">
       <p>Game Design</p>
       <p>Spring 2024</p>
     </div>
   </div>
-  <div class="flex flex-col gap-3 mx-96 mt-12">
+  <div class="flex flex-col gap-3 sm:mx-96 mt-12">
     <p>
       For this project, I designed and developed a game from the ground up, focusing on both
       creative & technical aspects. The project was structured around multiple milestones, allowing

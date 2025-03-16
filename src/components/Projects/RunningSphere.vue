@@ -3,14 +3,14 @@ import flipbook from 'flipbook-vue'
 </script>
 
 <template>
-  <div class="flex flex-col justify-center mx-96 mt-6">
+  <div class="flex flex-col justify-center sm:mx-96 mt-6">
     <img src="@/assets/images/headers/running-sphere-header.png" alt="" />
     <div class="flex justify-between text-black/50 mt-3">
       <p>Typography & Layout</p>
       <p>Spring 2024</p>
     </div>
   </div>
-  <div class="flex flex-col gap-3 mx-96 mt-12">
+  <div class="flex flex-col gap-3 sm:mx-96 mt-12">
     <p>
       This project focused on designing a 16-page magazine, emphasizing layout, typography, and
       imagery. Each student was tasked with:
@@ -52,7 +52,7 @@ import flipbook from 'flipbook-vue'
     </p>
   </div>
 
-  <div class="flex justify-center items-center my-12">
+  <div class="hidden sm:flex justify-center items-center my-12">
     <flipbook
       class="flipbook"
       :pages="[
@@ -75,6 +75,10 @@ import flipbook from 'flipbook-vue'
         '/src/assets/images/running-sphere/rs16.jpg',
       ]"
     ></flipbook>
+  </div>
+
+  <div class="block sm:hidden my-6 text-black/50">
+    please check out the desktop version to flip through the magazine :)
   </div>
 </template>
 

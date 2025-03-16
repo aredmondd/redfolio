@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center mx-96 mt-6">
+  <div class="flex flex-col justify-center sm:mx-96 mt-6">
     <img src="@/assets/images/headers/jasiah-header.png" alt="" />
     <div class="flex justify-between text-black/50 mx-2">
       <p>Alter Ego Running</p>
@@ -7,7 +7,7 @@
     </div>
   </div>
 
-  <div class="flex flex-col gap-3 mx-96 mt-12">
+  <div class="flex flex-col gap-3 sm:mx-96 my-12">
     <p>
       JASIAH is a Google Apps Script-powered solution designed to streamline inventory tracking and
       management by integrating Google Sheets with CSV files and Shopify data. By automating tedious

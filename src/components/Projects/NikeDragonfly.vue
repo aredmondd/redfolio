@@ -18,14 +18,14 @@ function closeModal(event) {
 </script>
 
 <template>
-  <div class="flex flex-col justify-center mx-96">
+  <div class="flex flex-col justify-center sm:mx-96">
     <img src="@/assets/images/headers/nike-dragonfly-header.png" alt="" />
-    <div class="flex justify-between mx-4 text-black/50 mt-[-25px]">
+    <div class="flex justify-between sm:mx-4 text-black/50 sm:mt-[-25px]">
       <p>Typography & Layout</p>
       <p>Spring 2024</p>
     </div>
   </div>
-  <div class="flex flex-col gap-3 mx-96 mt-12">
+  <div class="flex flex-col gap-3 sm:mx-96 mt-12">
     <p>
       This project focused on expressing ideas through typography by creating a series of 3
       advertisements for an old pair of shoes. Each student was tasked with designing:
@@ -63,7 +63,7 @@ function closeModal(event) {
     </p>
   </div>
 
-  <div class="grid grid-cols-3 gap-6 my-6">
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 my-6">
     <img src="@/assets/images/nike-dragonfly-1.png" alt="" @click="openModal($event.target.src)" />
     <img src="@/assets/images/nike-dragonfly-2.png" alt="" @click="openModal($event.target.src)" />
     <img src="@/assets/images/nike-dragonfly-3.png" alt="" @click="openModal($event.target.src)" />

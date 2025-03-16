@@ -25,7 +25,7 @@ const slides = ref([
 </script>
 
 <template>
-  <div class="flex flex-col justify-center mx-96 mt-6">
+  <div class="flex flex-col justify-center sm:mx-96 mt-6">
     <img src="@/assets/images/headers/reservoir-header.png" alt="" />
     <div class="flex justify-between text-black/50 mx-2">
       <p>Senior Project</p>
@@ -33,7 +33,7 @@ const slides = ref([
     </div>
   </div>
 
-  <div class="flex flex-col gap-3 mx-96 mt-12">
+  <div class="flex flex-col gap-3 sm:mx-96 mt-12">
     <p>
       Reservoir is a web application designed to help users organize and track their media, connect
       with friends, share recommendations, and receive personalized AI-driven suggestions. Unlike

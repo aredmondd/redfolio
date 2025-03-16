@@ -27,8 +27,8 @@ const hoverClass = computed(() => {
       >
         <img :src="'/src/assets/images/projects/' + props.name + '.png'" />
       </div>
-      <p class="text-md text-center mt-6">{{ props.description }}</p>
-      <p class="text-black/50 text-sm text-center mt-1">{{ props.time }}</p>
+      <p class="text-sm sm:text-md text-center mt-6">{{ props.description }}</p>
+      <p class="text-black/50 text-xs sm:text-sm text-center mt-1">{{ props.time }}</p>
     </div>
   </RouterLink>
 </template>

@@ -6,7 +6,7 @@ import OfficiallyProjectItem from './OfficiallyProjectItem.vue'
   <!-- PROJECTS SECTION -->
   <h2 class="text-center text-5xl font-bold">PROJECTS</h2>
   <p class="text-black/50 text-sm text-center mt-3 mb-12">(click on one to learn more)</p>
-  <div class="grid grid-cols-1 place-items-center gap-12 mx-24 mb-12 sm:grid-cols-3 sm:gap-24">
+  <div class="grid grid-cols-1 place-items-center gap-12 sm:mx-24 mb-12 sm:grid-cols-3 sm:gap-24">
     <OfficiallyProjectItem
       name="reservoir"
       description="A social platform for media tracking"
@@ -29,7 +29,7 @@ import OfficiallyProjectItem from './OfficiallyProjectItem.vue'
       invert
     />
   </div>
-  <div class="grid grid-cols-1 place-items-center gap-12 mx-24 mb-24 sm:grid-cols-3 sm:gap-24">
+  <div class="grid grid-cols-1 place-items-center gap-12 sm:mx-24 mb-24 sm:grid-cols-3 sm:gap-24">
     <OfficiallyProjectItem
       name="running-sphere"
       description="A magazine I designed & printed"

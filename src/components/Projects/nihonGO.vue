@@ -25,7 +25,7 @@ const slides = ref([
 </script>
 
 <template>
-  <div class="flex flex-col justify-center mx-96 mt-6">
+  <div class="flex flex-col justify-center sm:mx-96 mt-6">
     <img src="@/assets/images/headers/nihongo-header.png" alt="" />
     <div class="flex justify-between text-black/50 mx-2">
       <p>Software Engineering</p>
@@ -33,7 +33,7 @@ const slides = ref([
     </div>
   </div>
 
-  <div class="flex flex-col gap-3 mx-96 mt-12">
+  <div class="flex flex-col gap-3 sm:mx-96 mt-12">
     <p>
       nihonGO is a Django and Python-based web application designed to facilitate communication
       between English and Japanese speakers. It provides a seamless language-learning experience by
