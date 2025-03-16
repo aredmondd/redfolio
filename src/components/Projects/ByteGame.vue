@@ -1,20 +1,48 @@
 <script setup>
 import { ref } from 'vue'
+import GenericCarousel from '../GenericCarousel.vue'
 
-const isModalOpen = ref(false)
-const modalImage = ref('')
-
-function openModal(imageSrc) {
-  modalImage.value = imageSrc
-  isModalOpen.value = true
-  document.body.style.overflow = 'hidden' // Disable scrolling
-}
-function closeModal(event) {
-  if (event.target === event.currentTarget) {
-    isModalOpen.value = false
-    document.body.style.overflow = '' // Restore scrolling
-  }
-}
+const slides = ref([
+  {
+    image: '/src/assets/images/byte/title.png',
+  },
+  {
+    image: '/src/assets/images/byte/title_1.png',
+  },
+  {
+    image: '/src/assets/images/byte/title_2.png',
+  },
+  {
+    image: '/src/assets/images/byte/title_3.png',
+  },
+  {
+    image: '/src/assets/images/byte/lvl1.png',
+  },
+  {
+    image: '/src/assets/images/byte/cut1.png',
+  },
+  {
+    image: '/src/assets/images/byte/cut2.png',
+  },
+  {
+    image: '/src/assets/images/byte/lvl4.png',
+  },
+  {
+    image: '/src/assets/images/byte/death.png',
+  },
+  {
+    image: '/src/assets/images/byte/cut3.png',
+  },
+  {
+    image: '/src/assets/images/byte/cut4.png',
+  },
+  {
+    image: '/src/assets/images/byte/lvl8.png',
+  },
+  {
+    image: '/src/assets/images/byte/finale.png',
+  },
+])
 </script>
 
 <template>
@@ -56,19 +84,5 @@ function closeModal(event) {
     <p>While BYTE isn't public, you can get a glimpse of the game through the images below.</p>
   </div>
 
-  <div class="grid grid-cols-3 gap-6 my-6">
-    <!-- <img src="@/assets/images/nike-dragonfly-1.png" alt="" @click="openModal($event.target.src)" /> -->
-  </div>
-
-  <!-- Modal -->
-  <div
-    v-if="isModalOpen"
-    id="imageModal"
-    class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
-    @click="closeModal"
-  >
-    <div class="relative">
-      <img id="modalImage" :src="modalImage" class="max-w-full max-h-screen my-12" />
-    </div>
-  </div>
+  <GenericCarousel :slides="slides" />
 </template>
