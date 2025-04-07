@@ -45,9 +45,9 @@ import UnofficiallyProjects from '@/components/UnofficiallyProjects.vue'
     <UnofficiallyProjects />
 
     <!-- tools i'm using -->
-    <h2 class="text-2xl sm:text-4xl font-bold mt-24 mb-3 text-center">tools i use 🧰</h2>
+    <!-- <h2 class="text-2xl sm:text-4xl font-bold mt-24 mb-3 text-center">tools i use 🧰</h2>
     <h3 class="mb-12 text-center text-sm">here's the tools & technologies i use daily</h3>
-    <Tools />
+    <Tools /> -->
 
     <span id="writing"></span>
     <!-- writing -->
