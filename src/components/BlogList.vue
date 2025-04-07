@@ -27,7 +27,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="!loading && !empty" class="flex">
+  <div v-if="!loading && !empty" class="flex gap-3">
     <RouterLink
       v-for="blog in blogs"
       :key="blog.id"
@@ -40,7 +40,7 @@ onMounted(() => {
       }"
       class="border border-green rounded-lg p-2 hover:bg-green hover:text-white transition-all duration-200 ease-in-out"
     >
-      <h1>{{ blog.title }}</h1>
+      <h1 class="font-extrabold">{{ blog.title }}</h1>
       <p>{{ blog.created_at.substring(0, blog.created_at.indexOf('T')) }}</p>
     </RouterLink>
   </div>
