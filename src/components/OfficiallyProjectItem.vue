@@ -10,7 +10,7 @@ const props = defineProps({
 })
 
 const hoverClass = computed(() => {
-  let classes = [`hover:bg-[${props.hover}]`]
+  let classes = ['project-item']
   if (props.invert) {
     classes.push('hover:invert')
   }
@@ -24,8 +24,9 @@ const imageLocation = computed(() => `/headers/${props.name}.png`)
   <RouterLink :to="'/project/' + props.name" class="project">
     <div class="flex flex-col h-full">
       <div
-        class="flex items-center justify-center h-full rounded-lg transition-all duration-500 ease-in-out"
+        class="flex items-center justify-center h-full rounded-lg transition-all duration-500 ease-in-out hover:bg-[var(--hover-color)]"
         :class="hoverClass"
+        :style="{ '--hover-color': props.hover }"
       >
         <img :src="imageLocation" />
       </div>
