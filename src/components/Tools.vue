@@ -38,7 +38,6 @@ import ToolItem from './ToolItem.vue'
       <h3 class="font-mono font-bold mb-3">technology</h3>
       <ToolItem text="tailwind" link="https://tailwindcss.com/" />
       <ToolItem text="vue" link="https://vuejs.org/" />
-      <ToolItem text="supabase" link="https://supabase.com/" />
       <ToolItem text="netlify" link="https://www.netlify.com/" />
       <ToolItem text="cloudinary" link="https://cloudinary.com/" />
       <ToolItem text="github" link="https://github.com/" />
