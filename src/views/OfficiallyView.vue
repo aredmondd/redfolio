@@ -130,5 +130,6 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
     class="rounded-lg block sm:hidden mb-24"
   />
 
+  <span class="sr-only" id="projects"></span>
   <OfficiallyProjectsSection />
 </template>

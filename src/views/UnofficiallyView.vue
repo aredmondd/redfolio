@@ -49,9 +49,10 @@ import UnofficiallyProjects from '@/components/UnofficiallyProjects.vue'
     <h3 class="mb-12 text-center text-sm">here's the tools & technologies i use daily</h3>
     <Tools />
 
+    <span id="writing"></span>
     <!-- writing -->
     <h2 class="text-2xl sm:text-4xl font-bold mt-24 mb-3 text-center">writing 👨🏽‍💻</h2>
-    <h3 class="mb-6 text-center text-sm">working on communicating my ideas better...</h3>
+    <h3 class="mb-6 text-center text-sm">keeping track of the things i'm up to & what i learn</h3>
     <BlogList />
 
     <!-- youtube videos -->
