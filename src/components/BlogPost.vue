@@ -7,6 +7,7 @@ const props = defineProps({
 })
 
 const blogData = ref(null)
+const ready = ref(false)
 
 // Fetch the blog post
 async function getBlogPost() {
@@ -20,6 +21,7 @@ async function getBlogPost() {
     console.error('Error fetching blog:', error.message)
   } else {
     blogData.value = data
+    ready.value = true
   }
 }
 
@@ -28,19 +30,21 @@ onMounted(getBlogPost)
 // Compute formatted date
 const formattedDate = computed(() => blogData.value?.created_at?.slice(0, 10) || '')
 const timeToRead = computed(() => {
-  const wordCount = props.content ? props.content.split(/\s+/).length : 0
+  const wordCount = blogData.value.content.split(/\s+/).length
   return `${Math.max(1, Math.ceil(wordCount / 225))} min read`
 })
 </script>
 
 <template>
-  <div class="flex flex-col sm:mx-80 mt-6">
-    <h1 class="text-5xl font-semibold">{{ blogData?.title }}</h1>
-    <div class="flex gap-2 mt-2 font-mono font-light">
-      <h3>{{ formattedDate }}</h3>
-      <h3>|</h3>
-      <h3>{{ timeToRead }}</h3>
+  <Transition>
+    <div v-if="ready" class="flex flex-col sm:px-[35%] mt-12">
+      <h1 class="text-5xl font-semibold">{{ blogData?.title }}</h1>
+      <div class="flex gap-2 mt-2 font-mono font-light">
+        <span>{{ formattedDate }}</span>
+        <span>|</span>
+        <span>{{ timeToRead }}</span>
+      </div>
+      <div v-html="blogData?.content" class="mt-6"></div>
     </div>
-    <div v-html="blogData?.content" class="mt-6 prose"></div>
-  </div>
+  </Transition>
 </template>

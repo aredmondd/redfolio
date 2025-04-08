@@ -8,7 +8,10 @@ const loading = ref(true)
 const empty = ref(false)
 
 async function getBlogs() {
-  const { data, error } = await supabase.from('blog_posts').select('*')
+  const { data, error } = await supabase
+    .from('blog_posts')
+    .select('*')
+    .order('created_at', { ascending: true })
 
   if (error) {
     console.error('Error fetching blogs:', error.message)

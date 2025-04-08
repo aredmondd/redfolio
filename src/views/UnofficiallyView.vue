@@ -26,6 +26,20 @@ import UnofficiallyProjects from '@/components/UnofficiallyProjects.vue'
     </h3>
     <ContentScroller class="mb-12" />
 
+    <!-- github projects section -->
+    <h2 class="text-2xl sm:text-4xl font-bold mt-24 mb-3 text-center">featured projects 🚧</h2>
+    <h3 class="mb-6 text-center text-sm">
+      listed below are some project i've been working on recently. <br />
+      click on one to see the github repo.
+    </h3>
+    <UnofficiallyProjects />
+
+    <span id="writing"></span>
+    <!-- writing -->
+    <h2 class="text-2xl sm:text-4xl font-bold mt-24 mb-3 text-center">writing 👨🏽‍💻</h2>
+    <h3 class="mb-6 text-center text-sm">keeping track of the things i'm up to & what i learn</h3>
+    <BlogList />
+
     <!-- raindrop section -->
     <h2 class="text-2xl sm:text-4xl font-bold mt-12 mb-3 text-center">the vault 🏛️</h2>
     <h3 class="mb-12 text-center text-sm">
@@ -36,24 +50,10 @@ import UnofficiallyProjects from '@/components/UnofficiallyProjects.vue'
     </h3>
     <Vault class="mb-12" />
 
-    <!-- github projects section -->
-    <h2 class="text-2xl sm:text-4xl font-bold mt-24 mb-3 text-center">featured projects 🚧</h2>
-    <h3 class="mb-6 text-center text-sm">
-      listed below are some project i've been working on recently. <br />
-      click on one to see the github repo.
-    </h3>
-    <UnofficiallyProjects />
-
     <!-- tools i'm using -->
     <!-- <h2 class="text-2xl sm:text-4xl font-bold mt-24 mb-3 text-center">tools i use 🧰</h2>
     <h3 class="mb-12 text-center text-sm">here's the tools & technologies i use daily</h3>
     <Tools /> -->
-
-    <span id="writing"></span>
-    <!-- writing -->
-    <h2 class="text-2xl sm:text-4xl font-bold mt-24 mb-3 text-center">writing 👨🏽‍💻</h2>
-    <h3 class="mb-6 text-center text-sm">keeping track of the things i'm up to & what i learn</h3>
-    <BlogList />
 
     <!-- youtube videos -->
     <YoutubeVideos />
