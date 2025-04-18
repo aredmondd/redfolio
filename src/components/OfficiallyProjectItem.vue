@@ -30,8 +30,6 @@ const imageLocation = computed(() => `/headers/${props.name}.png`)
       >
         <img :src="imageLocation" />
       </div>
-      <p class="text-sm sm:text-md text-center mt-6">{{ props.description }}</p>
-      <p class="text-black/50 text-xs sm:text-sm text-center mt-1">{{ props.time }}</p>
     </div>
   </RouterLink>
 </template>
