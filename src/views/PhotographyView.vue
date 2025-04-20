@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-1 gap-24 justify-center items-start mt-12">
+  <div class="flex flex-1 gap-24 justify-center items-start mt-24">
     <div class="flex flex-col">
       <h1 class="font-bold mb-6">
         digital photography <br />
@@ -73,14 +73,6 @@
           non-project photos
         </RouterLink>
       </div>
-    </div>
-
-    <div class="flex flex-col">
-      <h1 class="font-bold mb-6">
-        the final spring <br />
-        <span class="text-black/50 font-medium">2024-12-12 to 2025-5-3</span>
-      </h1>
-      <p class="text-black/50">so empty...</p>
     </div>
   </div>
 </template>
