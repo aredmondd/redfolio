@@ -16,8 +16,8 @@ import { onMounted, onBeforeUnmount, ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 // === CONSTS ===
-const WIDTH = 928
-const HEIGHT = 680
+const WIDTH = 900
+const HEIGHT = 600
 const RADIUS = 100
 const DISTANCE = 250
 
