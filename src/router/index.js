@@ -2,6 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import OfficiallyView from '@/views/OfficiallyView.vue'
 import UnofficiallyView from '@/views/UnofficiallyView.vue'
+import ContactView from '@/views/ContactView.vue'
+import ProjectsView from '@/views/ProjectsView.vue'
+import WritingView from '@/views/WritingView.vue'
+import MoreView from '@/views/MoreView.vue'
 import NotFound from '@/views/NotFound.vue'
 import BlogPost from '@/components/BlogPost.vue'
 import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
@@ -23,9 +27,29 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/officially',
+      path: '/resume',
       name: 'officially',
       component: OfficiallyView,
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: ContactView,
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: ProjectsView,
+    },
+    {
+      path: '/writing',
+      name: 'writing',
+      component: WritingView,
+    },
+    {
+      path: '/more',
+      name: 'more',
+      component: MoreView,
     },
     {
       path: '/unofficially',

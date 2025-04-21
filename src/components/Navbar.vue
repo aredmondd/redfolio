@@ -3,17 +3,19 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <nav class="flex justify-center items-center gap-12">
-    <div class="flex gap-6">
-      <RouterLink to="/officially">resume</RouterLink>
-      <RouterLink to="/projects">projects</RouterLink>
+  <nav class="flex justify-center items-center gap-20">
+    <div class="flex gap-12 text-3xl">
+      <RouterLink to="/resume">📜</RouterLink>
+      <RouterLink to="/contact">☎️</RouterLink>
+      <RouterLink to="/projects">🚧</RouterLink>
     </div>
     <RouterLink to="/">
       <img src="/logo_regular.png" alt="" class="w-24" />
     </RouterLink>
-    <div class="flex gap-6">
-      <RouterLink to="/photography">photography</RouterLink>
-      <RouterLink to="/writing">writing</RouterLink>
+    <div class="flex gap-12 text-3xl">
+      <RouterLink to="/photography">📸</RouterLink>
+      <RouterLink to="/writing">✍🏼</RouterLink>
+      <RouterLink to="/more">‼️</RouterLink>
     </div>
   </nav>
 </template>
