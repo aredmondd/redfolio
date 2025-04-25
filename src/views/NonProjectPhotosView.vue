@@ -66,16 +66,18 @@ let images = [
 </script>
 
 <template>
-  <div class="flex flex-1">
-    <div class="flex-1 columns-3 gap-4 space-y-4 my-6">
-      <img
-        v-for="(image, index) in images"
-        :key="index"
-        :src="image.image"
-        @click="openModal(image.image)"
-      />
+  <Transition appear>
+    <div class="flex flex-1">
+      <div class="flex-1 columns-3 gap-4 space-y-4 my-6">
+        <img
+          v-for="(image, index) in images"
+          :key="index"
+          :src="image.image"
+          @click="openModal(image.image)"
+        />
+      </div>
     </div>
-  </div>
+  </Transition>
 
   <!-- Modal -->
   <div
