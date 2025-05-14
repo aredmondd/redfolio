@@ -14,7 +14,7 @@ import { RouterLink } from 'vue-router'
     <div class="flex gap-12 text-3xl">
       <RouterLink to="/photography">📸</RouterLink>
       <RouterLink to="/writing">✍🏼</RouterLink>
-      <RouterLink to="/more">‼️</RouterLink>
+      <!-- <RouterLink to="/more">‼️</RouterLink> -->
     </div>
   </nav>
 </template>
