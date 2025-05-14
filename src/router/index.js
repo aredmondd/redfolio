@@ -1,8 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import OfficiallyView from '@/views/OfficiallyView.vue'
+import AboutView from '@/views/AboutView.vue'
 import UnofficiallyView from '@/views/UnofficiallyView.vue'
-import ContactView from '@/views/ContactView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import WritingView from '@/views/WritingView.vue'
 import MoreView from '@/views/MoreView.vue'
@@ -12,8 +11,8 @@ import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
 import ByteGame from '@/components/Projects/ByteGame.vue'
 import RunningSphere from '@/components/Projects/RunningSphere.vue'
 import PhotographyView from '@/views/PhotographyView.vue'
-import PhotographyProjectView from '@/views/PhotographyProjectView.vue'
-import NonProjectPhotosView from '@/views/NonProjectPhotosView.vue'
+import PhotographyProjectView from '@/views/Photography/PhotographyProjectView.vue'
+import NonProjectPhotosView from '@/views/Photography/NonProjectPhotosView.vue'
 import Reservoir from '@/components/Projects/Reservoir.vue'
 import NihonGO from '@/components/Projects/nihonGO.vue'
 import JASIAH from '@/components/Projects/JASIAH.vue'
@@ -29,12 +28,7 @@ const router = createRouter({
     {
       path: '/resume',
       name: 'officially',
-      component: OfficiallyView,
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: ContactView,
+      component: AboutView,
     },
     {
       path: '/projects',
