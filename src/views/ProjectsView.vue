@@ -1,9 +1,9 @@
 <script setup>
-import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vue'
+import ProjectGrid from '@/components/ProjectGrid.vue'
 import UnofficiallyProjects from '@/components/UnofficiallyProjects.vue'
 </script>
 
 <template>
-  <OfficiallyProjectsSection />
+  <ProjectGrid />
   <UnofficiallyProjects />
 </template>

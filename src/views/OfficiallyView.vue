@@ -1,7 +1,3 @@
-<script setup>
-import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vue'
-</script>
-
 <template>
   <!-- PROFILE -->
   <Transition appear>

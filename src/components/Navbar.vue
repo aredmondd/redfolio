@@ -6,7 +6,6 @@ import { RouterLink } from 'vue-router'
   <nav class="flex justify-center items-center gap-20">
     <div class="flex gap-12 text-3xl">
       <RouterLink to="/resume">📜</RouterLink>
-      <RouterLink to="/contact">☎️</RouterLink>
       <RouterLink to="/projects">🚧</RouterLink>
     </div>
     <RouterLink to="/">
