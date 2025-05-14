@@ -23,72 +23,88 @@ function closeModal(event) {
       <div class="grid gap-4 photo-col">
         <div>
           <img
-            class="h-auto max-w-full rounded-lg"
+            loading="lazy"
+            class="h-auto max-w-full rounded-lg transition-opacity duration-500 opacity-0"
             src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg"
-            alt=""
+            alt="anthony climbing an abandoned house"
             @click="openModal($event.target.src)"
+            @load="$event.target.classList.add('opacity-100')"
           />
         </div>
         <div>
           <img
-            class="h-auto max-w-full rounded-lg"
-            src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363767/DSC00374_esme4j.jpg"
-            alt=""
+            loading="lazy"
+            class="h-auto max-w-full rounded-lg transition-opacity duration-500 opacity-0"
+            src="https://res.cloudinary.com/dkznczrj0/image/upload/v1747233443/marsh_fzmpod.jpg"
+            alt="ponte vedra marsh at sunrise"
             @click="openModal($event.target.src)"
+            @load="$event.target.classList.add('opacity-100')"
           />
         </div>
       </div>
       <div class="grid gap-4 photo-col">
         <div>
           <img
-            class="h-auto max-w-full rounded-lg"
+            loading="lazy"
+            class="h-auto max-w-full rounded-lg transition-opacity duration-500 opacity-0"
             src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363314/_MG_9430_lcteaz.jpg"
-            alt=""
+            alt="broken CD"
             @click="openModal($event.target.src)"
+            @load="$event.target.classList.add('opacity-100')"
           />
         </div>
         <div>
           <img
-            class="h-auto max-w-full rounded-lg"
+            loading="lazy"
+            class="h-auto max-w-full rounded-lg transition-opacity duration-500 opacity-0"
             src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704776/_MG_9121_rlj0zf.jpg"
-            alt=""
+            alt="rachel in the garden"
             @click="openModal($event.target.src)"
+            @load="$event.target.classList.add('opacity-100')"
           />
         </div>
       </div>
       <div class="grid gap-4 photo-col">
         <div>
           <img
-            class="h-auto max-w-full rounded-lg"
+            loading="lazy"
+            class="h-auto max-w-full rounded-lg transition-opacity duration-500 opacity-0"
             src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704773/_MG_8530_ibfvbq.jpg"
-            alt=""
+            alt="lake mirror sculpture"
             @click="openModal($event.target.src)"
+            @load="$event.target.classList.add('opacity-100')"
           />
         </div>
         <div>
           <img
-            class="h-auto max-w-full rounded-lg"
-            src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363821/DSC01004_l2iotu.jpg"
-            alt=""
+            loading="lazy"
+            class="h-auto max-w-full rounded-lg transition-opacity duration-500 opacity-0"
+            src="https://res.cloudinary.com/dkznczrj0/image/upload/v1747233440/chris_ubi7of.jpg"
+            alt="chris at blue heat"
             @click="openModal($event.target.src)"
+            @load="$event.target.classList.add('opacity-100')"
           />
         </div>
       </div>
       <div class="grid gap-4 photo-col">
         <div>
           <img
-            class="h-auto max-w-full rounded-lg"
-            src="https://res.cloudinary.com/dkznczrj0/image/upload/v1735177793/DSC01568_ud8fer.jpg"
-            alt=""
+            loading="lazy"
+            class="h-auto max-w-full rounded-lg transition-opacity duration-500 opacity-0"
+            src="https://res.cloudinary.com/dkznczrj0/image/upload/v1747233445/kaws_r0i8v9.jpg"
+            alt="kaws"
             @click="openModal($event.target.src)"
+            @load="$event.target.classList.add('opacity-100')"
           />
         </div>
         <div>
           <img
-            class="h-auto max-w-full rounded-lg"
+            loading="lazy"
+            class="h-auto max-w-full rounded-lg transition-opacity duration-500 opacity-0"
             src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733780751/_MG_0884_cropped_fb9zep.jpg"
-            alt=""
+            alt="elijah at the fire"
             @click="openModal($event.target.src)"
+            @load="$event.target.classList.add('opacity-100')"
           />
         </div>
       </div>

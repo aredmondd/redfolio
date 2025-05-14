@@ -5,7 +5,6 @@ import Tools from '@/components/Tools.vue'
 import BlogList from '@/components/BlogList.vue'
 import PhotographyGrid from '@/components/PhotographyGrid.vue'
 import YoutubeVideos from '@/components/YoutubeVideos.vue'
-import UnofficiallyProjects from '@/components/UnofficiallyProjects.vue'
 </script>
 
 <template>
