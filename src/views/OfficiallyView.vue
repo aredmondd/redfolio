@@ -15,15 +15,16 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
             <img src="/logo_regular.png" alt="" width="50" />
             <h2 class="text-xl sm:text-2xl font-bold text-right ml-2">Aiden Redmond</h2>
           </div>
-          <p class="text-sm text-black/50 mt-1">web developer, student-athlete, artist</p>
-          <div class="text-sm sm:text-md text-black/75 mt-2">
-            - working on
-            <a href="https://www.aidenredmond.com" target="_blank" class="link">aidenredmond.com</a>
-            &
-            <a href="https://www.stridespace.xyz" target="_blank" class="link">stridespace.xyz</a>
-            <br />
-            - learning vue.js, japanese, & obsidian <br />
-            - loves manga, music, video games, and running
+          <p class="text-sm text-black/50 mt-1">developer, athlete, artist</p>
+          <div class="text-sm sm:text-md text-black/75 mt-2 flex flex-col gap-y-1">
+            <p>
+              - working on
+              <a href="https://www.aidenredmond.com" target="_blank" class="link"
+                >aidenredmond.com</a
+              >
+            </p>
+            <p>- learning UI/UX, linux, & obsidian</p>
+            <p>- love manga, music, video games, and running</p>
           </div>
         </div>
       </div>
@@ -56,11 +57,11 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
             <p class="text-sm text-black/50 mt-2">Lakeland, FL | Aug 2021 - May 2025</p>
             <h3 class="text-black/75 mt-2 text-sm sm:text-md">
               B.S in Computer Science (Web & Cloud Computing)<br />
-              <span class="italic">Minor in Graphic Design</span>
+              <span class="italic">Minor in Graphic Design (Web Emphasis)</span>
             </h3>
-            <h4 class="mt-4 text-xs sm:text-sm text-black/50">
-              - <span class="font-bold">Cumulative GPA: 3.85;</span> Deanʼs list or higher every
-              semester. <br />
+            <h4 class="mt-3 text-xs sm:text-sm text-black/50">
+              - <span class="font-bold">Cumulative GPA: 3.86;</span> Graduated with summa cum
+              laude<br />
               - <span class="font-bold">NCAA DII Collegiate Athlete</span>: Compete year-round in
               cross country & track.
             </h4>
@@ -68,7 +69,7 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
         </div>
       </div>
       <img
-        src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled_hhxhcj.png"
+        src="https://res.cloudinary.com/dkznczrj0/image/upload/v1746727376/award_pgbhru.jpg"
         alt=""
         class="h-[350px] rounded-lg hidden sm:block"
       />
@@ -76,7 +77,7 @@ import OfficiallyProjectsSection from '@/components/OfficiallyProjectsSection.vu
   </Transition>
   <Transition appear>
     <img
-      src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled_hhxhcj.png"
+      src="https://res.cloudinary.com/dkznczrj0/image/upload/v1746727376/award_pgbhru.jpg"
       alt=""
       class="rounded-lg block sm:hidden mb-24"
     />
