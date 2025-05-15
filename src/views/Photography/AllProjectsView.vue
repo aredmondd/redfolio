@@ -75,13 +75,6 @@
           </RouterLink>
         </div>
       </div>
-      <div class="flex flex-col">
-        <h1 class="font-bold mb-6">
-          the final spring <br />
-          <span class="text-black/50 font-medium">2024-12-12 to 2025-5-3</span>
-        </h1>
-        <p class="text-black/50">so empty...</p>
-      </div>
     </div>
   </Transition>
 </template>
