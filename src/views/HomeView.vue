@@ -12,8 +12,8 @@
 
   <Transition appear :style="{ '--delay': '7000ms' }">
     <div class="mb-12">
-      <p class="text-center">don't know where to go? here's a key:</p>
-      <div class="flex justify-center items-center gap-12">
+      <p class="text-center mb-4 sm:mb-0">don't know where to go? here's a key:</p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-12">
         <p>📜 = resume</p>
         <p>🚧 = projects</p>
         <p class="flex items-center justify-center">

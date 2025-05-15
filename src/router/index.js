@@ -1,10 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
-import UnofficiallyView from '@/views/UnofficiallyView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
-import WritingView from '@/views/WritingView.vue'
-import MoreView from '@/views/MoreView.vue'
+import NotesView from '@/views/NotesView.vue'
 import NotFound from '@/views/NotFound.vue'
 import BlogPost from '@/components/BlogPost.vue'
 import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
@@ -37,19 +35,9 @@ const router = createRouter({
       component: ProjectsView,
     },
     {
-      path: '/writing',
-      name: 'writing',
-      component: WritingView,
-    },
-    {
-      path: '/more',
-      name: 'more',
-      component: MoreView,
-    },
-    {
-      path: '/unofficially',
-      name: 'unofficially',
-      component: UnofficiallyView,
+      path: '/notes',
+      name: 'notes',
+      component: NotesView,
     },
     {
       path: '/:pathMatch(.*)*',
