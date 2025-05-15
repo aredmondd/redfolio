@@ -16,6 +16,7 @@ import NonProjectPhotosView from '@/views/Photography/NonProjectPhotosView.vue'
 import Reservoir from '@/components/Projects/Reservoir.vue'
 import NihonGO from '@/components/Projects/nihonGO.vue'
 import JASIAH from '@/components/Projects/JASIAH.vue'
+import AllProjectsView from '@/views/Photography/AllProjectsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -87,6 +88,10 @@ const router = createRouter({
     {
       path: '/photography',
       component: PhotographyView,
+    },
+    {
+      path: '/photography/all-projects',
+      component: AllProjectsView,
     },
     {
       path: '/photography/non-project-photos',
