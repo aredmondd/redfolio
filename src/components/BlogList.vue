@@ -30,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="!loading && !empty" class="flex gap-3">
+  <div v-if="!loading && !empty" class="grid grid-cols-6 gap-3">
     <RouterLink
       v-for="blog in blogs"
       :key="blog.id"
@@ -41,10 +41,12 @@ onMounted(() => {
           slug: blog.slug,
         },
       }"
-      class="border border-green rounded-lg p-2 hover:bg-green hover:text-white transition-all duration-200 ease-in-out"
+      class="border border-green rounded-lg pb-12 pt-4 px-4 hover:bg-green hover:text-white transition-all duration-200 ease-in-out"
     >
       <h1 class="font-extrabold">{{ blog.title }}</h1>
-      <p>{{ blog.created_at.substring(0, blog.created_at.indexOf('T')) }}</p>
+      <p class="text-sm text-current/50">
+        {{ blog.created_at.substring(0, blog.created_at.indexOf('T')) }}
+      </p>
     </RouterLink>
   </div>
   <div v-else class="text-center text-black/50">so empty...</div>
