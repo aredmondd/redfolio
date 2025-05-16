@@ -4,7 +4,7 @@ import AboutView from '@/views/AboutView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import NotesView from '@/views/NotesView.vue'
 import NotFound from '@/views/NotFound.vue'
-import BlogPost from '@/components/BlogPost.vue'
+import Note from '@/components/Note.vue'
 import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
 import ByteGame from '@/components/Projects/ByteGame.vue'
 import RunningSphere from '@/components/Projects/RunningSphere.vue'
@@ -15,6 +15,10 @@ import Reservoir from '@/components/Projects/Reservoir.vue'
 import NihonGO from '@/components/Projects/nihonGO.vue'
 import JASIAH from '@/components/Projects/JASIAH.vue'
 import AllProjectsView from '@/views/Photography/AllProjectsView.vue'
+import Tools from '@/components/Pinned/Tools.vue'
+import ContentScroller from '@/components/Pinned/ContentScroller.vue'
+import YoutubeVideos from '@/components/Pinned/YoutubeVideos.vue'
+import Vault from '@/components/Pinned/Vault.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +39,26 @@ const router = createRouter({
       component: ProjectsView,
     },
     {
+      path: '/notes/my-tools',
+      name: 'my-tools',
+      component: Tools,
+    },
+    {
+      path: '/notes/my-favorite-things',
+      name: 'my-favorite-things',
+      component: ContentScroller,
+    },
+    {
+      path: '/notes/important-videos',
+      name: 'important-videos',
+      component: YoutubeVideos,
+    },
+    {
+      path: '/notes/the-vault',
+      name: 'the-vault',
+      component: Vault,
+    },
+    {
       path: '/notes',
       name: 'notes',
       component: NotesView,
@@ -44,9 +68,9 @@ const router = createRouter({
       component: NotFound,
     },
     {
-      path: '/writing/:slug',
-      name: 'blogPost',
-      component: BlogPost,
+      path: '/note/:slug',
+      name: 'note',
+      component: Note,
       props: true,
     },
     {

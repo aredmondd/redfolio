@@ -3,49 +3,58 @@ import { ref, onMounted } from 'vue'
 import { RouterLink } from 'vue-router'
 import { supabase } from '../lib/supabaseClient'
 
-const blogs = ref([])
+const props = defineProps({
+  collection: {
+    type: String,
+    required: true,
+  },
+})
+
+const collection = ref([])
 const loading = ref(true)
 const empty = ref(false)
 
-async function getBlogs() {
+async function getCollection() {
   const { data, error } = await supabase
-    .from('blog_posts')
+    .from('notes')
     .select('*')
+    .eq('collection', props.collection)
     .order('created_at', { ascending: true })
 
   if (error) {
-    console.error('Error fetching blogs:', error.message)
+    console.error('Error fetching collection:', error.message)
   } else {
-    blogs.value = data
+    collection.value = data
     loading.value = false
-    if (blogs.value.length == 0) {
+    if (collection.value.length == 0) {
       empty.value = true
     }
   }
 }
 
+function sortCollection() {
+  collection.value.reverse()
+}
+
 onMounted(() => {
-  getBlogs()
+  getCollection()
 })
 </script>
 
 <template>
   <div v-if="!loading && !empty" class="grid grid-cols-6 gap-3">
     <RouterLink
-      v-for="blog in blogs"
-      :key="blog.id"
-      href=""
+      v-for="note in collection"
+      :key="note.id"
       :to="{
-        name: 'blogPost',
-        params: {
-          slug: blog.slug,
-        },
+        name: 'note',
+        params: { slug: note.slug },
       }"
       class="border border-green rounded-lg pb-12 pt-4 px-4 hover:bg-green hover:text-white transition-all duration-200 ease-in-out"
     >
-      <h1 class="font-extrabold">{{ blog.title }}</h1>
+      <h1 class="font-extrabold">{{ note.title }}</h1>
       <p class="text-sm text-current/50">
-        {{ blog.created_at.substring(0, blog.created_at.indexOf('T')) }}
+        {{ note.created_at.substring(0, note.created_at.indexOf('T')) }}
       </p>
     </RouterLink>
   </div>

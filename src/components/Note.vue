@@ -3,34 +3,35 @@ import { supabase } from '../lib/supabaseClient'
 import { onMounted, ref, computed } from 'vue'
 
 const props = defineProps({
-  slug: String,
+  slug: {
+    type: String,
+    required: true,
+  },
 })
 
-const blogData = ref(null)
+const noteData = ref(null)
 const ready = ref(false)
 
-// Fetch the blog post
-async function getBlogPost() {
+async function getNote() {
   const { data, error } = await supabase
-    .from('blog_posts')
+    .from('notes')
     .select('*')
     .eq('slug', props.slug)
-    .single() // Ensures we get a single object instead of an array
+    .maybeSingle()
 
   if (error) {
-    console.error('Error fetching blog:', error.message)
+    console.error('Error fetching note:', error.message)
   } else {
-    blogData.value = data
+    noteData.value = data
     ready.value = true
   }
 }
 
-onMounted(getBlogPost)
+onMounted(getNote)
 
-// Compute formatted date
-const formattedDate = computed(() => blogData.value?.created_at?.slice(0, 10) || '')
+const formattedDate = computed(() => noteData.value?.created_at?.slice(0, 10) || '')
 const timeToRead = computed(() => {
-  const wordCount = blogData.value.content.split(/\s+/).length
+  const wordCount = noteData.value.content.split(/\s+/).length
   return `${Math.max(1, Math.ceil(wordCount / 225))} min read`
 })
 </script>
@@ -38,13 +39,13 @@ const timeToRead = computed(() => {
 <template>
   <Transition>
     <div v-if="ready" class="flex flex-col sm:px-[35%] mt-12">
-      <h1 class="text-5xl font-semibold">{{ blogData?.title }}</h1>
+      <h1 class="text-5xl font-semibold">{{ noteData?.title }}</h1>
       <div class="flex gap-2 mt-2 font-mono font-light">
         <span>{{ formattedDate }}</span>
         <span>|</span>
         <span>{{ timeToRead }}</span>
       </div>
-      <div v-html="blogData?.content" class="mt-6"></div>
+      <div v-html="noteData?.content" class="mt-6"></div>
     </div>
   </Transition>
 </template>

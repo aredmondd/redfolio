@@ -2,7 +2,8 @@
 import ToolItem from './ToolItem.vue'
 </script>
 <template>
-  <div class="grid grid-cols-2 gap-12 sm:flex sm:flex-row mb-12 text-md sm:text-lg">
+  <div class="flex flex-col mb-12 text-md sm:text-lg">
+    <h2>peni</h2>
     <div class="flex flex-col grow">
       <h3 class="font-mono font-bold mb-3">apps</h3>
       <ToolItem text="magnet" link="https://magnet.crowdcafe.com/" />
