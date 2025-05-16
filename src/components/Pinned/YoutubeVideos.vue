@@ -150,6 +150,11 @@ let videoIDs = [
   'cGzBaSBdikA',
   'Kj4R1vQTrUE',
   'Ex_6IF3AGmQ',
+  'Gc9DAlwY3xQ',
+  'dpkE55wTajw',
+  'tffo3U4owwE',
+  '3siJkvREdC4',
+  'tNZnLkRBYA8',
 ]
 
 const randomVideoIndex = ref(Math.floor(Math.random() * videoIDs.length))
