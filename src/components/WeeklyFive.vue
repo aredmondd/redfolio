@@ -24,11 +24,19 @@
   <div
     v-if="isModalOpen"
     id="imageModal"
-    class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
+    class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
     @click="closeModal"
   >
     <div class="relative">
-      <img id="modalImage" :src="modalImage" class="max-w-full max-h-screen my-12" />
+      <!-- Close Button -->
+      <button
+        class="absolute top-4 right-4 text-pink bg-black/60 hover:bg-black px-2 py-1 rounded-lg z-10"
+        @click.stop="isModalOpen = false"
+      >
+        ✕
+      </button>
+      <!-- Image -->
+      <img id="modalImage" :src="modalImage" class="max-w-full max-h-screen" />
     </div>
   </div>
 </template>
