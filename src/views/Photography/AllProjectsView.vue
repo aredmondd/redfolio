@@ -75,6 +75,20 @@
           </RouterLink>
         </div>
       </div>
+      <div class="flex flex-col">
+        <h1 class="font-bold mb-6">
+          post digital photography<br />
+          <span class="text-black/50 font-medium">???</span>
+        </h1>
+        <div class="flex flex-col">
+          <RouterLink
+            to="/photography/weeklyfive"
+            class="hover:text-pink duration-200 ease-in-out transition-all"
+          >
+            the weekly five
+          </RouterLink>
+        </div>
+      </div>
     </div>
   </Transition>
 </template>

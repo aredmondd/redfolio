@@ -19,6 +19,7 @@ import Tools from '@/components/Pinned/Tools.vue'
 import ContentScroller from '@/components/Pinned/ContentScroller.vue'
 import YoutubeVideos from '@/components/Pinned/YoutubeVideos.vue'
 import Vault from '@/components/Pinned/Vault.vue'
+import WeeklyFive from '@/components/WeeklyFive.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -121,6 +122,11 @@ const router = createRouter({
           next()
         }
       },
+    },
+    {
+      path: '/photography/weeklyfive',
+      component: WeeklyFive,
+      name: 'weeklyfive',
     },
   ],
 })

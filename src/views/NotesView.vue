@@ -14,14 +14,6 @@ import PinnedNotes from '@/components/PinnedNotes.vue'
         </h2>
         <h2 class="text-right text-4xl sm:text-5xl font-bold">NOTES</h2>
       </div>
-
-      <PinnedNotes />
-
-      <div class="flex items-end justify-between mb-4">
-        <h2 class="mt-24 text-left text-3xl sm:text-4xl font-bold">DEVLOG</h2>
-        <!-- <p class="text-black/50">ascending ↑</p> -->
-      </div>
-      <NoteCollection collection="devlog" />
     </div>
   </Transition>
 </template>

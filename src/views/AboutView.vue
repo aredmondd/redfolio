@@ -11,7 +11,7 @@
             <img src="/logo_regular.png" alt="" width="50" />
             <h2 class="text-xl sm:text-2xl font-bold text-right ml-2">Aiden Redmond</h2>
           </div>
-          <p class="text-sm text-black/50 mt-1">developer, athlete, artist</p>
+          <p class="text-sm text-black/50 mt-1">developer, designer, athlete</p>
           <div class="text-sm sm:text-md text-black/75 mt-2 flex flex-col gap-y-1">
             <p>
               - working on
