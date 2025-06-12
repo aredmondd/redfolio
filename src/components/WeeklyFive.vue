@@ -11,7 +11,8 @@
           :key="idx"
           :src="img"
           alt="Photo"
-          class="rounded-xl w-64"
+          class="rounded-lg w-64 transition-opacity duration-500 opacity-0"
+          loading="lazy"
           @click="openModal($event.target.src)"
           @load="$event.target.classList.add('opacity-100')"
         />
