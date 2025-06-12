@@ -50,12 +50,10 @@ const modalImage = ref('')
 function openModal(imageSrc) {
   modalImage.value = imageSrc
   isModalOpen.value = true
-  document.body.style.overflow = 'hidden' // Disable scrolling
 }
 function closeModal(event) {
   if (event.target === event.currentTarget) {
     isModalOpen.value = false
-    document.body.style.overflow = '' // Restore scrolling
   }
 }
 
