@@ -6,8 +6,8 @@ import ProjectCard from './ProjectCard.vue'
   <Transition appear>
     <div>
       <!-- PROJECTS SECTION -->
-      <h2 class="mt-12 text-center text-5xl font-bold">PROJECTS</h2>
-      <p class="text-black/50 text-sm text-center mt-1 mb-14">(click on one to learn more)</p>
+      <h2 class="mt-12 text-center text-6xl font-bold">PROJECTS</h2>
+      <p class="text-black/50 text-sm text-center mt-1 mb-20">(click on one to learn more)</p>
       <div
         class="grid grid-cols-1 place-items-center gap-12 sm:mx-24 mb-14 sm:grid-cols-3 sm:gap-12"
       >

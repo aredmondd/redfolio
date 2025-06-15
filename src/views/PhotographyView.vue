@@ -1,5 +1,6 @@
 <script setup>
 import PhotographyGrid from '@/components/PhotographyGrid.vue'
+import AllProjectsView from './Photography/AllProjectsView.vue'
 </script>
 
 <template>
@@ -8,10 +9,20 @@ import PhotographyGrid from '@/components/PhotographyGrid.vue'
       <h2 class="mt-12 text-center text-4xl sm:text-5xl font-bold mb-3 sm:mb-4">PHOTOGRAPHY</h2>
       <h3 class="mb-12 text-center text-xs sm:text-base text-black/50">
         last semester, i fell in love with cameras.<br />
-        here are my favorite photos, but can you check out more
-        <RouterLink to="/photography/all-projects" class="link">here</RouterLink>
+        i've been obsessed with form, light, and motion ever since.
       </h3>
       <PhotographyGrid />
+
+      <div class="flex">
+        <div>
+          <h2 class="mt-12 text-4xl sm:text-5xl font-bold mb-3 sm:mb-4">PROJECTS</h2>
+          <h3 class="text-xs sm:text-base text-black/50">
+            here is where my 'official' projects live <br />
+            click on one to learn more :)
+          </h3>
+        </div>
+        <AllProjectsView class="mb-24" />
+      </div>
     </div>
   </Transition>
 </template>

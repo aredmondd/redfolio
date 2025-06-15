@@ -20,6 +20,7 @@ import ContentScroller from '@/components/Pinned/ContentScroller.vue'
 import YoutubeVideos from '@/components/Pinned/YoutubeVideos.vue'
 import Vault from '@/components/Pinned/Vault.vue'
 import WeeklyFive from '@/components/WeeklyFive.vue'
+import ProjectGrid from '@/components/ProjectGrid.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -101,10 +102,6 @@ const router = createRouter({
     {
       path: '/photography',
       component: PhotographyView,
-    },
-    {
-      path: '/photography/all-projects',
-      component: AllProjectsView,
     },
     {
       path: '/photography/non-project-photos',

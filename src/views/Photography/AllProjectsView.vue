@@ -1,7 +1,7 @@
 <template>
   <Transition appear>
     <div class="flex flex-1 gap-24 justify-center items-start mt-12">
-      <div class="flex flex-col">
+      <div class="flex flex-col text-lg">
         <h1 class="font-bold mb-6">
           digital photography <br />
           <span class="text-black/50 font-medium">2024-8-20 to 2024-12-8</span>
@@ -75,7 +75,7 @@
           </RouterLink>
         </div>
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col text-lg">
         <h1 class="font-bold mb-6">
           post digital photography<br />
           <span class="text-black/50 font-medium">???</span>
