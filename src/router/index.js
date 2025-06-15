@@ -19,7 +19,7 @@ import YoutubeVideos from '@/components/Pinned/YoutubeVideos.vue'
 import Vault from '@/components/Pinned/Vault.vue'
 import WeeklyFive from '@/components/WeeklyFive.vue'
 import NowView from '@/views/NowView.vue'
-import ProjectGrid from '@/components/ProjectGrid.vue'
+import WorkView from '@/views/WorkView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -40,7 +40,7 @@ const router = createRouter({
     {
       path: '/work',
       name: 'projects',
-      component: ProjectGrid,
+      component: WorkView,
     },
     {
       path: '/now',
