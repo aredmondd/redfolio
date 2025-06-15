@@ -49,7 +49,12 @@ const slides = ref([
   <Transition appear>
     <div>
       <div class="flex flex-col justify-center sm:mx-96 mt-6">
-        <img src="/headers/byte-header.png" alt="" />
+        <img
+          src="/headers/byte-header.png"
+          alt=""
+          class="duration-200 opacity-0 ease-in-out"
+          @load="$event.target.classList.add('opacity-100')"
+        />
         <div class="flex justify-between text-black/50">
           <p>Game Design</p>
           <p>Spring 2024</p>

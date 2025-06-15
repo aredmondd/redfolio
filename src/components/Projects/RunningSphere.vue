@@ -6,7 +6,12 @@ import flipbook from 'flipbook-vue'
   <Transition appear>
     <div>
       <div class="flex flex-col justify-center sm:mx-96 mt-6">
-        <img src="/headers/running-sphere-header.png" alt="" />
+        <img
+          src="/headers/running-sphere-header.png"
+          alt=""
+          class="duration-200 opacity-0 ease-in-out"
+          @load="$event.target.classList.add('opacity-100')"
+        />
         <div class="flex justify-between text-black/50 mt-3">
           <p>Typography & Layout</p>
           <p>Spring 2024</p>
