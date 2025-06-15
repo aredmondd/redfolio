@@ -43,7 +43,7 @@
             >
           </div>
         </div>
-        <div class="flex flex-col items-start mb-12">
+        <div class="flex flex-col items-start mb-12 sm:mb-0">
           <h1 class="text-3xl sm:text-4xl font-bold">want to say hi?</h1>
           <form
             action="https://formspree.io/f/mblyykyq"

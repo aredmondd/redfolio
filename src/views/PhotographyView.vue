@@ -13,7 +13,7 @@ import AllProjectsView from './Photography/AllProjectsView.vue'
       </h3>
       <PhotographyGrid />
 
-      <div class="flex">
+      <div class="flex flex-col sm:flex-row">
         <div>
           <h2 class="mt-12 text-4xl sm:text-5xl font-bold mb-3 sm:mb-4">PROJECTS</h2>
           <h3 class="text-xs sm:text-base text-black/50">
