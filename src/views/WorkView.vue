@@ -8,7 +8,7 @@ import NewProjectCard from '../components/NewProjectCard.vue'
       <!-- freelance -->
       <div class="flex flex-col gap-12">
         <div class="mt-12 flex flex-col sm:flex-row gap-6 sm:gap-12 justify-between">
-          <h2 class="text-left text-6xl font-bold">WEB PROJECTS</h2>
+          <h2 class="text-left text-5xl sm:text-6xl font-bold">WEB PROJECTS</h2>
           <h3 class="text-right text-xs sm:text-base text-black/50">
             here's some of my recent web development projects. <br />
             click on a project to see more.
@@ -42,7 +42,7 @@ import NewProjectCard from '../components/NewProjectCard.vue'
       <!-- capstones -->
       <div class="flex flex-col gap-12">
         <div class="flex flex-col sm:flex-row gap-6 sm:gap-12 justify-between">
-          <h2 class="text-left text-6xl font-bold">CAPSTONES</h2>
+          <h2 class="text-left text-5xl sm:text-6xl font-bold">CAPSTONES</h2>
           <h3 class="text-xs text-right sm:text-base text-black/50">
             over the last few years, i've worked on three major development projects. <br />
             click on one to learn more.
@@ -73,7 +73,7 @@ import NewProjectCard from '../components/NewProjectCard.vue'
       <!-- design work -->
       <div class="flex flex-col gap-12 mb-24">
         <div class="flex flex-col sm:flex-row gap-6 sm:gap-12 justify-between">
-          <h2 class="text-left text-6xl font-bold">GRAPHIC DESIGN</h2>
+          <h2 class="text-left text-5xl sm:text-6xl font-bold">GRAPHIC DESIGN</h2>
           <h3 class="text-xs text-right sm:text-base text-black/50">
             during my time at florida southern, i worked on three major design projects. <br />
             click on one to learn more.
