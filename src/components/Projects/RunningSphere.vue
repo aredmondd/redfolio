@@ -4,7 +4,7 @@ import flipbook from 'flipbook-vue'
 
 <template>
   <div class="flex flex-col justify-center sm:mx-96 mt-6">
-    <img src="/headers/running-sphere.png" alt="" />
+    <img src="/headers/running-sphere-header.png" alt="" />
     <div class="flex justify-between text-black/50 mt-3">
       <p>Typography & Layout</p>
       <p>Spring 2024</p>

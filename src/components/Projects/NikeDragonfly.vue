@@ -19,7 +19,7 @@ function closeModal(event) {
 
 <template>
   <div class="flex flex-col justify-center sm:mx-96">
-    <img src="/headers/nike-dragonfly.png" alt="" />
+    <img src="/headers/nike-dragonfly-header.png" alt="" />
     <div class="flex justify-between sm:mx-4 text-black/50 sm:mt-[-25px]">
       <p>Typography & Layout</p>
       <p>Spring 2024</p>

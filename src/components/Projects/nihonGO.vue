@@ -28,7 +28,7 @@ const slides = ref([
 
 <template>
   <div class="flex flex-col justify-center sm:mx-96 mt-6">
-    <img src="/headers/nihongo.png" alt="" />
+    <img src="/headers/nihongo-header.png" alt="" />
     <div class="flex justify-between text-black/50 mx-2">
       <p>Software Engineering</p>
       <p>Fall 2024</p>

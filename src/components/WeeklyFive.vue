@@ -2,9 +2,9 @@
   <p class="text-black/50 text-center my-12">
     the goal is to... well... take 5 photos a week <br />(click on one to make it bigger)
   </p>
-  <div class="flex gap-12 mb-12">
+  <div class="flex justify-end gap-12 mb-12">
     <div v-for="(images, week) in photos" :key="week">
-      <h2 class="text-4xl sm:text-5xl font-bold">{{ week }}</h2>
+      <h2 class="text-4xl sm:text-5xl font-bold text-right">{{ week }}</h2>
       <div class="space-y-4 mt-6">
         <img
           v-for="(img, idx) in images"
@@ -20,7 +20,6 @@
     </div>
   </div>
 
-  <!-- Modal -->
   <div
     v-if="isModalOpen"
     id="imageModal"
@@ -28,14 +27,12 @@
     @click="closeModal"
   >
     <div class="relative">
-      <!-- Close Button -->
       <button
         class="absolute top-4 right-4 text-pink bg-black/60 hover:bg-black px-2 py-1 rounded-lg z-10"
         @click.stop="isModalOpen = false"
       >
         ✕
       </button>
-      <!-- Image -->
       <img id="modalImage" :src="modalImage" class="max-w-full max-h-screen" />
     </div>
   </div>
