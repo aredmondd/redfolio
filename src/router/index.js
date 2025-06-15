@@ -30,12 +30,12 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/resume',
+      path: '/about',
       name: 'officially',
       component: AboutView,
     },
     {
-      path: '/projects',
+      path: '/work',
       name: 'projects',
       component: ProjectsView,
     },
