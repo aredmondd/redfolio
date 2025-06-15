@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
-import ProjectsView from '@/views/ProjectsView.vue'
 import NotesView from '@/views/NotesView.vue'
 import NotFound from '@/views/NotFound.vue'
 import Note from '@/components/Note.vue'
@@ -14,12 +13,12 @@ import NonProjectPhotosView from '@/views/Photography/NonProjectPhotosView.vue'
 import Reservoir from '@/components/Projects/Reservoir.vue'
 import NihonGO from '@/components/Projects/nihonGO.vue'
 import JASIAH from '@/components/Projects/JASIAH.vue'
-import AllProjectsView from '@/views/Photography/AllProjectsView.vue'
 import Tools from '@/components/Pinned/Tools.vue'
 import ContentScroller from '@/components/Pinned/ContentScroller.vue'
 import YoutubeVideos from '@/components/Pinned/YoutubeVideos.vue'
 import Vault from '@/components/Pinned/Vault.vue'
 import WeeklyFive from '@/components/WeeklyFive.vue'
+import NowView from '@/views/NowView.vue'
 import ProjectGrid from '@/components/ProjectGrid.vue'
 
 const router = createRouter({
@@ -41,7 +40,12 @@ const router = createRouter({
     {
       path: '/work',
       name: 'projects',
-      component: ProjectsView,
+      component: ProjectGrid,
+    },
+    {
+      path: '/now',
+      name: 'now',
+      component: NowView,
     },
     {
       path: '/notes/my-tools',

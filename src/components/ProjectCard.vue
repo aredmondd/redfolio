@@ -3,10 +3,7 @@ import { computed } from 'vue'
 
 const props = defineProps({
   name: String,
-  description: String,
-  time: String,
   hover: String,
-  invert: Boolean,
 })
 
 const imageLocation = computed(() => `/headers/${props.name}.png`)

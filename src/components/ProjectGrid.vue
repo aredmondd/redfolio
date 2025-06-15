@@ -1,10 +1,11 @@
 <script setup>
 import ProjectCard from './ProjectCard.vue'
+import NewProjectCard from './NewProjectCard.vue'
 </script>
 
 <template>
   <Transition appear>
-    <div class="space-y-48 sm:mt-12 sm:mx-12">
+    <div class="space-y-48 sm:mt-12 sm:mx-4">
       <div class="flex flex-col gap-12">
         <div class="mt-12 flex gap-12 justify-between">
           <h2 class="text-left text-6xl font-bold">FREELANCE WORK</h2>
@@ -13,10 +14,25 @@ import ProjectCard from './ProjectCard.vue'
             click on a project to learn more.
           </h3>
         </div>
-        <div class="flex gap-12">
-          <ProjectCard name="gp" />
-          <ProjectCard name="ar" />
-          <ProjectCard name="eclipse" />
+        <div class="flex gap-8">
+          <NewProjectCard
+            bg="grey"
+            img="https://res.cloudinary.com/dkznczrj0/image/upload/v1750012052/Screenshot_2025-06-15_at_10.41.41_AM_lbwyhi.png"
+            border="blue"
+            to="/project/garveyperry"
+          />
+          <NewProjectCard
+            bg="black"
+            img="https://res.cloudinary.com/dkznczrj0/image/upload/v1750012052/Screenshot_2025-06-15_at_10.41.50_AM_yv6zdx.png"
+            border="red"
+            to="/project/eclipse-endurance"
+          />
+          <NewProjectCard
+            bg="green"
+            img="https://res.cloudinary.com/dkznczrj0/image/upload/v1750012052/Screenshot_2025-06-15_at_10.48.56_AM_uemlob.png"
+            border="white"
+            to="/project/aidenredmond"
+          />
         </div>
       </div>
 
@@ -28,10 +44,25 @@ import ProjectCard from './ProjectCard.vue'
             click on one to learn more.
           </h3>
         </div>
-        <div class="flex gap-12">
-          <ProjectCard name="reservoir" hover="#0A1826" />
-          <ProjectCard name="nihongo" hover="#f1cd9d" />
-          <ProjectCard name="jasiah" hover="#ffffff" invert />
+        <div class="flex gap-8">
+          <NewProjectCard
+            bg="blue"
+            img="https://res.cloudinary.com/dkznczrj0/image/upload/v1742153378/reservoir-home_ayshfy.png"
+            border="grey"
+            to="/project/reservoir"
+          />
+          <NewProjectCard
+            bg="peach"
+            img="https://res.cloudinary.com/dkznczrj0/image/upload/v1742153256/nihongo-home_fgw9um.png"
+            border="red"
+            to="/project/nihongo"
+          />
+          <NewProjectCard
+            bg="white"
+            img="https://res.cloudinary.com/dkznczrj0/image/upload/v1750012052/jasiah_wx7itd.png"
+            border="grey"
+            to="/project/jasiah"
+          />
         </div>
       </div>
 
@@ -43,10 +74,25 @@ import ProjectCard from './ProjectCard.vue'
             click on one to learn more.
           </h3>
         </div>
-        <div class="flex gap-12">
-          <ProjectCard name="nike-dragonfly" hover="#caf840" />
-          <ProjectCard name="byte" hover="#000000" />
-          <ProjectCard name="running-sphere" hover="#eeeeee" />
+        <div class="grid grid-cols-3 gap-8">
+          <NewProjectCard
+            bg="electricblue"
+            img="https://res.cloudinary.com/dkznczrj0/image/upload/v1750015384/test-2_r6jdad.png"
+            border="white"
+            to="/project/nike-dragonfly"
+          />
+          <NewProjectCard
+            bg="black"
+            img="https://res.cloudinary.com/dkznczrj0/image/upload/v1742152122/lvl8_pfcqvn.png"
+            border="red"
+            to="/project/byte"
+          />
+          <NewProjectCard
+            bg="offwhite"
+            img="https://res.cloudinary.com/dkznczrj0/image/upload/v1750015384/test_b9venf.png"
+            border="white"
+            to="/project/running-sphere"
+          />
         </div>
       </div>
     </div>

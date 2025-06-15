@@ -42,3 +42,7 @@
   opacity: 0;
   transform: translateY(48px);
 }
+
+textarea {
+  resize: none;
+}
