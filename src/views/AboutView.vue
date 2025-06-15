@@ -1,34 +1,48 @@
 <template>
   <!-- PROFILE -->
   <Transition appear>
-    <div class="flex justify-between items-start mb-6 sm:mb-36 sm:mx-24 mt-12 sm:mt-24">
-      <div class="flex flex-col left-item">
-        <div>
-          <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-12">PROFILE</h2>
-        </div>
-        <div class="flex flex-col">
-          <div class="flex items-center justify-start">
-            <img src="/logo_regular.png" alt="" width="50" />
-            <h2 class="text-xl sm:text-2xl font-bold text-right ml-2">Aiden Redmond</h2>
+    <div>
+      <p class="text-center italic text-black/50 my-12 text-lg">
+        looking for my resume? download it
+        <a href="/aiden-redmond-resume.pdf" download class="link">here</a>
+      </p>
+      <div class="flex justify-between items-start mb-6 sm:mb-36 sm:mx-24 mt-12 sm:mt-24">
+        <div class="flex flex-col left-item">
+          <div>
+            <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-12">PROFILE</h2>
           </div>
-          <p class="text-sm text-black/50 mt-1">developer, designer, athlete</p>
-          <div class="text-sm sm:text-md text-black/75 mt-2 flex flex-col gap-y-1">
-            <p>
-              - working on
-              <a href="https://www.aidenredmond.com" target="_blank" class="link"
-                >aidenredmond.com</a
-              >
-            </p>
-            <p>- learning UI/UX, linux, & obsidian</p>
-            <p>- love manga, music, video games, and running</p>
+          <div class="flex flex-col">
+            <div class="flex items-center justify-start">
+              <img src="/logo_regular.png" alt="" width="50" />
+              <h2 class="text-xl sm:text-2xl font-bold text-right ml-2">Aiden Redmond</h2>
+            </div>
+            <p class="text-sm text-black/50 mt-1">developer, designer, athlete</p>
+            <div class="text-sm sm:text-md text-black/75 mt-2 flex flex-col gap-y-1">
+              <p>
+                - co-founder & coach @
+                <a href="https://eclipse-endurance.com/" class="link" target="_blank"
+                  >eclipse endurance</a
+                >
+              </p>
+              <p>
+                - working on
+                <a href="https://www.aidenredmond.com" target="_blank" class="link"
+                  >aidenredmond.com</a
+                >
+              </p>
+              <p>
+                - loves video games,
+                <RouterLink to="/photography" class="link">photography</RouterLink>, manga, & music
+              </p>
+            </div>
           </div>
         </div>
+        <img
+          src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742152811/red-profile_sp7snx.jpg"
+          alt=""
+          class="h-[350px] rounded-lg hidden sm:block"
+        />
       </div>
-      <img
-        src="https://res.cloudinary.com/dkznczrj0/image/upload/v1742152811/red-profile_sp7snx.jpg"
-        alt=""
-        class="h-[350px] rounded-lg hidden sm:block"
-      />
     </div>
   </Transition>
   <Transition appear>
