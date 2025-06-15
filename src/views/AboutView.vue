@@ -16,7 +16,7 @@
               <img src="/logo_regular.png" alt="" width="50" />
               <h2 class="text-xl sm:text-2xl font-bold text-right ml-2">Aiden Redmond</h2>
             </div>
-            <p class="text-sm text-black/50 mt-1">developer, designer, athlete</p>
+            <p class="text-sm text-black/50 mt-1">developer & designer</p>
             <div class="text-sm sm:text-md text-black/75 mt-2 flex flex-col gap-y-1">
               <p>
                 - co-founder & coach @
@@ -25,7 +25,7 @@
                 >
               </p>
               <p>
-                - working on
+                - always working on
                 <a href="https://www.aidenredmond.com" target="_blank" class="link"
                   >aidenredmond.com</a
                 >
