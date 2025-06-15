@@ -1,6 +1,6 @@
 <template>
   <Transition>
-    <div class="my-12 mx-24">
+    <div class="my-12 sm:mx-24">
       <h1 class="text-4xl font-bold">what i'm loving</h1>
       <p class="mb-12 text-black/50">here's what i've been listening to, reading, and playing</p>
       <div class="columns-2 md:columns-3 lg:columns-3 gap-6 mt-4">
