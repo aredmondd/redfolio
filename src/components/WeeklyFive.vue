@@ -62,6 +62,13 @@ const photos = {
     'https://res.cloudinary.com/dkznczrj0/image/upload/v1749687161/DSC02446_lgushy.jpg',
     'https://res.cloudinary.com/dkznczrj0/image/upload/v1749687160/DSC02353_ayifly.jpg',
   ],
+  'WEEK 2': [
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256405/DSC02487_kwnfga.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256405/DSC02481_tjw8kb.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256405/DSC02476_zpstnc.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256537/DSC02455_snm9ml.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256404/DSC02499_qcvmse.jpg',
+  ],
 }
 </script>
 
