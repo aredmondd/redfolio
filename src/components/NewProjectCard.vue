@@ -11,7 +11,6 @@ const props = defineProps({
     required: true,
   },
   text: String,
-  width: String,
 })
 
 const allowedBorders = {
@@ -75,7 +74,6 @@ const isExternal = computed(() => {
         :class="[
           'rotate-x-50 -rotate-z-33 hover:rotate-x-0 hover:rotate-z-0 duration-500 opacity-0 ease-in-out rounded-lg border-2',
           borderClass,
-          widthClass, // Apply dynamic width class here
         ]"
         @load="$event.target.classList.add('opacity-100')"
       />

@@ -85,18 +85,21 @@ import NewProjectCard from '../components/NewProjectCard.vue'
             img="https://res.cloudinary.com/dkznczrj0/image/upload/v1750015384/test-2_r6jdad.png"
             border="white"
             link="/project/nike-dragonfly"
+            class="sm:max-w-1/3"
           />
           <NewProjectCard
             bg="offwhite"
             img="https://res.cloudinary.com/dkznczrj0/image/upload/v1750015384/test_b9venf.png"
             border="white"
             link="/project/running-sphere"
+            class="sm:max-w-1/3"
           />
           <NewProjectCard
             bg="black"
             img="https://res.cloudinary.com/dkznczrj0/image/upload/v1742152122/lvl8_pfcqvn.png"
             border="red"
             link="/project/byte"
+            class="bg-[#1A1A1A]"
           />
         </div>
       </div>
