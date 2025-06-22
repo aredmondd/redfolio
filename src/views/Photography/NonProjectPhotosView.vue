@@ -1,18 +1,21 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const isModalOpen = ref(false)
 const modalImage = ref('')
+const loaded = ref(false)
+const imagesToLoad = ref(0)
+const imagesLoadedCount = ref(0)
 
 function openModal(imageSrc) {
   modalImage.value = imageSrc
   isModalOpen.value = true
-  document.body.style.overflow = 'hidden' // Disable scrolling
+  document.body.style.overflow = 'hidden'
 }
 function closeModal(event) {
   if (event.target === event.currentTarget) {
     isModalOpen.value = false
-    document.body.style.overflow = '' // Restore scrolling
+    document.body.style.overflow = ''
   }
 }
 
@@ -63,10 +66,31 @@ let images = [
   { image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1733704760/_MG_0967_kzktks.jpg' },
   { image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1733704766/_MG_7515_ers8aj.jpg' },
 ]
+
+onMounted(() => {
+  imagesToLoad.value = images.length
+
+  images.forEach((image) => {
+    const img = new Image()
+    img.src = image.image
+    img.onload = () => {
+      imagesLoadedCount.value++
+      if (imagesLoadedCount.value === imagesToLoad.value) {
+        loaded.value = true
+      }
+    }
+    img.onerror = () => {
+      imagesLoadedCount.value++
+      if (imagesLoadedCount.value === imagesToLoad.value) {
+        loaded.value = true
+      }
+    }
+  })
+})
 </script>
 
 <template>
-  <Transition appear>
+  <Transition appear v-if="loaded">
     <div class="flex flex-1">
       <div class="flex-1 columns-3 gap-4 space-y-4 my-6">
         <img
@@ -78,12 +102,11 @@ let images = [
       </div>
     </div>
   </Transition>
-
-  <!-- Modal -->
+  <p v-else class="text-center text-xl text-black/50 italic mt-12">loading...</p>
   <div
     v-if="isModalOpen"
     id="imageModal"
-    class="fixed inset-0 bg-black/90 flex items-center justify-center"
+    class="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
     @click="closeModal"
   >
     <div class="relative">
