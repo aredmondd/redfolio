@@ -14,6 +14,7 @@ import JASIAH from '@/components/Projects/JASIAH.vue'
 import WeeklyFive from '@/components/WeeklyFive.vue'
 import NowView from '@/views/NowView.vue'
 import WorkView from '@/views/WorkView.vue'
+import UnemploymentView from '@/views/Photography/UnemploymentView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -94,6 +95,11 @@ const router = createRouter({
       path: '/photography/weeklyfive',
       component: WeeklyFive,
       name: 'weeklyfive',
+    },
+    {
+      path: '/photography/other',
+      component: UnemploymentView,
+      name: 'UnemploymentView',
     },
   ],
 })

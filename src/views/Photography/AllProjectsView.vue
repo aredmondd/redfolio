@@ -82,6 +82,12 @@
         </h1>
         <div class="flex flex-col text-sm sm:text-lg">
           <RouterLink
+            to="/photography/other"
+            class="hover:text-pink duration-200 ease-in-out transition-all"
+          >
+            other
+          </RouterLink>
+          <RouterLink
             to="/photography/weeklyfive"
             class="hover:text-pink duration-200 ease-in-out transition-all"
           >
