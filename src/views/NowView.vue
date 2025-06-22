@@ -7,8 +7,8 @@
         <a href="https://en.wikipedia.org/wiki/Bloom_(Beach_House_album)" target="_blank"
           ><img src="/current/bloom.webp" alt="" class="w-full mb-4 rounded-md"
         /></a>
-        <a href="https://en.wikipedia.org/wiki/Vagabond_(manga)" target="_blank"
-          ><img src="/current/vagabond.jpg" alt="" class="w-full mb-4 rounded-md"
+        <a href="https://en.wikipedia.org/wiki/Vinland_Saga_(manga)" target="_blank"
+          ><img src="/current/vinland-saga.jpg" alt="" class="w-full mb-4 rounded-md"
         /></a>
         <a href="https://en.wikipedia.org/wiki/Doom:_The_Dark_Ages" target="_blank"
           ><img src="/current/doom.avif" alt="" class="w-full mb-4 rounded-md"

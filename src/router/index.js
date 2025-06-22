@@ -1,9 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
-import NotesView from '@/views/NotesView.vue'
 import NotFound from '@/views/NotFound.vue'
-import Note from '@/components/Note.vue'
 import NikeDragonfly from '@/components/Projects/NikeDragonfly.vue'
 import ByteGame from '@/components/Projects/ByteGame.vue'
 import RunningSphere from '@/components/Projects/RunningSphere.vue'
@@ -13,10 +11,6 @@ import NonProjectPhotosView from '@/views/Photography/NonProjectPhotosView.vue'
 import Reservoir from '@/components/Projects/Reservoir.vue'
 import NihonGO from '@/components/Projects/nihonGO.vue'
 import JASIAH from '@/components/Projects/JASIAH.vue'
-import Tools from '@/components/Pinned/Tools.vue'
-import ContentScroller from '@/components/Pinned/ContentScroller.vue'
-import YoutubeVideos from '@/components/Pinned/YoutubeVideos.vue'
-import Vault from '@/components/Pinned/Vault.vue'
 import WeeklyFive from '@/components/WeeklyFive.vue'
 import NowView from '@/views/NowView.vue'
 import WorkView from '@/views/WorkView.vue'
@@ -48,39 +42,8 @@ const router = createRouter({
       component: NowView,
     },
     {
-      path: '/notes/my-tools',
-      name: 'my-tools',
-      component: Tools,
-    },
-    {
-      path: '/notes/my-favorite-things',
-      name: 'my-favorite-things',
-      component: ContentScroller,
-    },
-    {
-      path: '/notes/important-videos',
-      name: 'important-videos',
-      component: YoutubeVideos,
-    },
-    {
-      path: '/notes/the-vault',
-      name: 'the-vault',
-      component: Vault,
-    },
-    {
-      path: '/notes',
-      name: 'notes',
-      component: NotesView,
-    },
-    {
       path: '/:pathMatch(.*)*',
       component: NotFound,
-    },
-    {
-      path: '/note/:slug',
-      name: 'note',
-      component: Note,
-      props: true,
     },
     {
       path: '/project/nike-dragonfly',
