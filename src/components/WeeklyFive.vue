@@ -56,18 +56,25 @@ function closeModal(event) {
 
 const photos = {
   'WEEK 1': [
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1749687161/DSC02373_rnj7ux.jpg',
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1749687161/DSC02423_k8vf9r.jpg',
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1749687161/DSC02385_uqgxnu.jpg',
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1749687161/DSC02446_lgushy.jpg',
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1749687160/DSC02353_ayifly.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856543/DSC02373_kz8e4t.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856542/DSC02423_yksw6a.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856543/DSC02385_he2ppg.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856542/DSC02446_gmbils.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856543/DSC02353_ykiw3k.jpg',
   ],
   'WEEK 2': [
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256405/DSC02487_kwnfga.jpg',
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256405/DSC02481_tjw8kb.jpg',
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256405/DSC02476_zpstnc.jpg',
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256537/DSC02455_snm9ml.jpg',
-    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750256404/DSC02499_qcvmse.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856652/DSC02487_xzhs3x.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856653/DSC02481_ogjejg.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856653/DSC02476_lbwy0q.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856654/DSC02455_rb6bue.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856652/DSC02499_t0ug3k.jpg',
+  ],
+  'WEEK 3': [
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856147/DSC02589_pdlk3r.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856147/DSC02514_k06dbc.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856147/DSC02531_sgmzhv.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856147/DSC02574_nopyuh.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1750856147/DSC02577_eywzfp.jpg',
   ],
 }
 </script>
