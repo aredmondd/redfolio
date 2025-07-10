@@ -2,9 +2,9 @@
   <p class="text-black/50 text-center my-12">
     the goal is to... well... take 5 photos a week <br />(click on one to make it bigger)
   </p>
-  <div class="flex justify-end gap-12 mb-12">
+  <div class="flex gap-12 mb-12 overflow-x-auto snap-x snap-mandatory px-4 scrollbar-hide">
     <div v-for="(images, week) in photos" :key="week">
-      <h2 class="text-4xl sm:text-5xl font-bold text-right">{{ week }}</h2>
+      <h2 class="text-4xl sm:text-5xl font-bold text-right whitespace-nowrap">{{ week }}</h2>
       <div class="space-y-4 mt-6">
         <img
           v-for="(img, idx) in images"
@@ -82,6 +82,13 @@ const photos = {
     'https://res.cloudinary.com/dkznczrj0/image/upload/v1751494888/DSC02627_tu71ya.jpg',
     'https://res.cloudinary.com/dkznczrj0/image/upload/v1751494888/DSC02630_i3jpvg.jpg',
     'https://res.cloudinary.com/dkznczrj0/image/upload/v1751494888/DSC02619_odosq4.jpg',
+  ],
+  'WEEK 5': [
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1752162557/DSC02661_l5rl2f.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1752162557/DSC02732_gitp47.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1752162557/DSC02719_pyvvhp.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1752162557/DSC02676_i8xck1.jpg',
+    'https://res.cloudinary.com/dkznczrj0/image/upload/v1752162557/DSC02685_e0qsrk.jpg',
   ],
 }
 </script>
