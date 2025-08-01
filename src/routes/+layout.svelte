@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import logo from '$lib/assets/aiden-logo.png';
 
 	let { children } = $props();
 </script>
@@ -9,4 +10,17 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children?.()}
+<div class="flex">
+	<aside class="flex h-screen flex-col border-r-2 border-dashed border-black/60 pr-6 pl-3">
+		<img src={logo} alt="" class="mt-6 w-24" />
+		<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
+			<a class="text-black/60 hover:text-black" href="/">/home</a>
+			<a class="text-black/60 hover:text-black" href="/photos">/photos</a>
+			<a class="text-black/60 hover:text-black" href="/work">/work</a>
+			<a class="text-black/60 hover:text-black" href="/about">/about</a>
+			<a class="text-black/60 hover:text-black" href="/writing">/writing</a>
+		</div>
+	</aside>
+
+	<div class="mt-30 w-full">{@render children?.()}</div>
+</div>
