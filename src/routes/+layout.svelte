@@ -17,7 +17,6 @@
 			<a class="text-black/60 hover:text-black" href="/">/home</a>
 			<a class="text-black/60 hover:text-black" href="/photos">/photos</a>
 			<a class="text-black/60 hover:text-black" href="/work">/work</a>
-			<a class="text-black/60 hover:text-black" href="/about">/about</a>
 			<a class="text-black/60 hover:text-black" href="/writing">/writing</a>
 		</div>
 	</aside>
