@@ -11,8 +11,8 @@
 </svelte:head>
 
 <div class="flex">
-	<aside class="flex h-screen flex-col border-r-2 border-dashed border-black/60 pr-6 pl-3">
-		<img src={logo} alt="" class="mt-6 w-24" />
+	<aside class="flex flex-col">
+		<img src={logo} alt="" class="w-24" />
 		<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
 			<a class="text-black/60 hover:text-black" href="/">/home</a>
 			<a class="text-black/60 hover:text-black" href="/photos">/photos</a>
@@ -22,5 +22,5 @@
 		</div>
 	</aside>
 
-	<div class="mt-30 w-full">{@render children?.()}</div>
+	<div class="mt-24 w-full">{@render children?.()}</div>
 </div>
