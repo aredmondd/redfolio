@@ -22,5 +22,5 @@
 		</div>
 	</aside>
 
-	<div class="mt-24 w-full">{@render children?.()}</div>
+	<div class="mt-28 w-full">{@render children?.()}</div>
 </div>
