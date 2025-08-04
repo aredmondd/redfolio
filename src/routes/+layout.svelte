@@ -11,17 +11,15 @@
 </svelte:head>
 
 <div class="flex">
-	<div class="relative">
-		<aside class="fixed top-0">
-			<img src={logo} alt="" class="w-24" />
-			<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
-				<a class="text-black/60 hover:text-black" href="/">/home</a>
-				<a class="text-black/60 hover:text-black" href="/photos">/photos</a>
-				<a class="text-black/60 hover:text-black" href="/work">/work</a>
-				<a class="text-black/60 hover:text-black" href="/writing">/writing</a>
-			</div>
-		</aside>
-	</div>
+	<aside class="fixed">
+		<img src={logo} alt="" class="w-24" />
+		<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
+			<a class="text-black/60 hover:text-black" href="/">/home</a>
+			<a class="text-black/60 hover:text-black" href="/photos">/photos</a>
+			<a class="text-black/60 hover:text-black" href="/work">/work</a>
+			<a class="text-black/60 hover:text-black" href="/writing">/writing</a>
+		</div>
+	</aside>
 
-	<div class="mt-28 w-full">{@render children?.()}</div>
+	<div class="mt-28 ml-48">{@render children?.()}</div>
 </div>
