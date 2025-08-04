@@ -1,4 +1,4 @@
-<div class="mb-12 grid grid-cols-1 gap-4 sm:mx-48 sm:grid-cols-2">
+<div class="mb-12 grid grid-cols-1 gap-4 sm:mr-24 sm:ml-48 sm:grid-cols-2">
 	<div class="photo-col grid gap-4">
 		<div>
 			<img
@@ -58,16 +58,16 @@
 			<img
 				loading="lazy"
 				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704773/_MG_8530_ibfvbq.jpg"
-				alt="lake mirror sculpture"
+				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704764/_MG_7409_tvydvn.jpg"
+				alt="anthony + elijah"
 			/>
 		</div>
 		<div>
 			<img
 				loading="lazy"
 				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1747233440/chris_ubi7of.jpg"
-				alt="chris at blue heat"
+				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1750606151/DSC01656_kwwqhv.jpg"
+				alt="my love"
 			/>
 		</div>
 	</div>
