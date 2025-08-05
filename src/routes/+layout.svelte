@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/aiden-logo.png';
 	import logo from '$lib/assets/aiden-logo.png';
 	import { page } from '$app/state';
 
@@ -9,6 +9,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>aiden redmond</title>
 </svelte:head>
 
 <div class="flex">

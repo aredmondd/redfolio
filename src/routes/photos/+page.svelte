@@ -61,26 +61,26 @@
 	<h1 class="text-7xl font-bold">WANT TO <br />SEE MORE?</h1>
 	<div class="flex flex-col text-sm sm:text-lg">
 		<h1 class="mb-4 font-bold">
-			digital photography<br />
+			case studies<br />
 		</h1>
 		<div class="flex flex-col gap-1 text-black/60">
 			<a href="/photos/aperture-and-shutter-speed" class="hover:text-black">
-				aperture & shutter speed
+				aperture / shutter speed
 			</a>
-			<a href="/photos/shadow-and-light" class="hover:text-black"> shadow & light </a>
+			<a href="/photos/shadow-and-light" class="hover:text-black"> shadow / light </a>
 			<a href="/photos/still-life" class="hover:text-black"> still life </a>
 			<a href="/photos/disconnected" class="hover:text-black"> portraits (disconnected) </a>
 			<a href="/photos/self-portraits" class="hover:text-black"> self portraits </a>
-			<a href="/photos/non-project" class="hover:text-black"> non-project photos </a>
+			<a href="/photos/non-project" class="hover:text-black">horizontal study</a>
 		</div>
 	</div>
 
 	<div class="flex flex-col">
 		<h1 class="mb-4 text-sm font-bold sm:text-lg">
-			post digital photography<br />
+			2025<br />
 		</h1>
 		<div class="flex flex-col text-sm text-black/60 sm:text-lg">
-			<a href="/photos/other" class="hover:text-black"> other </a>
+			<a href="/photos/vertical-study" class="hover:text-black">vertical study</a>
 			<a href="/photos/weeklyfive" class="hover:text-black"> the weekly five </a>
 		</div>
 	</div>
