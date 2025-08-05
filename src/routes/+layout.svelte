@@ -2,6 +2,7 @@
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import logo from '$lib/assets/aiden-logo.png';
+	import { page } from '$app/state';
 
 	let { children } = $props();
 </script>
@@ -14,10 +15,22 @@
 	<aside class="fixed">
 		<img src={logo} alt="" class="w-24" />
 		<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
-			<a class="text-black/60 hover:text-black" href="/">/home</a>
-			<a class="text-black/60 hover:text-black" href="/photos">/photos</a>
-			<a class="text-black/60 hover:text-black" href="/work">/work</a>
-			<a class="text-black/60 hover:text-black" href="/writing">/writing</a>
+			<a
+				class="{page.url.pathname === '/' ? 'text-black' : 'text-black/60'} hover:text-black"
+				href="/">/home</a
+			>
+			<a
+				class="{page.url.pathname === '/photos' ? 'text-black' : 'text-black/60'} hover:text-black"
+				href="/photos">/photos</a
+			>
+			<a
+				class="{page.url.pathname === '/work' ? 'text-black' : 'text-black/60'} hover:text-black"
+				href="/work">/work</a
+			>
+			<a
+				class="{page.url.pathname === '/writing' ? 'text-black' : 'text-black/60'} hover:text-black"
+				href="/writing">/writing</a
+			>
 		</div>
 	</aside>
 

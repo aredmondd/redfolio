@@ -57,36 +57,31 @@
 	</div>
 </div>
 
-<div class="mt-12 flex flex-1 flex-col items-start gap-12 sm:flex-row sm:gap-24">
+<div class="my-12 flex flex-1 flex-col items-start gap-12 sm:flex-row sm:gap-24">
+	<h1 class="text-7xl font-bold">WANT TO <br />SEE MORE?</h1>
 	<div class="flex flex-col text-sm sm:text-lg">
 		<h1 class="mb-4 font-bold">
 			digital photography<br />
-			<span class="font-medium text-black/50">2024-8-20 to 2024-12-8</span>
 		</h1>
-		<div class="flex flex-col gap-1">
-			<a class="hover:text-pink transition-all duration-200 ease-in-out">
+		<div class="flex flex-col gap-1 text-black/60">
+			<a href="/photos/aperture-and-shutter-speed" class="hover:text-black">
 				aperture & shutter speed
 			</a>
-			<a class="hover:text-pink transition-all duration-200 ease-in-out"> shadow & light </a>
-			<a class="hover:text-pink transition-all duration-200 ease-in-out"> still life </a>
-			<a class="hover:text-pink transition-all duration-200 ease-in-out">
-				portraits (disconnected)
-			</a>
-			<a class="hover:text-pink transition-all duration-200 ease-in-out"> self portraits </a>
-			<a class="hover:text-pink transition-all duration-200 ease-in-out"> non-project photos </a>
+			<a href="/photos/shadow-and-light" class="hover:text-black"> shadow & light </a>
+			<a href="/photos/still-life" class="hover:text-black"> still life </a>
+			<a href="/photos/disconnected" class="hover:text-black"> portraits (disconnected) </a>
+			<a href="/photos/self-portraits" class="hover:text-black"> self portraits </a>
+			<a href="/photos/non-project" class="hover:text-black"> non-project photos </a>
 		</div>
 	</div>
 
 	<div class="flex flex-col">
 		<h1 class="mb-4 text-sm font-bold sm:text-lg">
 			post digital photography<br />
-			<span class="font-medium text-black/50">2024-12-9 to ???</span>
 		</h1>
-		<div class="flex flex-col text-sm sm:text-lg">
-			<a href="/photos/other" class="transition-all duration-200 ease-in-out"> other </a>
-			<a href="/photos/weeklyfive" class="transition-all duration-200 ease-in-out">
-				the weekly five
-			</a>
+		<div class="flex flex-col text-sm text-black/60 sm:text-lg">
+			<a href="/photos/other" class="hover:text-black"> other </a>
+			<a href="/photos/weeklyfive" class="hover:text-black"> the weekly five </a>
 		</div>
 	</div>
 </div>
