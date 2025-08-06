@@ -70,13 +70,13 @@
 			case studies<br />
 		</h1>
 		<div class="flex flex-col gap-1 text-black/60">
-			<a href="/photos/aperture-and-shutter-speed" class="hover:text-black">
+			<a href="/photos/apertureandshutterspeed" class="hover:text-black">
 				aperture / shutter speed
 			</a>
-			<a href="/photos/shadow-and-light" class="hover:text-black"> shadow / light </a>
-			<a href="/photos/still-life" class="hover:text-black"> still life </a>
+			<a href="/photos/shadowandlight" class="hover:text-black"> shadow / light </a>
+			<a href="/photos/stilllife" class="hover:text-black"> still life </a>
 			<a href="/photos/disconnected" class="hover:text-black"> portraits (disconnected) </a>
-			<a href="/photos/self-portraits" class="hover:text-black"> self portraits </a>
+			<a href="/photos/selfportraits" class="hover:text-black"> self portraits </a>
 			<a href="/photos/horizontal-study" class="hover:text-black">horizontal study</a>
 		</div>
 	</div>
