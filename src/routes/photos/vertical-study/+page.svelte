@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+	import { fadeSlide } from '$lib/transitions';
+
 	const photos = [
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1750606171/DSC01267_khu9u9.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1750606146/DSC01794_kd7ihj.jpg' },
@@ -51,12 +53,38 @@
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1750606161/DSC01559_nq4xj9.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1750606164/DSC01529_jkgjse.jpg' }
 	];
+
+	let imagesToLoad = $state(0);
+	let imagesLoadedCount = $state(0);
+	let loaded = $state(false);
+
+	$effect(() => {
+		imagesToLoad = photos.length;
+
+		photos.forEach((image) => {
+			const img = new Image();
+			img.src = image.image;
+			img.onload = () => {
+				imagesLoadedCount++;
+				if (imagesLoadedCount === imagesToLoad) {
+					loaded = true;
+				}
+			};
+			img.onerror = () => {
+				if (imagesLoadedCount === imagesToLoad) {
+					loaded = true;
+				}
+			};
+		});
+	});
 </script>
 
-<div>
-	<div class="mt-4 mr-12 columns-2 gap-3 lg:columns-3">
+{#if loaded}
+	<div transition:fadeSlide class="mt-4 mr-12 columns-2 gap-3 lg:columns-3">
 		{#each photos as image}
-			<img src={image.image} class="mb-3" alt="vertical study" />
+			<img src={image.image} class="mb-3" alt="image" />
 		{/each}
 	</div>
-</div>
+{:else}
+	<h1 class="font-6xl text-center text-black/60">loading...</h1>
+{/if}

@@ -1,3 +1,9 @@
+<h1 class="mr-12 mb-12 text-right">
+	i love photography. i took a photography class in college and haven't been able to stop since.
+	<br />
+	some of my favorites are here, but you can check out my case studies and more below.
+</h1>
+
 <div class="mb-12 grid grid-cols-1 gap-4 sm:mr-12 sm:grid-cols-4">
 	<div class="photo-col grid gap-4">
 		<img
@@ -58,7 +64,7 @@
 </div>
 
 <div class="my-12 flex flex-1 flex-col items-start gap-12 sm:flex-row sm:gap-24">
-	<h1 class="text-7xl font-bold">WANT TO <br />SEE MORE?</h1>
+	<h1 class="mr-12 text-6xl font-bold">WANT TO <br />SEE MORE?</h1>
 	<div class="flex flex-col text-sm sm:text-lg">
 		<h1 class="mb-4 font-bold">
 			case studies<br />
@@ -77,7 +83,7 @@
 
 	<div class="flex flex-col">
 		<h1 class="mb-4 text-sm font-bold sm:text-lg">
-			2025<br />
+			2025+<br />
 		</h1>
 		<div class="flex flex-col text-sm text-black/60 sm:text-lg">
 			<a href="/photos/vertical-study" class="hover:text-black">vertical study</a>
