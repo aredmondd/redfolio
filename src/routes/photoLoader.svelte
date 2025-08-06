@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { fadeSlide } from '$lib/transitions';
+	import { onMount } from 'svelte';
 
 	let { photos, children } = $props();
 
@@ -7,7 +8,7 @@
 	let imagesLoadedCount = $state(0);
 	let loaded = $state(false);
 
-	$effect(() => {
+	onMount(() => {
 		imagesToLoad = photos.length;
 
 		photos.forEach((image) => {

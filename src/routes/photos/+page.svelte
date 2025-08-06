@@ -77,7 +77,7 @@
 			<a href="/photos/still-life" class="hover:text-black"> still life </a>
 			<a href="/photos/disconnected" class="hover:text-black"> portraits (disconnected) </a>
 			<a href="/photos/self-portraits" class="hover:text-black"> self portraits </a>
-			<a href="/photos/non-project" class="hover:text-black">horizontal study</a>
+			<a href="/photos/horizontal-study" class="hover:text-black">horizontal study</a>
 		</div>
 	</div>
 
