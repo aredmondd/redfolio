@@ -13,7 +13,7 @@ export const photoCaseStudies: Record<string, PhotoCaseStudy> = {
 		inspirations: 'Deana Lawson, Imogen Cunningham, Baldwin Lee, Mark Steinmetz',
 		text: "<div class='flex flex-col gap-3'><p>For this project, we were tasked with capturing eight unique portraits, each featuring a different individual. The focus was on composition, lighting, and expression to create engaging and visually compelling images.</p>  <div>  <p>- 8 photos of 8 unique people</p> </div>  <p>This project was an exploration of portrait photography, emphasizing how lighting, angles, and subject positioning can convey personality and emotion. My goal with this collection was to portray the general disconnection of society today. Each photo features a subject who is disconnected in some way—whether from a loved one, reality, their emotions, school, or something else. The physical representation of this disconnection is the presence of headphones, which audibly detach the subject from reality, adding another layer to the theme.</p>  </div>",
 		photos: [
-			'https://res.cloudinary.com/dkznczrj0/image/upload/v1733780752/lk_edited_2_rh49rr.jpimage',
+			'https://res.cloudinary.com/dkznczrj0/image/upload/v1733780752/lk_edited_2_rh49rr.jpg',
 			'https://res.cloudinary.com/dkznczrj0/image/upload/v1733780857/will_ptyiok.jpg',
 			'https://res.cloudinary.com/dkznczrj0/image/upload/v1733780751/flu_edited_hmkiv6.jpg',
 			'https://res.cloudinary.com/dkznczrj0/image/upload/v1733780878/9430-FIXED_cnsmwa.png',

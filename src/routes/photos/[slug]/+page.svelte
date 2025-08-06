@@ -1,4 +1,8 @@
 <script lang="ts">
+	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
+	import '@splidejs/svelte-splide/css';
+	import { fade } from 'svelte/transition';
+
 	export let data: {
 		title: string;
 		date: string;
@@ -23,15 +27,20 @@
 			</p>
 		{/if}
 	</div>
-	<!-- <VueperSlides
-		class="no-shadow my-6 hidden sm:block"
-		:touchable="false"
-		:bullets="false"
-		fade
-		fixed-height="666.5px"
-		style="width: 1000px"
-		arrows-outside
-	>
-		<vueper-slide v-for="(slide, i) in project.slides" :key="i" :image="slide.image" />
-	</VueperSlides> -->
+	<div class="mt-12">
+		<Splide
+			aria-label="My Favorite Images"
+			options={{
+				width: 1008,
+				type: 'fade',
+				rewind: true
+			}}
+		>
+			{#each data.photos as image}
+				<SplideSlide>
+					<img src={image} alt="new fvaorie" />
+				</SplideSlide>
+			{/each}
+		</Splide>
+	</div>
 </div>
