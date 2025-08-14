@@ -1,7 +1,10 @@
 <script lang="ts">
 	import { fadeSlide } from '$lib/transitions';
 	import ImageModal from '../imageModal.svelte';
+	import { openModal } from '$lib/actions/openModal';
 </script>
+
+<ImageModal />
 
 <div transition:fadeSlide>
 	<h1 class="mr-12 mb-12 text-right">
@@ -12,14 +15,13 @@
 
 	<div class="mb-12 grid grid-cols-1 gap-4 sm:mr-12 sm:grid-cols-4">
 		<div class="photo-col grid gap-4">
-			<ImageModal>
-				<img
-					loading="lazy"
-					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg"
-					alt="anthony climbing an abandoned house"
-				/>
-			</ImageModal>
+			<img
+				loading="lazy"
+				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg"
+				alt="anthony climbing an abandoned house"
+				use:openModal
+			/>
 
 			<img
 				loading="lazy"

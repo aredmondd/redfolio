@@ -1,35 +1,35 @@
 <script lang="ts">
-	let isModalOpen: boolean = $state(false);
-	let image: string = $state('');
-	let { children } = $props();
+	import { modalImage } from '$lib/stores/imageModal';
+	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
-	function openModal(imageSrc: string) {
-		image = imageSrc;
-		isModalOpen = true;
-	}
+	let currentImage = $modalImage;
 
-	function closeModal() {
-		isModalOpen = false;
-	}
+	const closeModal = () => {
+		modalImage.set(null);
+	};
+
+	// Close on Escape key
+	onMount(() => {
+		const handler = (e: KeyboardEvent) => {
+			if (e.key === 'Escape') closeModal();
+		};
+		window.addEventListener('keydown', handler);
+		return () => window.removeEventListener('keydown', handler);
+	});
 </script>
 
-{#if isModalOpen}
+{#if currentImage}
 	<button
-		id="imageModal"
-		class="fixed inset-0 z-50 flex items-center justify-center bg-white/50"
-		onclick={closeModal}
+		class="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
+		on:click={closeModal}
+		transition:fade
 	>
-		<div class="relative">
-			<img src={image} alt="" class="max-h-screen max-w-full p-12" />
-		</div>
-	</button>
-{:else}
-	<button
-		onclick={(e) => {
-			const img = e.currentTarget.querySelector('img');
-			if (img) openModal(img.src);
-		}}
-	>
-		{@render children?.()}
+		<img
+			src={currentImage.src}
+			alt={currentImage.alt}
+			class="max-h-screen max-w-full p-6"
+			on:click|stopPropagation
+		/>
 	</button>
 {/if}
