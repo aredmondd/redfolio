@@ -16,8 +16,8 @@ export function fadeSlide(
 		duration,
 		easing: cubicOut,
 		css: (t: number) => `
-      opacity: ${t};
-      transform: translateY(${(1 - t) * y}px);
-    `
+			opacity: ${t};
+			transform: translateY(${(1 - t) * y}px);
+		`
 	};
 }

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { fadeSlide } from '$lib/transitions';
 
 	const feedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Faidenredmondd.substack.com%2Ffeed`;
 

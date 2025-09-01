@@ -12,7 +12,7 @@
 	<title>aiden redmond</title>
 </svelte:head>
 
-<!-- <div class="flex">
+<div class="flex">
 	<aside class="fixed">
 		<img src={logo} alt="" class="w-24" />
 		<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
@@ -24,10 +24,10 @@
 				class="{page.url.pathname === '/photos' ? 'text-black' : 'text-black/60'} hover:text-black"
 				href="/photos">/photos</a
 			>
-			<a
+			<!-- <a
 				class="{page.url.pathname === '/work' ? 'text-black' : 'text-black/60'} hover:text-black"
 				href="/work">/work</a
-			>
+			> -->
 			<a
 				class="{page.url.pathname === '/writing' ? 'text-black' : 'text-black/60'} hover:text-black"
 				href="/writing">/writing</a
@@ -36,7 +36,4 @@
 	</aside>
 
 	<div class="mt-28 ml-48">{@render children?.()}</div>
-</div> -->
-
-<div class="mt-12 text-center">aidenredmond.com is under construction...</div>
-<p class="mt-2 text-center text-6xl">🚧</p>
+</div>

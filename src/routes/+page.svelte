@@ -1,5 +1,6 @@
 <script lang="ts">
 	import redmond from '$lib/assets/redmond.png';
+	import { fadeSlide } from '$lib/transitions';
 	// import professionalRedmond from '$lib/assets/professional_redmond.jpg';
 </script>
 

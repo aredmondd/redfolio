@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fadeSlide } from '$lib/transitions';
 	import { onMount } from 'svelte';
 
 	let { photos, children } = $props();
@@ -30,7 +29,7 @@
 </script>
 
 {#if loaded}
-	<div transition:fadeSlide>
+	<div>
 		{@render children?.()}
 	</div>
 {:else}

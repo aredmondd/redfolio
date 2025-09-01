@@ -1,12 +1,11 @@
 <script lang="ts">
-	import { fadeSlide } from '$lib/transitions';
 	import ImageModal from '../imageModal.svelte';
 	import { openModal } from '$lib/actions/openModal';
 </script>
 
 <ImageModal />
 
-<div transition:fadeSlide>
+<div>
 	<!-- <h1 class="mr-12 mb-12 text-right">
 		i love photography. i took a photography class in college and haven't been able to stop since.
 		<br />
