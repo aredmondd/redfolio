@@ -12,7 +12,7 @@
 	<title>aiden redmond</title>
 </svelte:head>
 
-<div class="flex">
+<!-- <div class="flex">
 	<aside class="fixed">
 		<img src={logo} alt="" class="w-24" />
 		<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
@@ -36,4 +36,7 @@
 	</aside>
 
 	<div class="mt-28 ml-48">{@render children?.()}</div>
-</div>
+</div> -->
+
+<div class="mt-12 text-center">aidenredmond.com is under construction...</div>
+<p class="mt-2 text-center text-6xl">🚧</p>
