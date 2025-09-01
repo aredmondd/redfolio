@@ -35,5 +35,5 @@
 		</div>
 	</aside>
 
-	<div class="mt-28 ml-48">{@render children?.()}</div>
+	<div class="mt-28 ml-48 flex-1">{@render children?.()}</div>
 </div>

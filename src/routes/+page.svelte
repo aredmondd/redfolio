@@ -4,7 +4,7 @@
 	// import professionalRedmond from '$lib/assets/professional_redmond.jpg';
 </script>
 
-<div class="flex flex-col items-center">
+<div class="flex h-full w-full items-center justify-between">
 	<div class="flex gap-8">
 		<img src={redmond} alt="" class="w-40 rounded-full" />
 		<div class="mt-2 flex flex-col gap-2">
@@ -16,5 +16,16 @@
 				</p>
 			</div>
 		</div>
+	</div>
+
+	<div class=" mr-12 flex flex-col gap-1 text-left font-semibold text-black/60 italic">
+		<a class="hover:text-black" href="https://www.linkedin.com/in/aidenredmondd/" target="_blank"
+			>@linkedin</a
+		>
+		<a class="hover:text-black" href="https://aidenredmondd.substack.com" target="_blank"
+			>@substack</a
+		>
+		<a class="hover:text-black" href="https://github.com/aredmondd" target="_blank">@github</a>
+		<a class="hover:text-black" href="mailto:aidenredmondd@gmail.com" target="_blank">@email</a>
 	</div>
 </div>
