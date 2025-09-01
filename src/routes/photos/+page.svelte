@@ -1,9 +1,5 @@
 <script lang="ts">
-	import ImageModal from '../imageModal.svelte';
-	import { openModal } from '$lib/actions/openModal';
 </script>
-
-<ImageModal />
 
 <div>
 	<!-- <h1 class="mr-12 mb-12 text-right">
@@ -18,7 +14,6 @@
 				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
 				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg"
 				alt="anthony climbing an abandoned house"
-				use:openModal
 			/>
 
 			<img
@@ -96,7 +91,7 @@
 			</h1>
 			<div class="flex flex-col text-sm text-black/60 sm:text-lg">
 				<a href="/photos/vertical-study" class="hover:text-black">vertical study</a>
-				<a href="/photos/weeklyfive" class="hover:text-black"> the weekly five </a>
+				<a href="/photos/weekly-five" class="hover:text-black"> the weekly five </a>
 			</div>
 		</div>
 	</div>

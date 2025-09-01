@@ -1,5 +1,11 @@
 <script lang="ts">
 	import PhotoLoader from '../../photoLoader.svelte';
+	import { imageModalStore } from '$lib/stores/imageModal';
+	import ImageModal from '../../imageModal.svelte';
+
+	const openImage = (imageSrc: string): void => {
+		imageModalStore.openModal(imageSrc);
+	};
 
 	const photos = [
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1750606171/DSC01267_khu9u9.jpg' },
@@ -58,7 +64,16 @@
 <PhotoLoader {photos}>
 	<div class="mt-4 mr-12 columns-2 gap-3 lg:columns-3">
 		{#each photos as image}
-			<img src={image.image} class="mb-3" alt="vertical study" />
+			<img
+				src={image.image}
+				class="mb-3"
+				alt="vertical study"
+				onclick={() => {
+					openImage(image.image);
+				}}
+			/>
 		{/each}
 	</div>
 </PhotoLoader>
+
+<ImageModal />

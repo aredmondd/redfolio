@@ -1,35 +1,46 @@
+<!-- ImageModal.svelte -->
 <script lang="ts">
-	import { modalImage } from '$lib/stores/imageModal';
-	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
+	import { imageModalStore } from '$lib/stores/imageModal';
 
-	let currentImage = $modalImage;
+	$: ({ isOpen, imageSrc } = $imageModalStore);
 
-	const closeModal = () => {
-		modalImage.set(null);
+	const handleBackdropClick = (event: MouseEvent): void => {
+		if (event.target === event.currentTarget) {
+			imageModalStore.closeModal();
+		}
 	};
 
-	// Close on Escape key
-	onMount(() => {
-		const handler = (e: KeyboardEvent) => {
-			if (e.key === 'Escape') closeModal();
-		};
-		window.addEventListener('keydown', handler);
-		return () => window.removeEventListener('keydown', handler);
-	});
+	const handleKeydown = (event: KeyboardEvent): void => {
+		if (event.key === 'Escape' && isOpen) {
+			imageModalStore.closeModal();
+		}
+	};
+
+	// Disable/enable body scroll when modal opens/closes
+	$: if (typeof document !== 'undefined') {
+		if (isOpen) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+		}
+	}
 </script>
 
-{#if currentImage}
-	<button
-		class="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
-		on:click={closeModal}
-		transition:fade
+<svelte:window on:keydown={handleKeydown} />
+
+{#if isOpen}
+	<div
+		class="bg-opacity-90 fixed inset-0 z-50 flex items-center justify-center bg-black p-4"
+		on:click={handleBackdropClick}
+		role="dialog"
+		aria-modal="true"
 	>
-		<img
-			src={currentImage.src}
-			alt={currentImage.alt}
-			class="max-h-screen max-w-full p-6"
-			on:click|stopPropagation
-		/>
-	</button>
+		<div class="relative max-h-[95vh] max-w-[95vw]">
+			<img
+				src={imageSrc}
+				alt=""
+				class="max-h-[95vh] max-w-full rounded-lg object-contain shadow-2xl"
+			/>
+		</div>
+	</div>
 {/if}
