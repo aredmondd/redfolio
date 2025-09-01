@@ -7,12 +7,11 @@
 <ImageModal />
 
 <div transition:fadeSlide>
-	<h1 class="mr-12 mb-12 text-right">
+	<!-- <h1 class="mr-12 mb-12 text-right">
 		i love photography. i took a photography class in college and haven't been able to stop since.
 		<br />
 		some of my favorites are here, but you can check out my case studies and more below.
-	</h1>
-
+	</h1> -->
 	<div class="mb-12 grid grid-cols-1 gap-4 sm:mr-12 sm:grid-cols-4">
 		<div class="photo-col grid gap-4">
 			<img

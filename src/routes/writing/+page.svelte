@@ -1,53 +1,82 @@
 <script lang="ts">
-	import blue_sticky from '$lib/assets/blue.png';
-	import green_sticky from '$lib/assets/green.png';
-	import orange_sticky from '$lib/assets/orange.png';
-	import pink_sticky from '$lib/assets/pink.png';
+	import { onMount } from 'svelte';
 
-	let x: number = 100; // starting position
-	let y: number = 100;
-	let offsetX: number = 0;
-	let offsetY: number = 0;
-	let dragging: boolean = false;
+	const feedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Faidenredmondd.substack.com%2Ffeed`;
 
-	function handlePointerDown(e: PointerEvent): void {
-		dragging = true;
-		offsetX = e.clientX - x;
-		offsetY = e.clientY - y;
+	let posts = $state([]);
+	let error = $state('');
+	let loading = $state(true);
 
-		window.addEventListener('pointermove', handlePointerMove);
-		window.addEventListener('pointerup', handlePointerUp);
+	type Post = {
+		author: string;
+		categories: Array<string>;
+		content: string;
+		description: string;
+		enclosure: Object;
+		guid: string;
+		link: string;
+		pubDate: string;
+		thumbnail: string;
+		title: string;
+	};
+
+	function formatDate(dateString: string) {
+		const date = new Date(dateString.replace(' ', 'T'));
+
+		const options = { month: 'short', day: 'numeric' };
+
+		return date.toLocaleDateString('en-US', options);
 	}
 
-	function handlePointerMove(e: PointerEvent): void {
-		if (dragging) {
-			x = e.clientX - offsetX;
-			y = e.clientY - offsetY;
+	async function fetchLatestPosts() {
+		try {
+			const response = await fetch(feedUrl);
+			const data = await response.json();
+
+			const items = data.items || [];
+
+			console.log(items);
+
+			posts = items.map((post: Post) => {
+				const imageUrlMatch = post.content.match(/<img src="([^"]+)"/);
+				const imageUrl = imageUrlMatch ? imageUrlMatch[1] : '';
+
+				return {
+					title: post.title,
+					subtitle: post.description || 'No Subtitle Provided',
+					link: post.link,
+					date: formatDate(post.pubDate),
+					imageUrl
+				};
+			});
+		} catch (err) {
+			error = 'Failed to load posts...';
+			console.error('Error fetching the RSS feed: ', err);
+		} finally {
+			loading = false;
 		}
 	}
 
-	function handlePointerUp(): void {
-		dragging = false;
-		window.removeEventListener('pointermove', handlePointerMove);
-		window.removeEventListener('pointerup', handlePointerUp);
-	}
+	onMount(fetchLatestPosts);
 </script>
 
-<div
-	class="relative w-64 cursor-move select-none"
-	on:pointerdown={handlePointerDown}
-	style="position: absolute; left: {x}px; top: {y}px;"
->
-	<img
-		src={blue_sticky}
-		alt=""
-		class="block w-full"
-		draggable="false"
-		on:dragstart|preventDefault
-	/>
-	<p
-		class="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-center text-lg font-bold italic"
-	>
-		BOTW might be my favorite game of all time?
-	</p>
+<div id="latest-posts">
+	{#if loading}
+		<p>loading posts...</p>
+	{:else if error}
+		<p>{error}</p>
+	{:else if posts.length > 0}
+		<div class="mx-12 grid grid-cols-3 gap-12">
+			{#each posts as post}
+				<a class="flex flex-col" href={post.link} target="_blank">
+					<img src={post.imageUrl} class="rounded-md" alt={post.title} />
+					<h2 class="mt-3 truncate text-lg font-bold text-black/75">{post.title}</h2>
+					<p class="mt-1 truncate text-sm text-black/60">{post.subtitle}</p>
+					<p class="mt-1 text-sm text-black/30">{post.date} ∙ Aiden Redmond</p>
+				</a>
+			{/each}
+		</div>
+	{:else}
+		<p>no posts were found...</p>
+	{/if}
 </div>
