@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { fadeSlide } from '$lib/transitions';
 
 	const feedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Faidenredmondd.substack.com%2Ffeed`;
 
-	let posts = $state([]);
+	let posts: Post[] = $state([]);
 	let error = $state('');
 	let loading = $state(true);
 
@@ -23,10 +22,7 @@
 
 	function formatDate(dateString: string) {
 		const date = new Date(dateString.replace(' ', 'T'));
-
-		const options = { month: 'short', day: 'numeric' };
-
-		return date.toLocaleDateString('en-US', options);
+		return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 	}
 
 	async function fetchLatestPosts() {
@@ -44,10 +40,10 @@
 
 				return {
 					title: post.title,
-					subtitle: post.description || 'No Subtitle Provided',
+					description: post.description || 'No Subtitle Provided',
 					link: post.link,
-					date: formatDate(post.pubDate),
-					imageUrl
+					pubDate: formatDate(post.pubDate),
+					thumbnail: imageUrl
 				};
 			});
 		} catch (err) {
@@ -70,10 +66,10 @@
 		<div class="mx-12 grid grid-cols-3 gap-12">
 			{#each posts as post}
 				<a class="flex flex-col" href={post.link} target="_blank">
-					<img src={post.imageUrl} class="rounded-md" alt={post.title} />
+					<img src={post.thumbnail} class="rounded-md" alt={post.title} />
 					<h2 class="mt-3 truncate text-lg font-bold text-black/75">{post.title}</h2>
-					<p class="mt-1 truncate text-sm text-black/60">{post.subtitle}</p>
-					<p class="mt-1 text-sm text-black/30">{post.date} ∙ Aiden Redmond</p>
+					<p class="mt-1 truncate text-sm text-black/60">{post.description}</p>
+					<p class="mt-1 text-sm text-black/30">{post.pubDate} ∙ Aiden Redmond</p>
 				</a>
 			{/each}
 		</div>
