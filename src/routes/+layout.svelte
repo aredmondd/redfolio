@@ -32,6 +32,10 @@
 				class="{page.url.pathname === '/writing' ? 'text-black' : 'text-black/60'} hover:text-black"
 				href="/writing">/writing</a
 			>
+			<a
+				class="{page.url.pathname === '/monthly' ? 'text-black' : 'text-black/60'} hover:text-black"
+				href="/monthly">/monthly</a
+			>
 		</div>
 	</aside>
 
