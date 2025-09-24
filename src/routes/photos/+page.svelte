@@ -69,9 +69,19 @@
 
 	<div class="my-12 flex flex-1 flex-col items-start gap-12 sm:flex-row sm:gap-24">
 		<h1 class="mr-12 text-6xl font-bold">WANT TO <br />SEE MORE?</h1>
+		<div class="flex flex-col">
+			<h1 class="mb-4 text-sm font-bold sm:text-lg">
+				NEW<br />
+			</h1>
+			<div class="flex flex-col text-sm text-black/60 sm:text-lg">
+				<a href="/photos/vertical-study" class="hover:text-black">vertical study</a>
+				<a href="/photos/weekly-five" class="hover:text-black"> the weekly five </a>
+			</div>
+		</div>
+
 		<div class="flex flex-col text-sm sm:text-lg">
 			<h1 class="mb-4 font-bold">
-				case studies<br />
+				OLD CASE STUDIES<br />
 			</h1>
 			<div class="flex flex-col gap-1 text-black/60">
 				<a href="/photos/apertureandshutterspeed" class="hover:text-black">
@@ -82,16 +92,6 @@
 				<a href="/photos/disconnected" class="hover:text-black"> portraits (disconnected) </a>
 				<a href="/photos/selfportraits" class="hover:text-black"> self portraits </a>
 				<a href="/photos/horizontal-study" class="hover:text-black">horizontal study</a>
-			</div>
-		</div>
-
-		<div class="flex flex-col">
-			<h1 class="mb-4 text-sm font-bold sm:text-lg">
-				2025+<br />
-			</h1>
-			<div class="flex flex-col text-sm text-black/60 sm:text-lg">
-				<a href="/photos/vertical-study" class="hover:text-black">vertical study</a>
-				<a href="/photos/weekly-five" class="hover:text-black"> the weekly five </a>
 			</div>
 		</div>
 	</div>
