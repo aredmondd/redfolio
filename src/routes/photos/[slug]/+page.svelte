@@ -13,7 +13,7 @@
 
 <div class="flex flex-1 flex-col items-center justify-center">
 	<div class="flex flex-col sm:mx-80">
-		<div class="my-6 flex items-end justify-between">
+		<div class="mb-6 flex items-end justify-between">
 			<h1 class="text-lg font-bold sm:text-2xl">{data.title}</h1>
 			<p class="sm:text-md text-xs text-black/50">{data.date}</p>
 		</div>

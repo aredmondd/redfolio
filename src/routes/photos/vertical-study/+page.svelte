@@ -62,7 +62,7 @@
 </script>
 
 <PhotoLoader {photos}>
-	<div class="mt-4 mr-12 columns-2 gap-3 lg:columns-3">
+	<div class="mt-4 columns-2 gap-3 sm:mr-12 lg:columns-3">
 		{#each photos as image}
 			<img
 				src={image.image}

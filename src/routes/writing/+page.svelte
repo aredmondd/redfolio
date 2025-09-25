@@ -63,7 +63,7 @@
 	{:else if error}
 		<p>{error}</p>
 	{:else if posts.length > 0}
-		<div class="mx-12 grid grid-cols-3 gap-12">
+		<div class="mx-12 grid grid-cols-1 gap-12 sm:grid-cols-3">
 			{#each posts as post}
 				<a class="flex flex-col" href={post.link} target="_blank">
 					<img src={post.thumbnail} class="rounded-md" alt={post.title} />
