@@ -5,7 +5,7 @@
 	import linkedin from '$lib/assets/linkedin.png';
 </script>
 
-<div class="mb-4 flex w-full">
+<div class="mb-4 flex w-full justify-center sm:justify-start">
 	<div class="flex flex-col gap-4 sm:flex-row">
 		<div class="flex items-center justify-center border-2 border-dashed border-black/10 p-2">
 			<img src={redmond} alt="" class="w-51 rounded-full" />
@@ -15,7 +15,7 @@
 				<h1 class="font-sans text-7xl font-semibold">aiden <br /> redmond</h1>
 			</div>
 			<div class="flex flex-col gap-2 border-2 border-dashed border-black/10 p-2">
-				<h1 class="font-sans text-lg">designer, developer, & athlete</h1>
+				<h1 class="text-center font-sans text-lg sm:text-left">designer, developer, & athlete</h1>
 			</div>
 		</div>
 		<div
