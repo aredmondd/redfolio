@@ -32,7 +32,7 @@
 			>
 		</div>
 		<div
-			class="sm:text-md flex h-full flex-col justify-end gap-1 border-2 border-dashed border-black/10 p-2 text-sm"
+			class="flex h-full flex-col justify-start gap-1 border-2 border-dashed border-black/10 p-2 text-sm sm:text-base"
 		>
 			<p class="mb-2 font-bold">about me:</p>
 			<p>
