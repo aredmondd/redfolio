@@ -12,32 +12,35 @@
 	<title>aiden redmond</title>
 </svelte:head>
 
-<div class="flex">
+{#snippet navLinks()}
+	<a class="{page.url.pathname === '/' ? 'text-black' : 'text-black/60'} hover:text-black" href="/"
+		>/home</a
+	>
+	<a
+		class="{page.url.pathname === '/photos' ? 'text-black' : 'text-black/60'} hover:text-black"
+		href="/photos">/photos</a
+	>
+	<a
+		class="{page.url.pathname === '/writing' ? 'text-black' : 'text-black/60'} hover:text-black"
+		href="/writing">/writing</a
+	>
+	<a
+		class="{page.url.pathname === '/monthly' ? 'text-black' : 'text-black/60'} hover:text-black"
+		href="/monthly">/monthly</a
+	>
+{/snippet}
+
+<div class="flex flex-col sm:flex-row">
 	<aside class="fixed hidden sm:block">
 		<img src={logo} alt="" class="w-24" />
 		<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
-			<a
-				class="{page.url.pathname === '/' ? 'text-black' : 'text-black/60'} hover:text-black"
-				href="/">/home</a
-			>
-			<a
-				class="{page.url.pathname === '/photos' ? 'text-black' : 'text-black/60'} hover:text-black"
-				href="/photos">/photos</a
-			>
-			<!-- <a
-				class="{page.url.pathname === '/work' ? 'text-black' : 'text-black/60'} hover:text-black"
-				href="/work">/work</a
-			> -->
-			<a
-				class="{page.url.pathname === '/writing' ? 'text-black' : 'text-black/60'} hover:text-black"
-				href="/writing">/writing</a
-			>
-			<a
-				class="{page.url.pathname === '/monthly' ? 'text-black' : 'text-black/60'} hover:text-black"
-				href="/monthly">/monthly</a
-			>
+			{@render navLinks()}
 		</div>
 	</aside>
 
-	<div class="mt-28 flex-1 sm:ml-48">{@render children?.()}</div>
+	<div class="mb-6 flex justify-between sm:hidden">
+		{@render navLinks()}
+	</div>
+
+	<div class="flex-1 sm:mt-28 sm:ml-48">{@render children?.()}</div>
 </div>
