@@ -12,7 +12,7 @@
 		categories: Array<string>;
 		content: string;
 		description: string;
-		enclosure: Object;
+		enclosure: object;
 		guid: string;
 		link: string;
 		pubDate: string;

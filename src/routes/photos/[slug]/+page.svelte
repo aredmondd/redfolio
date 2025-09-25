@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 	import '@splidejs/svelte-splide/css';
-	import { fade } from 'svelte/transition';
 
 	export let data: {
 		title: string;

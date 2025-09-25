@@ -1,69 +1,137 @@
 <script lang="ts">
+	import ImageModal from '../imageModal.svelte';
+	import { imageModalStore } from '$lib/stores/imageModal';
+
+	const openImage = (imageSrc: string): void => {
+		imageModalStore.openModal(imageSrc);
+	};
 </script>
 
 <div>
-	<!-- <h1 class="mr-12 mb-12 text-right">
-		i love photography. i took a photography class in college and haven't been able to stop since.
-		<br />
-		some of my favorites are here, but you can check out my case studies and more below.
-	</h1> -->
 	<div class="mb-12 grid grid-cols-1 gap-4 sm:mr-12 sm:grid-cols-4">
 		<div class="photo-col grid gap-4">
-			<img
-				loading="lazy"
-				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg"
-				alt="anthony climbing an abandoned house"
-			/>
+			<button
+				onclick={() => {
+					openImage(
+						'https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg'
+					);
+				}}
+			>
+				<img
+					loading="lazy"
+					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg"
+					alt="anthony climbing an abandoned house"
+				/>
+			</button>
 
-			<img
-				loading="lazy"
-				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1753920594/DSC03130_p02sjy.jpg"
-				alt="ponte vedra marsh at sunrise"
-			/>
+			<button
+				onclick={() => {
+					openImage(
+						'https://res.cloudinary.com/dkznczrj0/image/upload/v1758758318/DSC03582_lbkehs.jpg'
+					);
+				}}
+			>
+				<img
+					loading="lazy"
+					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1758758318/DSC03582_lbkehs.jpg"
+					alt="plant"
+				/>
+			</button>
 		</div>
 		<div class="photo-col grid gap-4">
-			<img
-				loading="lazy"
-				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363314/_MG_9430_lcteaz.jpg"
-				alt="broken CD"
-			/>
-			<img
-				loading="lazy"
-				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704776/_MG_9121_rlj0zf.jpg"
-				alt="rachel in the garden"
-			/>
+			<button
+				onclick={() => {
+					openImage(
+						'https://res.cloudinary.com/dkznczrj0/image/upload/v1734363314/_MG_9430_lcteaz.jpg'
+					);
+				}}
+			>
+				<img
+					loading="lazy"
+					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363314/_MG_9430_lcteaz.jpg"
+					alt="broken CD"
+				/>
+			</button>
+
+			<button
+				onclick={() => {
+					openImage(
+						'https://res.cloudinary.com/dkznczrj0/image/upload/v1733704776/_MG_9121_rlj0zf.jpg'
+					);
+				}}
+			>
+				<img
+					loading="lazy"
+					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704776/_MG_9121_rlj0zf.jpg"
+					alt="rachel in the garden"
+				/>
+			</button>
 		</div>
 		<div class="photo-col grid gap-4">
-			<img
-				loading="lazy"
-				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704774/_MG_8987_x1tsmg.jpg"
-				alt="anthony + elijah"
-			/>
-			<img
-				loading="lazy"
-				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1747233445/kaws_r0i8v9.jpg"
-				alt="kaws"
-			/>
+			<button
+				onclick={() => {
+					openImage(
+						'https://res.cloudinary.com/dkznczrj0/image/upload/v1733704774/_MG_8987_x1tsmg.jpg'
+					);
+				}}
+			>
+				<img
+					loading="lazy"
+					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704774/_MG_8987_x1tsmg.jpg"
+					alt="anthony + elijah"
+				/>
+			</button>
+
+			<button
+				onclick={() => {
+					openImage(
+						'https://res.cloudinary.com/dkznczrj0/image/upload/v1747233445/kaws_r0i8v9.jpg'
+					);
+				}}
+			>
+				<img
+					loading="lazy"
+					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1747233445/kaws_r0i8v9.jpg"
+					alt="kaws"
+				/>
+			</button>
 		</div>
 		<div class="photo-col grid gap-4">
-			<img
-				loading="lazy"
-				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1754431887/DSC03265_wueukv.jpg"
-				alt="my love"
-			/>
-			<img
-				loading="lazy"
-				class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-				src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733780751/_MG_0884_cropped_fb9zep.jpg"
-				alt="elijah at the fire"
-			/>
+			<button
+				onclick={() => {
+					openImage(
+						'https://res.cloudinary.com/dkznczrj0/image/upload/v1754431887/DSC03265_wueukv.jpg'
+					);
+				}}
+			>
+				<img
+					loading="lazy"
+					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1754431887/DSC03265_wueukv.jpg"
+					alt="my love"
+				/>
+			</button>
+
+			<button
+				onclick={() => {
+					openImage(
+						'https://res.cloudinary.com/dkznczrj0/image/upload/v1733780751/_MG_0884_cropped_fb9zep.jpg'
+					);
+				}}
+			>
+				<img
+					loading="lazy"
+					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733780751/_MG_0884_cropped_fb9zep.jpg"
+					alt="elijah at the fire"
+				/>
+			</button>
 		</div>
 	</div>
 
@@ -96,3 +164,5 @@
 		</div>
 	</div>
 </div>
+
+<ImageModal />

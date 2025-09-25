@@ -1,7 +1,5 @@
 <script lang="ts">
 	import redmond from '$lib/assets/redmond.png';
-	import { fadeSlide } from '$lib/transitions';
-	// import professionalRedmond from '$lib/assets/professional_redmond.jpg';
 </script>
 
 <div class="flex h-full w-full items-center justify-between">
