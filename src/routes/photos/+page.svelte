@@ -144,6 +144,7 @@
 			<div class="flex flex-col text-sm text-black/60 sm:text-lg">
 				<a href="/photos/vertical-study" class="hover:text-black">vertical study</a>
 				<a href="/photos/weekly-five" class="hover:text-black"> the weekly five </a>
+				<a href="/photos/atlanta-collection" class="hover:text-black">atlanta collection</a>
 			</div>
 		</div>
 
