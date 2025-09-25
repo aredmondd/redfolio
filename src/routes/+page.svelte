@@ -15,13 +15,21 @@
 				<h1 class="font-sans text-7xl font-semibold">aiden <br /> redmond</h1>
 			</div>
 			<div class="flex flex-col gap-2 border-2 border-dashed border-black/10 p-2">
-				<h1 class="font-sans">designer, developer, & athlete</h1>
+				<h1 class="font-sans text-lg">designer, developer, & athlete</h1>
 			</div>
 		</div>
-		<div class="flex flex-col gap-6 border-2 border-dashed border-black/10 p-2">
-			<img src={github} alt="" class="w-12" />
-			<img src={substack} alt="" class="w-12" />
-			<img src={linkedin} alt="" class="w-12" />
+		<div
+			class="flex flex-col items-center justify-center gap-6 border-2 border-dashed border-black/10 p-2"
+		>
+			<a href="https://github.com/aredmondd" target="_blank"
+				><img src={github} alt="" class="w-12" /></a
+			>
+			<a href="https://aidenredmondd.substack.com/" target="_blank"
+				><img src={substack} alt="" class="w-10" /></a
+			>
+			<a href="https://www.linkedin.com/in/aidenredmondd/" target="_blank"
+				><img src={linkedin} alt="" class="w-10" /></a
+			>
 		</div>
 		<div class="flex h-full flex-col justify-end gap-1 border-2 border-dashed border-black/10 p-2">
 			<p class="mb-2 font-bold">about me:</p>
