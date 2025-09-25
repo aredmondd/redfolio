@@ -6,8 +6,8 @@
 </script>
 
 <div class="mb-4 flex w-full">
-	<div class="flex gap-4">
-		<div class="border-2 border-dashed border-black/10 p-2">
+	<div class="flex flex-col gap-4 sm:flex-row">
+		<div class="flex items-center justify-center border-2 border-dashed border-black/10 p-2">
 			<img src={redmond} alt="" class="w-51 rounded-full" />
 		</div>
 		<div class="flex flex-col gap-4">
@@ -19,19 +19,21 @@
 			</div>
 		</div>
 		<div
-			class="flex flex-col items-center justify-center gap-6 border-2 border-dashed border-black/10 p-2"
+			class="flex flex-row items-center justify-around gap-6 border-2 border-dashed border-black/10 p-2 sm:flex-col"
 		>
 			<a href="https://github.com/aredmondd" target="_blank"
 				><img src={github} alt="" class="w-12" /></a
 			>
 			<a href="https://aidenredmondd.substack.com/" target="_blank"
-				><img src={substack} alt="" class="w-10" /></a
+				><img src={substack} alt="" class="w-9" /></a
 			>
 			<a href="https://www.linkedin.com/in/aidenredmondd/" target="_blank"
 				><img src={linkedin} alt="" class="w-10" /></a
 			>
 		</div>
-		<div class="flex h-full flex-col justify-end gap-1 border-2 border-dashed border-black/10 p-2">
+		<div
+			class="sm:text-md flex h-full flex-col justify-end gap-1 border-2 border-dashed border-black/10 p-2 text-sm"
+		>
 			<p class="mb-2 font-bold">about me:</p>
 			<p>
 				my "real job" is a <a
@@ -56,19 +58,3 @@
 		</div>
 	</div>
 </div>
-<!-- <div class="flex items-start gap-4">
-	<div class="border-2 border-dashed border-black/10 p-2">
-		<img
-			src="https://media.pitchfork.com/photos/5931b39bd13a3d6b24764691/master/w_900,h_900,c_limit/f251d544.jpg"
-			alt="bloom"
-			class="w-64"
-		/>
-	</div>
-	<div class="border-2 border-dashed border-black/10 p-2">
-		<img
-			src="https://m.media-amazon.com/images/M/MV5BNjI0NTEwZDYtZDhlOC00MGM2LWFlNGItY2U2ZWRkMzk2ODI0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-			alt="botw"
-			class="w-64"
-		/>
-	</div>
-</div> -->

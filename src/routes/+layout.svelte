@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div class="flex">
-	<aside class="fixed">
+	<aside class="fixed hidden sm:block">
 		<img src={logo} alt="" class="w-24" />
 		<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
 			<a
@@ -39,5 +39,5 @@
 		</div>
 	</aside>
 
-	<div class="mt-28 ml-48 flex-1">{@render children?.()}</div>
+	<div class="mt-28 flex-1 sm:ml-48">{@render children?.()}</div>
 </div>
