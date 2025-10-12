@@ -18,7 +18,6 @@
 				}}
 			>
 				<img
-					loading="lazy"
 					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
 					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg"
 					alt="anthony climbing an abandoned house"
@@ -33,7 +32,6 @@
 				}}
 			>
 				<img
-					loading="lazy"
 					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
 					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1758758318/DSC03582_lbkehs.jpg"
 					alt="plant"
@@ -49,7 +47,6 @@
 				}}
 			>
 				<img
-					loading="lazy"
 					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
 					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363314/_MG_9430_lcteaz.jpg"
 					alt="broken CD"
@@ -64,7 +61,6 @@
 				}}
 			>
 				<img
-					loading="lazy"
 					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
 					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704776/_MG_9121_rlj0zf.jpg"
 					alt="rachel in the garden"
@@ -80,10 +76,9 @@
 				}}
 			>
 				<img
-					loading="lazy"
 					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
 					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704774/_MG_8987_x1tsmg.jpg"
-					alt="anthony + elijah"
+					alt="da bike"
 				/>
 			</button>
 
@@ -95,7 +90,6 @@
 				}}
 			>
 				<img
-					loading="lazy"
 					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
 					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1747233445/kaws_r0i8v9.jpg"
 					alt="kaws"
@@ -111,7 +105,6 @@
 				}}
 			>
 				<img
-					loading="lazy"
 					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
 					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1754431887/DSC03265_wueukv.jpg"
 					alt="my love"
@@ -126,8 +119,7 @@
 				}}
 			>
 				<img
-					loading="lazy"
-					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
+					class="h-auto max-w-full rounded-xl"
 					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733780751/_MG_0884_cropped_fb9zep.jpg"
 					alt="elijah at the fire"
 				/>

@@ -44,7 +44,6 @@
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759779636/DSC03982_xwanbp.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759779636/DSC03903_vulhq6.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759779636/DSC04035_tbb87m.jpg' }
-
 	];
 </script>
 
