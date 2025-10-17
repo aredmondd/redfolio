@@ -25,8 +25,8 @@
 		href="/writing">/writing</a
 	>
 	<a
-		class="{page.url.pathname === '/monthly' ? 'text-black' : 'text-black/60'} hover:text-black"
-		href="/monthly">/monthly</a
+		class="{page.url.pathname === '/snippets' ? 'text-black' : 'text-black/60'} hover:text-black"
+		href="/snippets">/snippets</a
 	>
 {/snippet}
 

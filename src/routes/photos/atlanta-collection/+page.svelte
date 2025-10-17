@@ -22,6 +22,10 @@
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1758820579/DSC03576_thuyld.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1758820578/DSC03779_eitn5t.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759101699/DSC03880_evmei1.jpg' },
+		{
+			image:
+				'https://res.cloudinary.com/dkznczrj0/image/upload/v1760731575/DSC04076-straightened_kt0ajx.jpg'
+		},
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759101699/DSC03870_kiqg39.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1758820585/DSC03189_waxve7.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1758820579/DSC03749_rtbh1j.jpg' },
@@ -32,6 +36,10 @@
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1758820584/DSC03465_foxfm7.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1758820589/DSC03001_yodc5l.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1758820589/DSC03046_xypadb.jpg' },
+		{
+			image:
+				'https://res.cloudinary.com/dkznczrj0/image/upload/v1760731575/DSC04072-straightened_ofxdaq.jpg'
+		},
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1758820579/DSC03661_m6dmtd.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1758820590/DSC02774_tgdpoq.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759101700/DSC03829_gkzcgr.jpg' },
@@ -43,7 +51,8 @@
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759779636/DSC03957_dxlugv.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759779636/DSC03982_xwanbp.jpg' },
 		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759779636/DSC03903_vulhq6.jpg' },
-		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759779636/DSC04035_tbb87m.jpg' }
+		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1759779636/DSC04035_tbb87m.jpg' },
+		{ image: 'https://res.cloudinary.com/dkznczrj0/image/upload/v1760731574/DSC04097_jqepk9.jpg' }
 	];
 </script>
 
@@ -52,7 +61,7 @@
 		{#each photos as image}
 			<img
 				src={image.image}
-				class="mb-3"
+				class="mb-3 max-h-[609px] sm:min-w-[408px]"
 				alt="vertical study"
 				onclick={() => {
 					openImage(image.image);
