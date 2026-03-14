@@ -24,16 +24,6 @@
 		class="{page.url.pathname === '/writing' ? 'text-black' : 'text-black/60'} hover:text-black"
 		href="/writing">/writing</a
 	>
-	<a
-		class="{page.url.pathname === '/snippets' ? 'text-black' : 'text-black/60'} hover:text-black"
-		href="/snippets">/snippets</a
-	>
-	<a
-		class="{page.url.pathname === '/significance'
-			? 'text-black'
-			: 'text-black/60'} hover:text-black"
-		href="/significance">/significance</a
-	>
 {/snippet}
 
 <div class="flex flex-col sm:flex-row">
