@@ -14,7 +14,7 @@
 
 {#snippet navLinks()}
 	<a class="{page.url.pathname === '/' ? 'text-black' : 'text-black/60'} hover:text-black" href="/"
-		>/home</a
+		>~</a
 	>
 	<a
 		class="{page.url.pathname === '/now' ? 'text-black' : 'text-black/60'} hover:text-black"
