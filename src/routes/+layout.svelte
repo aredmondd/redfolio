@@ -17,6 +17,10 @@
 		>/home</a
 	>
 	<a
+		class="{page.url.pathname === '/now' ? 'text-black' : 'text-black/60'} hover:text-black"
+		href="/now">/now</a
+	>
+	<a
 		class="{page.url.pathname === '/photos' ? 'text-black' : 'text-black/60'} hover:text-black"
 		href="/photos">/photos</a
 	>
