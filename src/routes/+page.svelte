@@ -13,7 +13,11 @@
 		<div class="mb-4 flex w-full justify-center sm:justify-start">
 			<div class="flex flex-col gap-4 sm:flex-row">
 				<div class="flex items-center justify-center border-2 border-dashed border-black/10 p-2">
-					<img src={red} alt="" class="w-51 rounded-full" />
+					<img
+						src={red}
+						alt=""
+						class="w-51 animate-photo-spin rounded-full [animation-play-state:paused] hover:[animation-play-state:running]"
+					/>
 				</div>
 				<div class="flex flex-col gap-4">
 					<div class="flex flex-col gap-2 border-2 border-dashed border-black/10 p-2 select-none">
@@ -57,11 +61,16 @@
 		</div>
 
 		<div class="w-[639px] text-justify">
-			<div
-				class="border-2 border-dashed border-black/10 p-2 text-sm sm:p-3 sm:text-base"
-			>
-				<p>my "real job" is a <a href="https://www.linkedin.com/in/aidenredmondd/" class="underline">full stack software engineer</a>. i graduated from college a year ago and moved to atlanta where i am pretending to be an adult. i like taking <a href="/photos" class="underline">photos</a> and <a href="/writing" class="underline">writing</a> when i can. good art keeps me going. see what i'm doing <a href="/now" class="underline">now</a>.
-                </p>
+			<div class="border-2 border-dashed border-black/10 p-2 text-sm sm:p-3 sm:text-base">
+				<p>
+					my "real job" is a <a href="https://www.linkedin.com/in/aidenredmondd/" class="underline"
+						>full stack software engineer</a
+					>. i graduated from college a year ago and moved to atlanta where i am pretending to be an
+					adult. i like taking <a href="/photos" class="underline">photos</a> and
+					<a href="/writing" class="underline">writing</a>
+					when i can. good art keeps me going. see what i'm doing
+					<a href="/now" class="underline">now</a>.
+				</p>
 			</div>
 		</div>
 	</div>

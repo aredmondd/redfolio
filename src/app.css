@@ -8,4 +8,16 @@
 	--color-pink: #f7b4c6;
 
 	--font-sans: 'Inter', sans-serif;
+
+	--animate-photo-spin: photo-spin 6s linear infinite;
+}
+
+@keyframes photo-spin {
+	from {
+		rotate: 0deg;
+	}
+
+	to {
+		rotate: 360deg;
+	}
 }
