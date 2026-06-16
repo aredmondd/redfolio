@@ -3,7 +3,6 @@
 	import github from '$lib/assets/github.png';
 	import substack from '$lib/assets/substack-nobg.png';
 	import lastfm from '$lib/assets/lastfm.png';
-	import ActivityGrid from './activityGrid.svelte';
 
 	const aiden = ['a', 'i', 'd', 'e', 'n'];
 	const redmond = ['r', 'e', 'd', 'm', 'o', 'n', 'd'];
@@ -72,8 +71,6 @@
 					& i'll <a href="/writing" class="underline">write sometimes</a>
 				</p>
 			</div>
-
-			<ActivityGrid />
 		</div>
 	</div>
 </div>
