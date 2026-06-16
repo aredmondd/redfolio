@@ -56,11 +56,11 @@
 			</div>
 		</div>
 
-		<div class="w-[646px]">
+		<div class="w-[639px] text-justify">
 			<div
 				class="border-2 border-dashed border-black/10 p-2 text-sm sm:p-3 sm:text-base"
 			>
-				<p>my "real job" is a full stack software engineer. i recently graduated from college and moved to atlanta where i am pretending to be an adult. i like taking <a href="/photos" class="underline">photos</a> and <a href="/writing" class="underline">writing</a> when i can. good art keeps me going. see what i'm doing <a href="/now" class="underline">now</a>.
+				<p>my "real job" is a <a href="https://www.linkedin.com/in/aidenredmondd/" class="underline">full stack software engineer</a>. i graduated from college a year ago and moved to atlanta where i am pretending to be an adult. i like taking <a href="/photos" class="underline">photos</a> and <a href="/writing" class="underline">writing</a> when i can. good art keeps me going. see what i'm doing <a href="/now" class="underline">now</a>.
                 </p>
 			</div>
 		</div>
