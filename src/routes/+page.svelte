@@ -16,7 +16,7 @@
 					<img src={red} alt="" class="w-51 rounded-full" />
 				</div>
 				<div class="flex flex-col gap-4">
-					<div class="flex flex-col gap-2 border-2 border-dashed border-black/10 p-2">
+					<div class="flex flex-col gap-2 border-2 border-dashed border-black/10 p-2 select-none">
 						<div class="flex">
 							{#each aiden as letter}
 								<p
@@ -56,20 +56,12 @@
 			</div>
 		</div>
 
-		<div class="flex gap-4">
+		<div class="w-[646px]">
 			<div
-				class="flex flex-col justify-start gap-1 border-2 border-dashed border-black/10 p-2 text-sm sm:p-3 sm:text-base"
+				class="border-2 border-dashed border-black/10 p-2 text-sm sm:p-3 sm:text-base"
 			>
-				<p>my "real job" is a full stack software engineer</p>
-				<p>
-					here's what i'm up to right <a href="/now" class="underline">now</a>
-				</p>
-				<p>
-					i love <a href="/photos" class="underline">taking photos</a>
-				</p>
-				<p>
-					& i'll <a href="/writing" class="underline">write sometimes</a>
-				</p>
+				<p>my "real job" is a full stack software engineer. i recently graduated from college and moved to atlanta where i am pretending to be an adult. i like taking <a href="/photos" class="underline">photos</a> and <a href="/writing" class="underline">writing</a> when i can. good art keeps me going. see what i'm doing <a href="/now" class="underline">now</a>.
+                </p>
 			</div>
 		</div>
 	</div>

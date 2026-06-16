@@ -23,17 +23,17 @@ i've also been really into creating and photographing graffiti. <br />& <a href=
 last but not least, here's some of my favorite art right now:
 
 <div class="flex gap-4">
-    <a href="https://store.steampowered.com/app/2276980/FACEMINER/"><img src="{faceminer}" alt="" class="w-64"></a>
-    <a href="https://store.steampowered.com/app/2453160/Sword_of_the_Sea/"><img src="{sots}" alt="" class="w-64"></a>
-    <a href="https://store.steampowered.com/app/646570/Slay_the_Spire/"><img src="{sts}" alt="" class="w-64"></a>
-    <a href="https://en.wikipedia.org/wiki/2093_(album)"><img src="{yeat}" alt="" class="w-64"></a>
+    <a href="https://store.steampowered.com/app/2276980/FACEMINER/"><img src="{faceminer}" alt="" class="w-64 rounded-lg"></a>
+    <a href="https://store.steampowered.com/app/2453160/Sword_of_the_Sea/"><img src="{sots}" alt="" class="w-64 rounded-lg"></a>
+    <a href="https://store.steampowered.com/app/646570/Slay_the_Spire/"><img src="{sts}" alt="" class="w-64 rounded-lg"></a>
+    <a href="https://en.wikipedia.org/wiki/2093_(album)"><img src="{yeat}" alt="" class="w-64 rounded-lg"></a>
 </div>
 
 <div class="flex gap-4 mt-[-50px]">
-    <a href="https://a24films.com/films/marty-supreme"><img src="{marty}" alt="" class="w-64 mt-4"></a>
-    <a href="https://en.wikipedia.org/wiki/Submarine_(The_Mar%C3%ADas_album)"><img src="{submarine}" alt="" class="w-64"></a>
-    <a href="https://open.spotify.com/album/4hsC2oeoSkJiULLob8zM98"><img src="{fs}" alt="" class="w-64 mt-4"></a>
-    <a href="https://gkids.com/films/100-meters/"><img src="{meters}" alt="" class="w-64 mt-[-10px]"></a>
+    <a href="https://a24films.com/films/marty-supreme"><img src="{marty}" alt="" class="w-64 rounded-lg mt-4"></a>
+    <a href="https://en.wikipedia.org/wiki/Submarine_(The_Mar%C3%ADas_album)"><img src="{submarine}" alt="" class="w-64 rounded-lg"></a>
+    <a href="https://open.spotify.com/album/4hsC2oeoSkJiULLob8zM98"><img src="{fs}" alt="" class="w-64 rounded-lg mt-4"></a>
+    <a href="https://gkids.com/films/100-meters/"><img src="{meters}" alt="" class="w-64 rounded-lg mt-[-10px]"></a>
 </div>
 
 ---
