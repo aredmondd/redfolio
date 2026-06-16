@@ -1,39 +1,39 @@
 ---
 title: now
-date: 2025-04-09
+date: 2025-06-16
 ---
 
 <script>
-    import faceminer from '$lib/assets/faceminer.png'
-    import sots from '$lib/assets/sots.png'
+    import severance from '$lib/assets/severance.jpg'
     import yeat from '$lib/assets/2093.png'
-    import submarine from '$lib/assets/submarine.jpg'
-    import sts from '$lib/assets/sts.jpg'
+    import sts2 from '$lib/assets/sts2.jpg'
     import fs from '$lib/assets/fs.jpg'
     import marty from '$lib/assets/marty.webp'
     import meters from '$lib/assets/100m.jpg'
+    import petgrief from '$lib/assets/petgrief.jpg'
+    import dbd from '$lib/assets/dbd.png'
 
     const fDate = new Date(date).toISOString().split('T')[0]
 </script>
 
-lately, i've been customizing my new PC (arch btw), working on a project to scrape & track linkedin game data, and <a href="https://aidenredmondd.substack.com/p/the-apple-photos-incident" class="underline">yelling at apple</a>.
+lately, i've been trying to figure out what to do. too many options too little time. 
 
-i've also been really into creating and photographing graffiti. <br />& <a href="/photos/atlanta-collection" class="underline">atlanta is absolutely full of it</a>.
+this has resulted in a lot of <a href="/writing" class="underline">writing</a> and a lot of thinking. i've been trying to beat <a href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/" class="underline">slay the spire 2</a> on ascension 10 for all the characters. much harder than i thought. i'm also addicted to <a href="https://liquiddeath.com/products/flavored-sparkling-variety-pack?size=12oz-12pack" class="underline">liquid death sparkling water</a> for some reason.
 
 last but not least, here's some of my favorite art right now:
 
 <div class="flex gap-4">
-    <a href="https://store.steampowered.com/app/2276980/FACEMINER/"><img src="{faceminer}" alt="" class="w-64 rounded-lg"></a>
-    <a href="https://store.steampowered.com/app/2453160/Sword_of_the_Sea/"><img src="{sots}" alt="" class="w-64 rounded-lg"></a>
-    <a href="https://store.steampowered.com/app/646570/Slay_the_Spire/"><img src="{sts}" alt="" class="w-64 rounded-lg"></a>
-    <a href="https://en.wikipedia.org/wiki/2093_(album)"><img src="{yeat}" alt="" class="w-64 rounded-lg"></a>
+    <a href="https://en.wikipedia.org/wiki/Severance_(TV_series)"><img src="{severance}" alt="" class="w-64 rounded-lg"></a>
+    <a href="https://open.spotify.com/album/4itKk52E9ZCdWUQcFAkud9"><img src="{dbd}" alt="" class="w-64 rounded-lg"></a>
+    <a href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/"><img src="{sts2}" alt="" class="w-64 rounded-lg"></a>
+    <a href="https://open.spotify.com/album/1jXYc5gip5tqCTDOotfY5L"><img src="{yeat}" alt="" class="w-64 rounded-lg"></a>
 </div>
 
 <div class="flex gap-4 mt-[-50px]">
-    <a href="https://a24films.com/films/marty-supreme"><img src="{marty}" alt="" class="w-64 rounded-lg mt-4"></a>
-    <a href="https://en.wikipedia.org/wiki/Submarine_(The_Mar%C3%ADas_album)"><img src="{submarine}" alt="" class="w-64 rounded-lg"></a>
-    <a href="https://open.spotify.com/album/4hsC2oeoSkJiULLob8zM98"><img src="{fs}" alt="" class="w-64 rounded-lg mt-4"></a>
-    <a href="https://gkids.com/films/100-meters/"><img src="{meters}" alt="" class="w-64 rounded-lg mt-[-10px]"></a>
+    <a href="https://open.spotify.com/album/1BKKCq9GMdMahEHhPkde5p"><img src="{petgrief}" alt="" class="w-64 rounded-lg"></a>
+    <a href="https://a24films.com/films/marty-supreme"><img src="{marty}" alt="" class="w-64 rounded-lg mt-[-40px]"></a>
+    <a href="https://open.spotify.com/album/4hsC2oeoSkJiULLob8zM98"><img src="{fs}" alt="" class="w-64 rounded-lg mt-[-10px]"></a>
+    <a href="https://gkids.com/films/100-meters/"><img src="{meters}" alt="" class="w-64 rounded-lg mt-[-40px]"></a>
 </div>
 
 ---
