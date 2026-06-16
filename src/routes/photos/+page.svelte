@@ -131,7 +131,7 @@
 		<div>
 			<h1 class="mr-12 text-6xl font-bold">WANT TO <br />SEE MORE?</h1>
 			<p class="mt-4 opacity-50">
-				<span class="bg-green/50 p-1">highlighted</span> links are my favorites :)
+				<span class="bg-green/50 p-0.25">highlighted</span> links are my favorites :)
 			</p>
 		</div>
 		<div class="flex flex-col">
@@ -141,7 +141,7 @@
 			<div class="flex flex-col text-sm text-black/60 sm:text-lg">
 				<a href="/photos/vertical-study" class="hover:text-black">vertical study</a>
 				<a href="/photos/weekly-five" class="hover:text-black"
-					><span class="bg-green/50 p-1">the weekly five</span></a
+					><span class="bg-green/50 p-0.25">the weekly five</span></a
 				>
 				<a href="/photos/atlanta-collection" class="hover:text-black">atlanta collection</a>
 			</div>
@@ -157,9 +157,7 @@
 				</a>
 				<a href="/photos/shadowandlight" class="hover:text-black"> shadow / light </a>
 				<a href="/photos/stilllife" class="hover:text-black"> still life </a>
-				<a href="/photos/disconnected" class="hover:text-black"
-					><span class="bg-green/50 p-1">the weekly five</span></a
-				>
+				<a href="/photos/disconnected" class="hover:text-black"><span class="bg-green/50 p-0.25">portraits (disconnected)</span></a>
 				<a href="/photos/selfportraits" class="hover:text-black"> self portraits </a>
 				<a href="/photos/horizontal-study" class="hover:text-black">horizontal study</a>
 			</div>
