@@ -11,14 +11,15 @@
 		'athlete',
 		'athl_te',
 		'ath._te',
-		"a'._te",
-		'a,  .e',
-		'?      ',
-		'??     ',
-		'???    ',
-		'????   ',
-		'?????  ',
-		'?????? ',
+		"a'h._te",
+		"a'h._t_",
+		"a'h._._",
+		"a'h.?._",
+		"a'h.?.?",
+		"a'?.?.?",
+		"a'???.?",
+		"a'?????",
+		'a??????',
 		'???????'
 	];
 	let athleteText = athleteFrames[0];
@@ -37,7 +38,7 @@
 		athleteFrames.forEach((frame, index) => {
 			const timeout = setTimeout(() => {
 				athleteText = frame;
-			}, index * 140);
+			}, index * 200);
 
 			athleteTimeouts = [...athleteTimeouts, timeout];
 		});
