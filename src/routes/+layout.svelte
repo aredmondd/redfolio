@@ -32,7 +32,7 @@
 
 <div class="flex flex-col sm:flex-row">
 	<aside class="fixed hidden sm:block">
-		<img src={logo} alt="" class="w-24" />
+		<a href="/"><img src={logo} alt="" class="w-24" /></a>
 		<div class="mt-4 ml-3 flex flex-col gap-2 text-lg">
 			{@render navLinks()}
 		</div>
