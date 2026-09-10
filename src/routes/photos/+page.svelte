@@ -157,7 +157,9 @@
 				</a>
 				<a href="/photos/shadowandlight" class="hover:text-black"> shadow / light </a>
 				<a href="/photos/stilllife" class="hover:text-black"> still life </a>
-				<a href="/photos/disconnected" class="hover:text-black"><span class="bg-green/50 p-0.25">portraits (disconnected)</span></a>
+				<a href="/photos/disconnected" class="hover:text-black"
+					><span class="bg-green/50 p-0.25">portraits (disconnected)</span></a
+				>
 				<a href="/photos/selfportraits" class="hover:text-black"> self portraits </a>
 				<a href="/photos/horizontal-study" class="hover:text-black">horizontal study</a>
 			</div>

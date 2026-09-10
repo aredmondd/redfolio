@@ -1,60 +1,29 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+  import type { SubstackPost } from './types.ts'
 
-	const feedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Faidenredmondd.substack.com%2Ffeed`;
-
-	let posts: Post[] = $state([]);
+	let posts: SubstackPost[] = $state([]);
 	let error = $state('');
 	let loading = $state(true);
 
-	type Post = {
-		author: string;
-		categories: Array<string>;
-		content: string;
-		description: string;
-		enclosure: object;
-		guid: string;
-		link: string;
-		pubDate: string;
-		thumbnail: string;
-		title: string;
-	};
-
-	function formatDate(dateString: string) {
+  function formatDate(dateString: string) {
 		const date = new Date(dateString.replace(' ', 'T'));
 		return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 	}
 
-	async function fetchLatestPosts() {
-		try {
-			const response = await fetch(feedUrl);
-			const data = await response.json();
+  async function fetchPosts() {
+    try {
+      const response = await fetch('api/writing');
+      const data = await response.json();
 
-			const items = data.items || [];
+      posts = data;
+    } catch (e) {
+      console.error("uh oh!", e)
+    }
+    loading = false;
+  }
 
-			console.log(items);
-
-			posts = items.map((post: Post) => {
-				const imageUrlMatch = post.content.match(/<img src="([^"]+)"/);
-				const imageUrl = imageUrlMatch ? imageUrlMatch[1] : '';
-
-				return {
-					title: post.title,
-					description: post.description || 'No Subtitle Provided',
-					link: post.link,
-					pubDate: formatDate(post.pubDate),
-					thumbnail: imageUrl
-				};
-			});
-		} catch (err) {
-			error = 'Failed to load posts...';
-			console.error('Error fetching the RSS feed: ', err);
-		} finally {
-			loading = false;
-		}
-	}
-
-	onMount(fetchLatestPosts);
+	onMount(fetchPosts);
 </script>
 
 <div id="latest-posts">
@@ -65,11 +34,11 @@
 	{:else if posts.length > 0}
 		<div class="mx-12 grid grid-cols-1 gap-12 sm:grid-cols-3">
 			{#each posts as post}
-				<a class="flex flex-col" href={post.link} target="_blank">
-					<img src={post.thumbnail} class="rounded-md" alt={post.title} />
-					<h2 class="mt-3 truncate text-lg font-bold text-black/75">{post.title}</h2>
-					<p class="mt-1 truncate text-sm text-black/60">{post.description}</p>
-					<p class="mt-1 text-sm text-black/30">{post.pubDate} ∙ Aiden Redmond</p>
+				<a class="flex flex-col" href={post.canonical_url} target="_blank">
+					<img src={post.cover_image} class="rounded-md" alt={post.title} />
+					<!-- <h2 class="mt-3 truncate text-lg font-bold text-black/75">{post.title}</h2> -->
+					<!-- <p class="mt-1 truncate text-sm text-black/60">{post.subtitle}</p> -->
+					<!-- <p class="mt-1 text-sm text-black/30">{formatDate(post.post_date)}</p> -->
 				</a>
 			{/each}
 		</div>
