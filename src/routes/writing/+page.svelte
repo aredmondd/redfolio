@@ -32,6 +32,8 @@
 	{:else if error}
 		<p>{error}</p>
 	{:else if posts.length > 0}
+    <p class="ml-12">these are my substacks. click on one to read them. i double dog dare you.</p>
+    <p class="ml-12 mb-12">yes i make the thumbnails and thank you for saying they look nice, fit my style, and have gotten better over time.</p>
 		<div class="mx-12 grid grid-cols-1 gap-12 sm:grid-cols-3">
 			{#each posts as post}
 				<a class="flex flex-col" href={post.canonical_url} target="_blank">
