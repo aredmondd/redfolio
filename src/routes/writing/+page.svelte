@@ -6,45 +6,76 @@
 	let error = $state('');
 	let loading = $state(true);
 
-  function formatDate(dateString: string) {
-		const date = new Date(dateString.replace(' ', 'T'));
-		return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-	}
+  let x = $state(0);
+  let y = $state(0);
+  let hoveredPost: SubstackPost | null = $state(null);
+
+  function handleMouseMove(e: MouseEvent) {
+    x = e.clientX + 15;
+    y = e.clientY + 30;
+  }
 
   async function fetchPosts() {
     try {
       const response = await fetch('api/writing');
       const data = await response.json();
-
       posts = data;
     } catch (e) {
-      console.error("uh oh!", e)
+      console.error(e);
     }
     loading = false;
   }
 
-	onMount(fetchPosts);
+  onMount(fetchPosts);
 </script>
 
 <div id="latest-posts">
-	{#if loading}
-		<p>loading posts...</p>
-	{:else if error}
-		<p>{error}</p>
-	{:else if posts.length > 0}
-    <p class="ml-12">these are my substacks. click on one to read them. i double dog dare you.</p>
-    <p class="ml-12 mb-12">yes i make the thumbnails and thank you for saying they look nice, fit my style, and have gotten better over time.</p>
-		<div class="mx-12 grid grid-cols-1 gap-12 sm:grid-cols-3">
-			{#each posts as post}
-				<a class="flex flex-col" href={post.canonical_url} target="_blank">
-					<img src={post.cover_image} class="rounded-md" alt={post.title} />
-					<!-- <h2 class="mt-3 truncate text-lg font-bold text-black/75">{post.title}</h2> -->
-					<!-- <p class="mt-1 truncate text-sm text-black/60">{post.subtitle}</p> -->
-					<!-- <p class="mt-1 text-sm text-black/30">{formatDate(post.post_date)}</p> -->
-				</a>
-			{/each}
-		</div>
-	{:else}
-		<p>no posts were found...</p>
-	{/if}
+  {#if loading}
+    <p>loading posts...</p>
+  {:else if error}
+    <p>{error}</p>
+  {:else if posts.length > 0}
+    <!-- <div class="mb-12">
+      <p>..incoming logs</p>
+      <p>EVENT <span class="text-green bg-green/50">[{new Date(Date.now()).toISOString()}]</span> {posts.length} posts loaded from substack</p>
+      <p>NOTICE <span class="text-green bg-green/50">[{new Date(Date.now() + (Math.random() * 1000)).toISOString()}]</span> click on a post that interests you to read it.</p>
+    </div> -->
+    <div class="flex gap-2 flex-wrap text-4xl mb-32">
+      {#each posts as post}
+        <a
+          class="hover:bg-green/80"
+          href={post.canonical_url}
+          target="_blank"
+          onmouseenter={() => hoveredPost = post}
+          onmouseleave={() => hoveredPost = null}
+        >
+          <p>{post.title.toLowerCase()}</p>
+        </a>
+      {/each}
+    </div>
+  {:else}
+    <p>no posts were found...</p>
+  {/if}
 </div>
+
+{#if hoveredPost}
+  <img
+    src={hoveredPost.cover_image}
+    class="hover-image"
+    style="transform: translate({x}px, {y}px);"
+    alt={hoveredPost.title}
+  />
+{/if}
+
+<svelte:window onmousemove={handleMouseMove} />
+
+<style>
+  .hover-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    will-change: transform;
+    width: 300px;
+  }
+</style>
