@@ -1,50 +1,12 @@
 <script lang="ts">
-	import { onDestroy } from 'svelte';
 	import red from '$lib/assets/redmond.png';
 	import github from '$lib/assets/github.png';
 	import substack from '$lib/assets/substack-nobg.png';
 	import lastfm from '$lib/assets/lastfm.png';
+  import NowPlaying from './nowPlaying.svelte';
 
 	const aiden = ['a', 'i', 'd', 'e', 'n'];
 	const redmond = ['r', 'e', 'd', 'm', 'o', 'n', 'd'];
-	const athleteFrames = [
-		'athlete',
-		'athl_te',
-		'ath._te',
-		"a'h._te",
-		"a'h._t_",
-		"a'h._._",
-		"a'h.?._",
-		"a'h.?.?",
-		"a'?.?.?",
-		"a'???.?",
-		"a'?????",
-		'a??????',
-		'???????'
-	];
-	let athleteText = athleteFrames[0];
-	let athleteTimeouts: ReturnType<typeof setTimeout>[] = [];
-
-	function clearAthleteAnimation() {
-		athleteTimeouts.forEach((timeout) => {
-			clearTimeout(timeout);
-		});
-		athleteTimeouts = [];
-	}
-
-	function corrodeAthlete() {
-		clearAthleteAnimation();
-
-		athleteFrames.forEach((frame, index) => {
-			const timeout = setTimeout(() => {
-				athleteText = frame;
-			}, index * 200);
-
-			athleteTimeouts = [...athleteTimeouts, timeout];
-		});
-	}
-
-	onDestroy(clearAthleteAnimation);
 </script>
 
 <div class="flex gap-4">
@@ -80,15 +42,7 @@
 						</div>
 					</div>
 					<div class="flex flex-col gap-2 border-2 border-dashed border-black/10 p-2">
-						<h2 class="text-center font-sans text-lg">
-							designer / developer /
-							<button
-								type="button"
-								class="inline-block min-w-[7ch] cursor-default border-0 bg-transparent p-0 text-left whitespace-pre [font:inherit]"
-								onpointerenter={corrodeAthlete}
-								onfocus={corrodeAthlete}>{athleteText}</button
-							>
-						</h2>
+						<h2 class="text-center font-sans text-lg">designer / developer</h2>
 					</div>
 				</div>
 				<div
@@ -120,5 +74,6 @@
 				</p>
 			</div>
 		</div>
+    <NowPlaying />
 	</div>
 </div>
