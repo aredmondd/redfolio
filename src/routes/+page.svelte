@@ -3,38 +3,45 @@
 	import github from '$lib/assets/github.png';
 	import substack from '$lib/assets/substack-nobg.png';
 	import lastfm from '$lib/assets/lastfm.png';
-  import NowPlaying from './nowPlaying.svelte';
-
-	const aiden = ['a', 'i', 'd', 'e', 'n'];
-	const redmond = ['r', 'e', 'd', 'm', 'o', 'n', 'd'];
+	import NowPlaying from './nowPlaying.svelte';
 </script>
 
-<div class="flex gap-4">
-	<div>
-		<div class="mb-4 flex w-full justify-center sm:justify-start">
-			<div class="flex flex-col gap-4 sm:flex-row">
-				<div class="flex items-center justify-center border-2 border-dashed border-black/10 p-2">
-					<img
-						src={red}
-						alt=""
-						class="w-51 animate-photo-spin rounded-full [animation-play-state:paused] hover:[animation-play-state:running]"
-					/>
-				</div>
-				<div
-					class="flex flex-row items-center justify-around gap-6 border-2 border-dashed border-black/10 p-2 sm:flex-col"
-				>
-					<a href="https://www.last.fm/user/aidenredmond/" target="_blank">
-						<img src={lastfm} alt="" class="w-12 rounded-md" />
-					</a>
-					<a href="https://github.com/aredmondd" target="_blank">
-						<img src={github} alt="" class="w-12" />
-					</a>
-					<a href="https://aidenredmondd.substack.com/" target="_blank">
-						<img src={substack} alt="" class="w-9" />
-					</a>
-				</div>
+<div class="flex flex-col items-start gap-4">
+	<div class="flex border-2 border-dashed border-black/10 p-2">
+		<h1 class="text-4xl font-bold mx-[0.5px]">aiden redmond</h1>
+	</div>
+	<div class="flex w-full justify-center sm:justify-start">
+		<div class="flex flex-col gap-4 sm:flex-row">
+			<div class="flex items-center justify-center border-2 border-dashed border-black/10 p-2">
+				<img
+					src={red}
+					alt=""
+					class="w-44 animate-photo-spin rounded-full [animation-play-state:paused] hover:[animation-play-state:running]"
+				/>
+			</div>
+			<div
+				class="flex flex-col items-center justify-around gap-6 border-2 border-dashed border-black/10 p-2"
+			>
+				<a href="https://www.last.fm/user/aidenredmond/" target="_blank">
+					<img src={lastfm} alt="" class="w-10 rounded-md" />
+				</a>
+				<a href="https://github.com/aredmondd" target="_blank">
+					<img src={github} alt="" class="w-10" />
+				</a>
+				<a href="https://aidenredmondd.substack.com/" target="_blank">
+					<img src={substack} alt="" class="w-8" />
+				</a>
 			</div>
 		</div>
-    <NowPlaying />
 	</div>
+	<div class="max-w-[375px] border-2 border-dashed border-black/10 p-2">
+		hi, i'm aiden and i'm a software engineer. <br />
+    in my free time, i take <a
+			href="/photos"
+			class="font-semibold underline">photos</a
+		>
+		and <a href="/writing" class="font-semibold underline">write.</a> <br />
+		see what i'm up to <a href="/now" class="font-semibold underline">now</a>
+	</div>
+	<NowPlaying />
 </div>
