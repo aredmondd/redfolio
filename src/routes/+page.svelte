@@ -20,31 +20,6 @@
 						class="w-51 animate-photo-spin rounded-full [animation-play-state:paused] hover:[animation-play-state:running]"
 					/>
 				</div>
-				<div class="flex flex-col gap-4">
-					<div class="flex flex-col gap-2 border-2 border-dashed border-black/10 p-2 select-none">
-						<div class="flex">
-							{#each aiden as letter}
-								<p
-									class="font-sans text-7xl font-semibold transition-all duration-400 ease-out hover:text-green"
-								>
-									{letter}
-								</p>
-							{/each}
-						</div>
-						<div class="mt-[-8px] flex">
-							{#each redmond as letter}
-								<p
-									class="font-sans text-7xl font-semibold transition-all duration-400 ease-out hover:text-pink"
-								>
-									{letter}
-								</p>
-							{/each}
-						</div>
-					</div>
-					<div class="flex flex-col gap-2 border-2 border-dashed border-black/10 p-2">
-						<h2 class="text-center font-sans text-lg">designer / developer</h2>
-					</div>
-				</div>
 				<div
 					class="flex flex-row items-center justify-around gap-6 border-2 border-dashed border-black/10 p-2 sm:flex-col"
 				>
@@ -58,20 +33,6 @@
 						<img src={substack} alt="" class="w-9" />
 					</a>
 				</div>
-			</div>
-		</div>
-
-		<div class="w-[639px] text-justify">
-			<div class="border-2 border-dashed border-black/10 p-2 text-sm sm:p-3 sm:text-base">
-				<p>
-					my "real job" is a <a href="https://www.linkedin.com/in/aidenredmondd/" class="underline"
-						>full stack software engineer</a
-					>. i graduated from college a year ago and moved to atlanta where i am pretending to be an
-					adult. i like taking <a href="/photos" class="underline">photos</a> and
-					<a href="/writing" class="underline">writing</a>
-					when i can. good art keeps me going. see what i'm doing
-					<a href="/now" class="underline">now</a>.
-				</p>
 			</div>
 		</div>
     <NowPlaying />

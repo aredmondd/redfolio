@@ -27,7 +27,7 @@
 
   onMount(() => {
     fetchNowPlaying();
-    interval = setInterval(fetchNowPlaying, 30000); // poll every 30s
+    interval = setInterval(fetchNowPlaying, 30000);
   });
 
   onDestroy(() => {
@@ -36,12 +36,12 @@
 </script>
 
 {#if !loading}
-  <div class="flex items-center gap-3 p-2">
+  <div class="flex items-center gap-3 p-2 border-2 border-dashed border-black/10">
     {#if track?.isPlaying}
       <img
         src={track.albumImageUrl}
         alt={track.album}
-        class="h-12 w-12 rounded-md"
+        class="h-24 w-24 rounded-md"
       />
       <div class="flex flex-col text-sm">
         <span class="text-[0.7rem] uppercase tracking-wide opacity-60">
@@ -55,14 +55,27 @@
         >
           {track.title}
         </a>
+        <p>{track.album}</p>
         <span class="opacity-75">{track.artist}</span>
       </div>
     {:else}
       <div class="flex flex-col text-sm">
         <span class="text-[0.7rem] uppercase tracking-wide opacity-60">
-          Not currently playing
+          aiden isn't listening to anything :(
         </span>
       </div>
     {/if}
+  </div>
+{:else} <!-- loading state -->
+  <div class="flex items-center gap-3 p-2 border-2 border-dashed border-black/10 animate-pulse">
+    <div
+      class="h-24 w-24 rounded-md bg-black/10"
+    ></div>
+    <div class="flex flex-col text-sm gap-1 items-start">
+      <div class="bg-black/10 p-2 px-10"></div>
+      <div class="bg-black/10 p-2 px-20"></div>
+      <div class="bg-black/10 p-2 px-15"></div>
+      <div class="bg-black/10 p-2 px-10"></div>
+    </div>
   </div>
 {/if}

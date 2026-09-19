@@ -18,7 +18,7 @@ date: 2026-09-09
 
 right now, i spend my days seeking challenge and searching for meaning.
 
-i'm <em>still</em> trying to beat <a href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/" class="underline">slay the spire 2</a> on A10 for all characters. i spend my evenings <a href="/writing" class="underline">writing</a> or thinking. i'm trying to make more art, whether that's with a <a href="/photos" class="underline">camera</a>, with paint, or with code. looking forward to celebrating end of Q3 with those who celebrate.
+i'm <span class="italic">still</span> trying to beat <a href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/" class="underline">slay the spire 2</a> on A10 for all characters. i spend my evenings <a href="/writing" class="underline">writing</a> or thinking. i'm trying to make more art, whether that's with a <a href="/photos" class="underline">camera</a>, with paint, or with code. looking forward to celebrating end of Q3 with those who celebrate.
 
 and again, last but not least, here's some of my favorite art right now:
 
