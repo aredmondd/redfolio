@@ -100,14 +100,14 @@
 			<button
 				onclick={() => {
 					openImage(
-						'https://res.cloudinary.com/dkznczrj0/image/upload/v1754431887/DSC03265_wueukv.jpg'
+						'https://res.cloudinary.com/dkznczrj0/image/upload/v1789922419/DSC04597_Large_s7amfm.jpg'
 					);
 				}}
 			>
 				<img
 					class="h-auto max-w-full rounded-xl transition-opacity duration-500"
-					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1754431887/DSC03265_wueukv.jpg"
-					alt="my love"
+					src="https://res.cloudinary.com/dkznczrj0/image/upload/v1789922419/DSC04597_Large_s7amfm.jpg"
+					alt="SPAM x Railroad"
 				/>
 			</button>
 
