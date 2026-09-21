@@ -5,7 +5,7 @@
 	let isHistorical = $derived(page.url.pathname.startsWith('/now/past'));
 </script>
 
-<div class="flex flex-col sm:flex-row gap-16">
+<div class="flex flex-col gap-16 sm:flex-row">
 	<div class="prose text-black marker:text-black prose-hr:my-8 prose-hr:border-green/30">
 		{@render children()}
 	</div>
@@ -23,7 +23,7 @@
 				{/each}
 			</ul>
 		{:else}
-			<p class="sm:ml-[-40px] text-black/50">
+			<p class="text-black/50 sm:ml-[-40px]">
 				you're in the past. <br /> want to go back to the
 				<a href="/now" class="underline">future?</a>
 			</p>

@@ -8,7 +8,7 @@
 
 <div class="flex flex-col items-start gap-4">
 	<div class="flex border-2 border-dashed border-black/10 p-2">
-		<h1 class="text-5xl sm:text-4xl font-bold mx-[0.5px]">aiden redmond</h1>
+		<h1 class="mx-[0.5px] text-5xl font-bold sm:text-4xl">aiden redmond</h1>
 	</div>
 	<div class="flex w-full justify-start">
 		<div class="flex flex-row gap-4">
@@ -16,7 +16,7 @@
 				<img
 					src={red}
 					alt=""
-					class="w-64 sm:w-44 animate-photo-spin rounded-full [animation-play-state:paused] hover:[animation-play-state:running]"
+					class="w-64 animate-photo-spin rounded-full [animation-play-state:paused] hover:[animation-play-state:running] sm:w-44"
 				/>
 			</div>
 			<div
@@ -36,10 +36,7 @@
 	</div>
 	<div class="max-w-[375px] border-2 border-dashed border-black/10 p-2">
 		hi, i'm aiden and i'm a software engineer. <br />
-    in my free time, i take <a
-			href="/photos"
-			class="font-semibold underline">photos</a
-		>
+		in my free time, i take <a href="/photos" class="font-semibold underline">photos</a>
 		and <a href="/writing" class="font-semibold underline">write.</a> <br />
 		see what i'm up to <a href="/now" class="font-semibold underline">now</a>
 	</div>
