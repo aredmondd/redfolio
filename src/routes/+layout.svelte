@@ -42,5 +42,7 @@
 		{@render navLinks()}
 	</div>
 
+  <div class="sm:hidden flex border-2 border-dashed border-red-500 p-2 italic mb-4">by viewing this website on your phone, you understand and agree that you will have a worse experience!</div>
+
 	<div class="flex-1 sm:mt-28 sm:ml-48">{@render children?.()}</div>
 </div>

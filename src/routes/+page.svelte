@@ -8,15 +8,15 @@
 
 <div class="flex flex-col items-start gap-4">
 	<div class="flex border-2 border-dashed border-black/10 p-2">
-		<h1 class="text-4xl font-bold mx-[0.5px]">aiden redmond</h1>
+		<h1 class="text-5xl sm:text-4xl font-bold mx-[0.5px]">aiden redmond</h1>
 	</div>
-	<div class="flex w-full justify-center sm:justify-start">
-		<div class="flex flex-col gap-4 sm:flex-row">
+	<div class="flex w-full justify-start">
+		<div class="flex flex-row gap-4">
 			<div class="flex items-center justify-center border-2 border-dashed border-black/10 p-2">
 				<img
 					src={red}
 					alt=""
-					class="w-44 animate-photo-spin rounded-full [animation-play-state:paused] hover:[animation-play-state:running]"
+					class="w-64 sm:w-44 animate-photo-spin rounded-full [animation-play-state:paused] hover:[animation-play-state:running]"
 				/>
 			</div>
 			<div
