@@ -4,14 +4,14 @@ date: 2026-09-09
 ---
 
 <script>
-  import denshattack from '$lib/assets/denshattack.jpg'
-  import ohyeah from '$lib/assets/ohyeah.webp'
-  import thend from '$lib/assets/thend.jpeg'
-  import sts2 from '$lib/assets/sts2.jpg'
-  import marty from '$lib/assets/marty.webp'
-  import petgrief from '$lib/assets/petgrief.jpg'
-  import dbd from '$lib/assets/dbd.png'
-  import tgred from '$lib/assets/greatestrealestatedev.jpg'
+  import denshattack from '#lib/assets/denshattack.jpg'
+  import ohyeah from '#lib/assets/ohyeah.webp'
+  import thend from '#lib/assets/thend.jpeg'
+  import sts2 from '#lib/assets/sts2.jpg'
+  import marty from '#lib/assets/marty.webp'
+  import petgrief from '#lib/assets/petgrief.jpg'
+  import dbd from '#lib/assets/dbd.png'
+  import tgred from '#lib/assets/greatestrealestatedev.jpg'
 
   const fDate = new Date(date).toISOString().split('T')[0]
 </script>

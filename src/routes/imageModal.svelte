@@ -1,6 +1,6 @@
 <!-- ImageModal.svelte -->
 <script lang="ts">
-	import { imageModalStore } from '$lib/stores/imageModal';
+	import { imageModalStore } from '#lib/stores/imageModal.js';
 
 	$: ({ isOpen, imageSrc } = $imageModalStore);
 

@@ -1,8 +1,8 @@
 <script lang="ts">
-	import red from '$lib/assets/redmond.png';
-	import github from '$lib/assets/github.png';
-	import substack from '$lib/assets/substack-nobg.png';
-	import lastfm from '$lib/assets/lastfm.png';
+	import red from '#lib/assets/redmond.png';
+	import github from '#lib/assets/github.png';
+	import substack from '#lib/assets/substack-nobg.png';
+	import lastfm from '#lib/assets/lastfm.png';
 	import NowPlaying from './nowPlaying.svelte';
 </script>
 

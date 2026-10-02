@@ -1,4 +1,4 @@
-import { photoCaseStudies } from '$lib/photoCaseStudies';
+import { photoCaseStudies } from '#lib/photoCaseStudies.js';
 import type { PageLoad } from './$types';
 import { error } from '@sveltejs/kit';
 

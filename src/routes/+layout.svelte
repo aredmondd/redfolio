@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/aiden-logo.png';
-	import logo from '$lib/assets/aiden-logo.png';
+	import favicon from '#lib/assets/aiden-logo.png';
+	import logo from '#lib/assets/aiden-logo.png';
 	import { page } from '$app/state';
 
 	let { children } = $props();

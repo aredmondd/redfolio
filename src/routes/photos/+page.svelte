@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ImageModal from '../imageModal.svelte';
-	import { imageModalStore } from '$lib/stores/imageModal';
+	import { imageModalStore } from '#lib/stores/imageModal.js';
 
 	const openImage = (imageSrc: string): void => {
 		imageModalStore.openModal(imageSrc);
