@@ -4,6 +4,7 @@
 	import substack from '#lib/assets/substack-nobg.png';
 	import lastfm from '#lib/assets/lastfm.png';
 	import NowPlaying from './nowPlaying.svelte';
+	import CombinedGithubContributions from './combinedGithubContributions.svelte';
 </script>
 
 <div class="flex flex-col items-start gap-4">
@@ -41,4 +42,5 @@
 		see what i'm up to <a href="/now" class="font-semibold underline">now</a>
 	</div>
 	<NowPlaying />
+	<CombinedGithubContributions />
 </div>
