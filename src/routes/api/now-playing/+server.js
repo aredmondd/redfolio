@@ -3,6 +3,7 @@ import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN } from 
 
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 const NOW_PLAYING_ENDPOINT = 'https://api.spotify.com/v1/me/player/currently-playing';
+const RECENTLY_PLAYED_ENDPOINT = 'https://api.spotify.com/v1/me/player/recently-played?limit=1';
 
 async function getAccessToken() {
 	const basic = Buffer.from(`${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`).toString('base64');
@@ -26,6 +27,30 @@ async function getAccessToken() {
 	return response.json();
 }
 
+function formatTrack(item, isPlaying) {
+	return {
+		isPlaying,
+		title: item.name,
+		artist: item.artists.map((a) => a.name).join(', '),
+		album: item.album.name,
+		albumImageUrl: item.album.images[0]?.url,
+		songUrl: item.external_urls.spotify
+	};
+}
+
+async function getLastPlayed(accessToken) {
+	const res = await fetch(RECENTLY_PLAYED_ENDPOINT, {
+		headers: { Authorization: `Bearer ${accessToken}` }
+	});
+
+	if (!res.ok) return { isPlaying: false };
+
+	const data = await res.json();
+	const item = data.items?.[0]?.track;
+
+	return item ? formatTrack(item, false) : { isPlaying: false };
+}
+
 export async function GET() {
 	try {
 		const { access_token } = await getAccessToken();
@@ -35,24 +60,17 @@ export async function GET() {
 		});
 
 		// 204 = nothing currently playing
-		if (res.status === 204 || res.status > 400) {
-			return json({ isPlaying: false });
+		if (res.status === 204 || res.status >= 400) {
+			return json(await getLastPlayed(access_token));
 		}
 
 		const song = await res.json();
 
 		if (!song?.item) {
-			return json({ isPlaying: false });
+			return json(await getLastPlayed(access_token));
 		}
 
-		return json({
-			isPlaying: song.is_playing,
-			title: song.item.name,
-			artist: song.item.artists.map((a) => a.name).join(', '),
-			album: song.item.album.name,
-			albumImageUrl: song.item.album.images[0]?.url,
-			songUrl: song.item.external_urls.spotify
-		});
+		return json(formatTrack(song.item, song.is_playing));
 	} catch (err) {
 		console.error('Now playing fetch failed:', err);
 		return json({ isPlaying: false });
