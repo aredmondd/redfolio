@@ -26,6 +26,18 @@ async function getAccessToken() {
 	return response.json();
 }
 
+/**
+ * @typedef {object} SpotifyTrack
+ * @property {string} name
+ * @property {{ name: string }[]} artists
+ * @property {{ name: string, images: { url: string }[] }} album
+ * @property {{ spotify: string }} external_urls
+ */
+
+/**
+ * @param {SpotifyTrack} item
+ * @param {boolean} isPlaying
+ */
 function formatTrack(item, isPlaying) {
 	return {
 		isPlaying,
@@ -37,6 +49,7 @@ function formatTrack(item, isPlaying) {
 	};
 }
 
+/** @param {string} accessToken */
 async function getLastPlayed(accessToken) {
 	const res = await fetch(RECENTLY_PLAYED_ENDPOINT, {
 		headers: { Authorization: `Bearer ${accessToken}` }

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Splide, SplideSlide } from '@splidejs/svelte-splide';
-	import '@splidejs/svelte-splide/css';
+	import '@splidejs/svelte-splide/css/splide.min.css';
 
 	export let data: {
 		title: string;

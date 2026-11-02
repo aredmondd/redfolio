@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, type Snippet } from 'svelte';
 
-	let { photos, children } = $props();
+	let { photos, children }: { photos: { image: string }[]; children?: Snippet } = $props();
 
 	let imagesToLoad = $state(0);
 	let imagesLoadedCount = $state(0);
@@ -20,6 +20,7 @@
 				}
 			};
 			img.onerror = () => {
+				imagesLoadedCount++;
 				if (imagesLoadedCount === imagesToLoad) {
 					loaded = true;
 				}
