@@ -16,7 +16,6 @@
 			const res: Response = await fetch('/api/contributions');
 			if (!res.ok) throw new Error(`Request failed: ${res.status}`);
 			data = await res.json();
-			console.log(data);
 		} catch (err) {
 			console.log(err);
 		} finally {

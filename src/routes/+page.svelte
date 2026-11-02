@@ -5,6 +5,7 @@
 	import lastfm from '#lib/assets/lastfm.png';
 	import NowPlaying from './nowPlaying.svelte';
 	import CombinedGithubContributions from './combinedGithubContributions.svelte';
+	import LastMovie from './lastMovie.svelte';
 </script>
 
 <div class="flex flex-col items-start gap-4">
@@ -38,9 +39,12 @@
 	<div class="max-w-[375px] border-2 border-dashed border-black/10 p-2">
 		hi, i'm aiden and i'm a software engineer. <br />
 		in my free time, i take <a href="/photos" class="font-semibold underline">photos</a>
-		and <a href="/writing" class="font-semibold underline">write.</a> <br />
+		and <a href="/writing" class="font-semibold underline">write</a>. <br />
 		see what i'm up to <a href="/now" class="font-semibold underline">now</a>
 	</div>
-	<NowPlaying />
+	<div class="flex gap-4">
+		<LastMovie />
+		<NowPlaying />
+	</div>
 	<CombinedGithubContributions />
 </div>
