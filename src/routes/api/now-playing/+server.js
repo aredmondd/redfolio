@@ -1,4 +1,3 @@
-import { json } from '@sveltejs/kit';
 import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN } from '$app/env/private';
 
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
@@ -61,18 +60,18 @@ export async function GET() {
 
 		// 204 = nothing currently playing
 		if (res.status === 204 || res.status >= 400) {
-			return json(await getLastPlayed(access_token));
+			return Response.json(await getLastPlayed(access_token));
 		}
 
 		const song = await res.json();
 
 		if (!song?.item) {
-			return json(await getLastPlayed(access_token));
+			return Response.json(await getLastPlayed(access_token));
 		}
 
-		return json(formatTrack(song.item, song.is_playing));
+		return Response.json(formatTrack(song.item, song.is_playing));
 	} catch (err) {
 		console.error('Now playing fetch failed:', err);
-		return json({ isPlaying: false });
+		return Response.json({ isPlaying: false });
 	}
 }
