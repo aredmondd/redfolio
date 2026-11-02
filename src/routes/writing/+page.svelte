@@ -22,8 +22,9 @@
 			posts = data;
 		} catch (e) {
 			console.error(e);
+		} finally {
+			loading = false;
 		}
-		loading = false;
 	}
 
 	onMount(fetchPosts);
