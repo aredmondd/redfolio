@@ -39,7 +39,9 @@
 	<div class="flex items-center gap-3 border-2 border-dashed border-black/10 p-2">
 		<img src={track.albumImageUrl} alt={track.album} class="h-20 w-20 rounded-md" />
 		<div class="flex flex-col text-sm">
-			<span class="text-[0.7rem] tracking-wide uppercase opacity-60">{track.isPlaying ? "Now Playing" : "Last Listened To"}</span>
+			<span class="text-[0.7rem] tracking-wide uppercase opacity-60">
+				{track.isPlaying ? 'Now Playing' : 'Last Listened To'}
+			</span>
 			<a
 				href={track.songUrl}
 				target="_blank"
