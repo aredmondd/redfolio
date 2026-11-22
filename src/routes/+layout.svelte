@@ -13,21 +13,27 @@
 </svelte:head>
 
 {#snippet navLinks()}
-	<a class="{page.url.pathname === '/' ? 'text-black' : 'text-black/60'} hover:text-black" href="/"
-		>~</a
-	>
+	<a class="{page.url.pathname === '/' ? 'text-black' : 'text-black/60'} hover:text-black" href="/">
+		~
+	</a>
 	<a
 		class="{page.url.pathname === '/now' ? 'text-black' : 'text-black/60'} hover:text-black"
-		href="/now">/now</a
+		href="/now"
 	>
+		/now
+	</a>
 	<a
 		class="{page.url.pathname === '/photos' ? 'text-black' : 'text-black/60'} hover:text-black"
-		href="/photos">/photos</a
+		href="/photos"
 	>
+		/photos
+	</a>
 	<a
 		class="{page.url.pathname === '/writing' ? 'text-black' : 'text-black/60'} hover:text-black"
-		href="/writing">/writing</a
+		href="/writing"
 	>
+		/writing
+	</a>
 {/snippet}
 
 <div class="flex flex-col sm:flex-row">
