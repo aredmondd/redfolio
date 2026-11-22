@@ -40,7 +40,7 @@
 {/snippet}
 
 {#if construction}
-	<div class="flex min-h-screen flex-col items-center justify-center gap-8">
+	<div class="flex h-dvh flex-col items-center justify-center gap-8">
 		<h1 class="text-xl">we're under construction...</h1>
 		<img src={graffiti} class="w-48" />
 		<h1 class="mt-[-10px] text-xl">come back later?</h1>
